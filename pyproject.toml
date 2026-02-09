@@ -1,0 +1,23 @@
+[project]
+name = "uv-env"
+version = "0.1.0"
+description = "Environment for running uv sync and related tools."
+requires-python = ">=3.8"
+dependencies = [
+	"lightning",
+	"transformers>=4.40.0",
+	"torch>=2.2.0",
+	"accelerate>=0.20.0",
+	"ipykernel",
+	"hf-transfer>=0.1.0",
+]
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["."]
+
+# Move the dependencies array under the [tool.uv] section
+[tool.uv]
+# Add any uv-specific configuration here if needed

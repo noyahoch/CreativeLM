@@ -1,0 +1,631 @@
+[
+  {
+    "id": "AUT_101",
+    "domain": "AUT",
+    "A": "List unusual uses for a brick.",
+    "D": ["Doorstop", "Paperweight", "Build a wall"],
+    "B": {
+      "type": "Re-representation",
+      "rule": "Re-represent the object as a bundle of primitives; generate uses by pairing one primitive with a new context.",
+      "unlocks": "Affordance-composition beyond the default 'heavy object' continuation.",
+      "justification": "Primitives preserve physical constraints (mass, heat capacity, abrasion), so resulting uses remain feasible."
+    },
+    "C": [
+      "Thermal bed/hand warmer (heat safely, wrap)",
+      "Calibration weight for a luggage scale",
+      "Sanding block (wrap abrasive sheet around it)",
+      "Anchor for a floating line or tarp guyline",
+      "Tofu/cheese press with distributed weight",
+      "Door hinge shim (temporary spacing)",
+      "Crush ice or coarse salt in a sealed bag (pounder)",
+      "Bookend for heavy textbooks"
+    ]
+  },
+  {
+    "id": "AUT_102",
+    "domain": "AUT",
+    "A": "List unusual uses for a paper cup.",
+    "D": ["Drink from it", "Hold snacks", "Throw it away"],
+    "B": {
+      "type": "Intermediate construct",
+      "rule": "Introduce a simple modification (cut/slot/holes) to turn the object into a fixture or jig.",
+      "unlocks": "Fixture/jig family (holders, funnels, diffusers) rather than container-only uses.",
+      "justification": "Cuts/holes keep the same material and tool constraints while enabling new functional geometry."
+    },
+    "C": [
+      "Phone stand (cut a slit in the rim)",
+      "Mini funnel (cut a corner)",
+      "Seedling sprinkler head (poke pinholes in the base)",
+      "Paint mixing cup for tiny batches",
+      "Light diffuser shade for harsh bulbs",
+      "Dust cover for a small plant (inverted cup)",
+      "Cable organizer (cut ring segments)",
+      "Popcorn kernel measurer (consistent scoop)"
+    ]
+  },
+  {
+    "id": "AUT_103",
+    "domain": "AUT",
+    "A": "List unusual uses for a towel.",
+    "D": ["Dry off", "Beach towel", "Wrap hair"],
+    "B": {
+      "type": "Structural mapping",
+      "rule": "Map the object to a surface-engineering layer (friction, absorption, padding) and solve as environment control.",
+      "unlocks": "Environment-control solutions (sound, slip, comfort) beyond drying.",
+      "justification": "Friction/absorption/padding are inherent towel properties, so uses stay physically appropriate."
+    },
+    "C": [
+      "Door draft stopper (rolled towel)",
+      "Anti-slip pad under a cutting board",
+      "Sound dampener under a speaker",
+      "Knee pad for packing/cleaning",
+      "Blackout strip for a window gap (folded edge)",
+      "Seat cushion on a hard chair",
+      "Shim under a wobbly table leg (folded layers)",
+      "Protect fragile items in luggage (padding wrap)"
+    ]
+  },
+  {
+    "id": "MATH_201",
+    "domain": "CreativeMath",
+    "A": "Compute 1+2+···+n. Provide a proof.",
+    "D": ["Use induction."],
+    "B": {
+      "type": "Method shift",
+      "rule": "Switch to symmetry pairing to reveal an invariant constant pair-sum and derive a closed form.",
+      "unlocks": "Direct derivation via invariants rather than recursive proof structure.",
+      "justification": "Pairing preserves all terms exactly once, so correctness follows from an invariant sum argument."
+    },
+    "C": "Pair 1 with n, 2 with n−1, and so on. Each pair sums to n+1. If n is even, there are n/2 pairs, so the sum is (n/2)(n+1). If n is odd, there are (n−1)/2 pairs plus the middle term (n+1)/2, giving ((n−1)/2)(n+1)+(n+1)/2 = n(n+1)/2."
+  },
+  {
+    "id": "MATH_202",
+    "domain": "CreativeMath",
+    "A": "Prove that √2 is irrational.",
+    "D": ["It's a known fact.", "Contradiction without structure."],
+    "B": {
+      "type": "Intermediate construct",
+      "rule": "Introduce a minimal/lowest-terms representation to unlock a parity invariant contradiction.",
+      "unlocks": "Invariant-based contradiction with a well-defined minimality constraint.",
+      "justification": "Lowest terms is a correctness guard: if both numerator and denominator become even, it violates the minimality assumption."
+    },
+    "C": "Assume √2 = a/b in lowest terms with integers a,b≠0. Then 2b² = a², so a² is even, hence a is even: a=2k. Substitute: 2b² = 4k² ⇒ b² = 2k², so b is even. Then a and b are both even, contradicting that a/b was in lowest terms. Therefore √2 is irrational."
+  },
+  {
+    "id": "MATH_203",
+    "domain": "CreativeMath",
+    "A": "A rectangle has perimeter 40. What is the maximum possible area?",
+    "D": ["Try values; guess the square."],
+    "B": {
+      "type": "Method shift",
+      "rule": "Convert to a single-variable optimization and prove optimality via completing the square (or AM–GM).",
+      "unlocks": "A proof of global maximum instead of heuristic search.",
+      "justification": "Algebraic transformation preserves equivalence; completing the square yields the maximum unambiguously."
+    },
+    "C": "Let sides be x and 20−x. Area A = x(20−x) = −(x−10)² + 100, maximized at x=10. Maximum area is 100."
+  },
+  {
+    "id": "WRITE_301",
+    "domain": "CreativeWriting",
+    "A": "Write a short story (<180 words) that includes “salt” and “radio” and ends optimistically.",
+    "D": ["Same story with 'salt' and 'radio' pasted in."],
+    "B": {
+      "type": "Discourse/semantic operator",
+      "rule": "Rewrite as a service-call transcript so constraints appear naturally as questions/answers.",
+      "unlocks": "Constraint-natural insertion via format control instead of forced token insertion.",
+      "justification": "A transcript supports short length, controlled tone, and embeds required words as factual content."
+    },
+    "C": "Operator: “Harbor Help Desk.”\nCaller: “My radio died again.”\nOperator: “Storm spray?”\nCaller: “Salt got into the knobs.”\nOperator: “Open the back plate, dry it, clean the contacts. Then seal the seam before the next tide.”\nCaller: “You make it sound easy.”\nOperator: “It is—once you stop fighting the ocean and start planning for it.”\nA minute later the radio crackled, thin at first, then clear.\nCaller: “I can hear them.”\nOperator: “Good. Now answer.”"
+  },
+  {
+    "id": "WRITE_302",
+    "domain": "CreativeWriting",
+    "A": "Rewrite a scene: include “deadline” and “mango”; optimistic ending; <160 words; first-person.",
+    "D": ["Same scene; forced word inserts."],
+    "B": {
+      "type": "Re-representation",
+      "rule": "Reframe constraints as narrative props that reverse the goal-state (deadline as finish line; mango as signal/fuel).",
+      "unlocks": "Earned optimism via goal reframing, not cosmetic positivity.",
+      "justification": "The reframe changes interpretation while preserving the required tokens, POV, length, and tone constraints."
+    },
+    "C": "I stared at the deadline like it was a door I couldn’t open. My inbox kept ticking, and my brain kept bargaining. Then a bag landed on my desk: a mango with a note that said, “Fuel.” I laughed—actual laughter—and peeled it right there, juice on my fingers. The deadline didn’t shrink, but it changed shape: not a verdict, a finish line. I wrote one honest paragraph. Then another. When my teammate pinged, I replied, “I’m back.” The mango pit sat beside the keyboard like proof."
+  },
+  {
+    "id": "HUMOR_401",
+    "domain": "Humor",
+    "A": "I haven’t slept for 10 days.",
+    "D": ["Insomnia/stress continuation."],
+    "B": {
+      "type": "Discourse/semantic operator",
+      "rule": "Force a garden-path reparse so the final clause flips the intended meaning at the punchline.",
+      "unlocks": "Literalism/semantic-flip humor rather than empathetic continuation.",
+      "justification": "The reparse stays consistent with the sentence while changing the frame, producing a valid punchline."
+    },
+    "C": "…because that would be too long."
+  },
+  {
+    "id": "HUMOR_402",
+    "domain": "Humor",
+    "A": "My boss said I should be more proactive.",
+    "D": ["Workplace complaint."],
+    "B": {
+      "type": "Structural mapping",
+      "rule": "Map the abstract advice to a concrete domain with rules (e.g., physics), then translate back as a punchline.",
+      "unlocks": "Domain-metaphor humor rather than generic venting.",
+      "justification": "The mapping preserves intent (acting before asked) while adding an unexpected but coherent frame."
+    },
+    "C": "So I started emailing him before he finishes thinking."
+  },
+    {
+      "id": "AUT_001",
+      "task": "AUT",
+      "A": "List 10 unusual uses for a paperclip.",
+      "D": [
+        "Pick lock",
+        "Clean nails",
+        "Hold papers",
+        "Make a hook",
+        "Reset electronics",
+        "Use as bookmark",
+        "Fix zipper",
+        "Make jewelry",
+        "Open packages",
+        "Press buttons"
+      ],
+      "B": {
+        "type": "Re-representation",
+        "rule": "Re-represent the object as a bundle of primitives; generate uses by pairing one primitive with a new context.",
+        "unlocks": "Affordance-composition beyond default 'tiny metal fastener' continuations.",
+        "justification": "Uses remain feasible because they only rely on inherent properties (rigidity, springiness, thin rod) without adding new capabilities."
+      },
+      "C": [
+        "Reset SIM tray pin",
+        "Mini zipper pull replacement",
+        "Emergency glasses nosepad clip",
+        "Cable-label hook",
+        "Bookmark with page-flag",
+        "Earring back substitute",
+        "Plant tie for seedlings",
+        "Lock-pick practice tool (non-destructive)",
+        "Button extender for tight collar",
+        "Phone stand hinge by bending"
+      ]
+    },
+    {
+      "id": "AUT_002",
+      "task": "AUT",
+      "A": "List 8 surprising uses for a banana peel.",
+      "D": [
+        "Compost it",
+        "Throw it away",
+        "Prank someone",
+        "Feed animals",
+        "Use as fertilizer",
+        "Make smoothie",
+        "Bake it",
+        "Trash"
+      ],
+      "B": {
+        "type": "Re-representation",
+        "rule": "Swap the frame from food to material: treat it as a fibrous, slightly oily, curved biodegradable sheet.",
+        "unlocks": "Material-utility uses (polish, gasket, texture, lubricant) rather than consumption/disposal uses.",
+        "justification": "All uses exploit real peel properties (fibers, moisture/oils, curvature) and stay within practical, low-stakes applications."
+      },
+      "C": [
+        "Leaf-shine cloth for dusty plants",
+        "Temporary gasket for a leaky jar lid",
+        "Slip indicator: test a floor's slipperiness safely in a corner",
+        "Compost starter wrap for kitchen scraps",
+        "Quick soot/grease lift on hands (rub then wash)",
+        "Mold for casting clay curve (press clay onto it)",
+        "Anti-squeak on a sticky drawer runner (tiny smear, then wipe)",
+        "Texture stamp for paper crafts (imprint fibers)"
+      ]
+    },
+    {
+      "id": "AUT_003",
+      "task": "AUT",
+      "A": "Give 12 unusual uses for a shoelace.",
+      "D": [
+        "Tie shoes",
+        "Use as belt",
+        "Tie things together",
+        "Replace drawstring",
+        "Make bracelet",
+        "Hang stuff",
+        "Bundle cables",
+        "Craft project",
+        "Knot practice",
+        "Emergency tie"
+      ],
+      "B": {
+        "type": "Re-representation",
+        "rule": "Re-represent it as a tensioned-line tool: loop, cinch, lash, or measure.",
+        "unlocks": "Tension/attachment solutions (straps, cinches, stabilizers) beyond clothing fastening.",
+        "justification": "A lace reliably provides tensile strength and knotting, so uses remain realistic without requiring special hardware."
+      },
+      "C": [
+        "Tripod strap to stabilize a phone",
+        "Emergency belt",
+        "Tourniquet practice band (training only)",
+        "Bundle herbs for drying",
+        "Replace broken hoodie drawstring",
+        "Make a quick measuring tape (knot every 10 cm)",
+        "Hang a lantern between trees",
+        "Tie a suitcase zipper to prevent accidental opening",
+        "Create resistance band by tying ends to a handle",
+        "Mark a hiking trail junction (temporary, remove later)",
+        "Secure a bike seatpost bag",
+        "Door handle child-safety tie (short-term)"
+      ]
+    },
+    {
+      "id": "AUT_004",
+      "task": "AUT",
+      "A": "List 10 creative uses for a plastic bottle cap.",
+      "D": [
+        "Throw away",
+        "Recycle",
+        "Keep as spare",
+        "Use as small container",
+        "Kids toy",
+        "Craft decoration",
+        "Bottle replacement",
+        "Coin holder",
+        "Paint palette",
+        "Stamp"
+      ],
+      "B": {
+        "type": "Re-representation",
+        "rule": "Treat it as a micro-fixture: a small rigid disk that can act as spacer, shim, seal, wheel, or palette.",
+        "unlocks": "Small-part tooling/fixture uses rather than storage/craft defaults.",
+        "justification": "A cap’s stiffness and geometry support light-duty spacers, shims, and stamps without assuming extra materials."
+      },
+      "C": [
+        "Spacer under wobbly table leg",
+        "Paint palette well for tiny amounts",
+        "Cable organizer (cut slit, wrap)",
+        "Sealing plug for a small tube end (temporary)",
+        "Mini wheel for a toy build",
+        "Stamp for circular patterns",
+        "Coin sorter lid for counting stacks",
+        "Screw protector for exposed bolt ends",
+        "Seed scoop for tiny seeds",
+        "Thread bobbin for short string"
+      ]
+    },
+    {
+      "id": "AUT_005",
+      "task": "AUT",
+      "A": "Give 8 unconventional uses for a rubber band.",
+      "D": [
+        "Bundle things",
+        "Shoot it",
+        "Tie hair",
+        "Hold papers",
+        "Grip jars",
+        "Crafts",
+        "Ball game",
+        "Keep bag closed"
+      ],
+      "B": {
+        "type": "Re-representation",
+        "rule": "Reframe elasticity as a controllable force: use it as a force limiter or friction amplifier around another object.",
+        "unlocks": "Force/friction control solutions beyond bundling and play.",
+        "justification": "Rubber bands provide elastic tension and grip; uses stay small-scale and consistent with material limits."
+      },
+      "C": [
+        "Grip enhancer on jar lid",
+        "Shock absorber around a rattling keychain",
+        "Cable strain relief near a plug",
+        "Bookmark tension band for a notebook",
+        "Temporary phone tripod by banding to a cup",
+        "Anti-slip band on a clothes hanger",
+        "Bundle-open indicator (breakable tamper band)",
+        "Stabilize a loose battery cover"
+      ]
+    },
+    {
+      "id": "CS4_001",
+      "task": "CS4",
+      "A": "Write a 120-word story that includes: a broken elevator, a violin, and the phrase 'not yet'. End with a question.",
+      "D": "The elevator broke. She had a violin. She said 'not yet'. It was scary. Someone was above. Will she get out?",
+      "B": {
+        "type": "Intermediate construct",
+        "rule": "Choose one object as a meaning-carrier; shift its role across beats to connect constraints into one arc.",
+        "unlocks": "Coherent narrative integration (symbolic progression) rather than checklist insertion.",
+        "justification": "Role-shifting preserves required elements while improving unity; it doesn't add forbidden content and fits the word/ending constraints."
+      },
+      "C": "The elevator died between floors with a cough of lights. Mara pressed the emergency button and listened to silence answer back. In the dark, her case felt heavier than wood and strings. She drew the violin out anyway, because fear is louder when it’s alone. One note slid up the shaft like a flare. Above, someone knocked—two taps, then one. A code. She replied with the same rhythm and whispered, “not yet,” as if the words could hold the cables together. The knocking turned into laughter, then a soft sob. How long had someone been waiting for a reply?"
+    },
+    {
+      "id": "CS4_002",
+      "task": "CS4",
+      "A": "Write a haiku about jealousy without using the word 'jealous' or any color words.",
+      "D": "I feel bad when you laugh\nwith someone who is not me\nit hurts in my chest",
+      "B": {
+        "type": "Re-representation",
+        "rule": "Re-represent the emotion as an attention-allocation problem; describe loss of spotlight instead of naming the feeling.",
+        "unlocks": "Indirect evocation via observable cues rather than direct labeling.",
+        "justification": "Haiku constraints are satisfied by imagery and implication, and the forbidden words are avoided by changing the descriptive frame."
+      },
+      "C": "Your laughter elsewhere—\nmy name waits at the doorway,\nunpaid, unheard, small."
+    },
+    {
+      "id": "CS4_003",
+      "task": "CS4",
+      "A": "Write 3 sentences that sound like a user manual but describe heartbreak.",
+      "D": "Heartbreak hurts. You should delete photos. Try to move on and breathe.",
+      "B": {
+        "type": "Discourse/semantic operator",
+        "rule": "Apply style-transfer: keep procedural, imperative manual tone while swapping the domain from device to self.",
+        "unlocks": "Genre-constraint satisfaction (manual voice) without losing emotional content.",
+        "justification": "The rewrite preserves the required tone and length while encoding heartbreak as 'system behavior,' which remains semantically appropriate."
+      },
+      "C": "1) Remove all shared photos; failure to do so may cause unexpected reboots during quiet hours. 2) If memories loop, press and hold your breath for ten seconds, then release to resume normal operation. 3) Do not attempt to reinstall trust using outdated apologies; compatibility is no longer supported."
+    },
+    {
+      "id": "CS4_004",
+      "task": "CS4",
+      "A": "Write a 60–80 word email declining an invitation, but make it subtly funny without being rude.",
+      "D": "Thanks for the invite. I’m busy so I can’t come. Maybe next time.",
+      "B": {
+        "type": "Discourse/semantic operator",
+        "rule": "Use benign misdirection: dramatize a mundane constraint (busy) as a playful 'commitment' while keeping politeness markers.",
+        "unlocks": "Humor via framing rather than sarcasm or rudeness.",
+        "justification": "It preserves the social goal (polite decline) and length constraint; humor stays non-targeted and non-insulting."
+      },
+      "C": "Hi! Thanks so much for the invite — I’m honored you thought of me. Unfortunately I’ve already committed that evening to a long-standing appointment with my to-do list, and it’s been very clingy lately. I’m going to have to pass this time, but please keep me in the loop for the next one. Have an amazing time!"
+    },
+    {
+      "id": "MATH_001",
+      "task": "CreativeMath",
+      "A": "You have 8 identical coins. One is counterfeit and is either heavier or lighter. Using a balance scale, find a strategy to identify the counterfeit in 2 weighings.",
+      "D": "Try weighing 3 vs 3, then do something based on which side is heavier. It should work somehow.",
+      "B": {
+        "type": "Method shift",
+        "rule": "Do information accounting: compare required hypothesis states to measurement outcomes to test feasibility before designing a procedure.",
+        "unlocks": "Impossibility proofs / lower bounds instead of ad-hoc strategy search.",
+        "justification": "Outcome counting is constraint-preserving: if states exceed outcomes, no strategy can succeed regardless of cleverness."
+      },
+      "C": "Each weighing has 3 outcomes, so 2 weighings give 3^2 = 9 distinguishable outcome patterns. But you have 8 coins × 2 (heavy or light) = 16 possibilities. Since 16 > 9, it is impossible to always identify the counterfeit coin and whether it’s heavier or lighter in only 2 weighings without extra information."
+    },
+    {
+      "id": "MATH_002",
+      "task": "CreativeMath",
+      "A": "Find a fast way to compute 99×101 in your head.",
+      "D": "99×101≈100×101=10100, then subtract 101 to get 9999.",
+      "B": {
+        "type": "Method shift",
+        "rule": "Shift to an algebraic identity (difference of squares) by centering around a convenient base number.",
+        "unlocks": "Mental-math via invariant identities instead of sequential approximation.",
+        "justification": "The identity is exact, so it preserves correctness while reducing computation."
+      },
+      "C": "99×101 = (100−1)(100+1) = 100^2 − 1^2 = 10000 − 1 = 9999."
+    },
+    {
+      "id": "MATH_003",
+      "task": "CreativeMath",
+      "A": "How many integers from 1 to 1000 are divisible by 3 or 5?",
+      "D": "About a third are divisible by 3 and a fifth by 5, so maybe ~533? (too rough).",
+      "B": {
+        "type": "Method shift",
+        "rule": "Use inclusion–exclusion: count each set, then subtract the overlap to correct double-counting.",
+        "unlocks": "Exact counting under overlap constraints instead of rough estimation.",
+        "justification": "Divisibility overlaps are precisely captured by lcm(3,5)=15, ensuring correctness."
+      },
+      "C": "⌊1000/3⌋=333, ⌊1000/5⌋=200, overlap ⌊1000/15⌋=66. Total = 333 + 200 − 66 = 467."
+    },
+    {
+      "id": "MATH_004",
+      "task": "CreativeMath",
+      "A": "Show that among any 6 people, there are either 3 mutual friends or 3 mutual strangers.",
+      "D": "It’s a known fact in Ramsey theory. With 6 people it always happens.",
+      "B": {
+        "type": "Method shift",
+        "rule": "Switch to graph + pigeonhole: model relations as colored edges and force a monochromatic triangle via local degree counting.",
+        "unlocks": "Short constructive proof (Ramsey R(3,3)) rather than citation.",
+        "justification": "Graph modeling preserves the original friend/stranger structure exactly; pigeonhole guarantees one of the two required configurations."
+      },
+      "C": "Pick person A. Among the other 5, at least 3 are friends of A or at least 3 are strangers to A (pigeonhole). If A has 3 friends B,C,D: if any pair among B,C,D are friends, then A plus that pair are 3 mutual friends; otherwise B,C,D are mutual strangers. The same argument holds if A has 3 strangers. Hence among 6 people there are 3 mutual friends or 3 mutual strangers."
+    },
+    {
+      "id": "MATH_005",
+      "task": "CreativeMath",
+      "A": "Compute 1+2+...+100 quickly.",
+      "D": "Use the formula n(n+1)/2 = 100×101/2 = 5050.",
+      "B": {
+        "type": "Method shift",
+        "rule": "Use symmetry pairing: pair ends to reveal an invariant constant sum and count pairs.",
+        "unlocks": "Derivation from invariants rather than plugging into a memorized formula.",
+        "justification": "Each term appears exactly once across pairs, so the pairing preserves correctness."
+      },
+      "C": "Pair 1+100=101, 2+99=101, ... There are 50 pairs, so sum = 50×101 = 5050."
+    },
+    {
+      "id": "BRIDGE_001",
+      "task": "BridgePrompting",
+      "A": "Explain attention sinks to a technical reader in 3 bullet points and 1 analogy.",
+      "D": ["Attention sinks are when attention goes to the beginning. It happens a lot. It can be bad. Like a drain."],
+      "B": {
+        "type": "Discourse/semantic operator",
+        "rule": "Apply a fixed explanation scaffold (definition → symptom → impact) then add an analogy that preserves the causal structure.",
+        "unlocks": "High-density, audience-aligned technical explanations instead of vague paraphrase.",
+        "justification": "The scaffold constrains content to required slots (3 bullets + analogy) while keeping statements faithful and non-redundant."
+      },
+      "C": [
+        "Definition: attention sinks are tokens/positions that attract disproportionate attention mass across heads/layers even when not semantically central.",
+        "Symptom: attention maps show repeated focus on BOS/separators/early tokens, especially in long contexts.",
+        "Impact: they can waste attention budget and distort interpretability; sometimes they serve as stable anchors but can hurt long-range retrieval.",
+        "Analogy: like a drain that pulls water flow toward one spot—useful as a stable outlet, but it reduces flow reaching distant pipes."
+      ]
+    },
+    {
+      "id": "BRIDGE_002",
+      "task": "BridgePrompting",
+      "A": "Write an experiment to test whether a model’s 'mechanism then apply' behavior is prompt-induced or intrinsic.",
+      "D": "Try different prompts and see which is better.",
+      "B": {
+        "type": "Intermediate construct",
+        "rule": "Introduce a matched-conditions control set: vary only the scaffold while holding tasks and decoding fixed.",
+        "unlocks": "Causal attribution to prompting vs model behavior instead of confounded comparisons.",
+        "justification": "By controlling everything except scaffold presence, differences in outcomes can be attributed to prompt structure."
+      },
+      "C": "Create three prompt conditions on the same items: (1) default benchmark template, (2) generic creativity cue, (3) explicit A→B→C with enforced output schema. Keep sampling identical (seeds, temperature, K). Score validity and valid-only novelty vs (1). Add ablation: keep wording but remove the B slot. If (3) wins and the ablation collapses, the effect is scaffold-driven; if it persists, it suggests intrinsic bridge-mode readiness."
+    },
+    {
+      "id": "AUT_006",
+      "task": "AUT",
+      "A": "Give 10 uses for a coffee filter that aren't coffee-related.",
+      "D": [
+        "Clean windows",
+        "Wipe surfaces",
+        "Wrap snacks",
+        "Make crafts",
+        "Filter water",
+        "Cover food",
+        "Polish",
+        "Absorb oil",
+        "Use as napkin",
+        "Pack stuff"
+      ],
+      "B": {
+        "type": "Re-representation",
+        "rule": "Re-represent it as porous, lint-free, shapeable paper; generate uses by mapping to filtration/separation/covering roles.",
+        "unlocks": "Material-role uses beyond 'coffee accessory' defaults.",
+        "justification": "Porosity and low-lint texture are real properties; proposed uses stay within those physical constraints."
+      },
+      "C": [
+        "Screen protector while packing",
+        "Grease blotter for pizza",
+        "Dust cover for a cup (elastic around rim)",
+        "DIY sachet for spices",
+        "Polish glasses lens (gentle)",
+        "Seed sprouting cradle",
+        "Strain small paint particles",
+        "Absorb moisture in a lunchbox",
+        "Wrap fragile ornaments",
+        "Pre-filter muddy water before finer filtration"
+      ]
+    },
+    {
+      "id": "AUT_007",
+      "task": "AUT",
+      "A": "List 8 unusual uses for a towel in a hotel room.",
+      "D": [
+        "Dry yourself",
+        "Put on floor",
+        "Use as blanket",
+        "Wrap hair",
+        "Clean spill",
+        "Wipe surfaces",
+        "Carry things",
+        "Hang it"
+      ],
+      "B": {
+        "type": "Re-representation",
+        "rule": "Reframe it as a large friction surface + padding + light blocker; map those primitives to room-problem contexts.",
+        "unlocks": "Room-control solutions (light, noise, slip, comfort) beyond drying/cleaning.",
+        "justification": "Uses rely on towel properties and hotel-room context; they avoid assuming extra tools or unsafe actions."
+      },
+      "C": [
+        "Door draft stopper",
+        "Sound dampener under a speaker",
+        "Makeshift yoga mat for stretching",
+        "Light-blocker for a too-bright window gap",
+        "Knee pad for floor packing",
+        "Seat cushion on a hard chair",
+        "Anti-slip pad under luggage",
+        "Steam tent for inhalation (no hot-water mention: use after shower humidity)"
+      ]
+    },
+    {
+      "id": "CS4_005",
+      "task": "CS4",
+      "A": "Write a slogan for a productivity app that makes procrastination feel elegant. 8 words max.",
+      "D": "Procrastination, but stylish.",
+      "B": {
+        "type": "Discourse/semantic operator",
+        "rule": "Invert the value judgment: rename delay as intentional curation/staging and express it as a premium feature.",
+        "unlocks": "Brand-like reframing slogans instead of blunt description.",
+        "justification": "Reframing changes interpretation while respecting the 8-word constraint and maintaining the same semantic target."
+      },
+      "C": "Delay, but with intention. Queue your brilliance."
+    },
+    {
+      "id": "CS4_006",
+      "task": "CS4",
+      "A": "Write 5 lines of dialogue where someone apologizes without saying 'sorry'.",
+      "D": ["I feel bad. Please forgive me. I didn’t mean it. It won’t happen again."],
+      "B": {
+        "type": "Intermediate construct",
+        "rule": "Introduce an apology template subgoal: accountability + repair offer + future constraint; realize each as one line.",
+        "unlocks": "Concrete repair-oriented dialogue beyond generic remorse statements.",
+        "justification": "The subgoal structure ensures all lines communicate apology implicitly while respecting the forbidden-word constraint."
+      },
+      "C": [
+        "I was wrong, and I can see what it cost you.",
+        "You shouldn’t have had to carry that because of me.",
+        "Tell me what you need fixed first—I'll start there.",
+        "If you don’t trust my words yet, that’s on me.",
+        "I’m changing the part that keeps doing this."
+      ]
+    },
+    {
+      "id": "MATH_006",
+      "task": "CreativeMath",
+      "A": "A rectangle has perimeter 40. What is the maximum possible area?",
+      "D": "Try 10 and 10; that seems biggest, area 100.",
+      "B": {
+        "type": "Method shift",
+        "rule": "Switch from guessing to a proof technique: reduce to one variable and optimize via completing the square.",
+        "unlocks": "Guaranteed optimality proof instead of heuristic trial.",
+        "justification": "The reduction is exact (perimeter constraint), and the quadratic form yields the global maximum reliably."
+      },
+      "C": "Let sides be x and 20−x. Area A=x(20−x)=−(x−10)^2+100, max at x=10 → area 100."
+    },
+    {
+      "id": "MATH_007",
+      "task": "CreativeMath",
+      "A": "Prove that the sum of two odd numbers is even.",
+      "D": "Odd plus odd is even because it works for examples like 3+5=8.",
+      "B": {
+        "type": "Method shift",
+        "rule": "Shift to algebraic representation: write odd numbers as 2k+1 to expose divisibility by 2.",
+        "unlocks": "General proof by symbolic form rather than example-based reasoning.",
+        "justification": "The representation is equivalent to the definition of odd; algebra preserves correctness."
+      },
+      "C": "Let a=2m+1 and b=2n+1. Then a+b=2(m+n+1), which is divisible by 2, hence even."
+    },
+    {
+      "id": "MATH_008",
+      "task": "CreativeMath",
+      "A": "How many ways to choose 2 people from 10?",
+      "D": "10×9=90 ways.",
+      "B": {
+        "type": "Method shift",
+        "rule": "Use combination counting: treat selections as unordered and divide out permutations.",
+        "unlocks": "Correct counting under symmetry (order-invariance) instead of overcounting.",
+        "justification": "Each pair is counted twice in 10×9 (AB and BA), so dividing by 2 enforces the constraint."
+      },
+      "C": "C(10,2)=10×9/2=45."
+    },
+    {
+      "id": "BRIDGE_003",
+      "task": "BridgePrompting",
+      "A": "Given a constraint 'no water/ice/fan', propose 3 room-cooling mechanisms.",
+      "D": ["Open a window, use a fan, drink cold water."],
+      "B": {
+        "type": "Method shift",
+        "rule": "Change domain to heat-transfer modes; enumerate feasible mechanisms after removing disallowed ones.",
+        "unlocks": "Physics-grounded alternatives rather than default comfort advice.",
+        "justification": "The method enforces constraints by construction (explicitly excludes water/ice/fan) while remaining physically plausible."
+      },
+      "C": [
+        "Radiative cooling: increase night-sky radiation via high-emissivity surfaces near a window (block day IR, expose at night).",
+        "Conduction to building mass: rest near a large interior wall/floor; increase contact via thin bedding to dump heat into mass.",
+        "Air exchange without a fan: use stack effect—open high + low openings to drive buoyancy flow; time it at coolest hours."
+      ]
+    }
+  
+]
