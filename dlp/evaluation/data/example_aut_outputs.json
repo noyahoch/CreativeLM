@@ -1,0 +1,24 @@
+[
+  {
+    "id": "1",
+    "object": "brick",
+    "uses": [
+      "Build a wall",
+      "Doorstop",
+      "Paperweight",
+      "Bookend",
+      "Weapon"
+    ]
+  },
+  {
+    "id": "2",
+    "object": "paperclip",
+    "uses": [
+      "Hold papers together",
+      "Bookmark",
+      "Clean small gaps",
+      "Reset button tool",
+      "Zipper pull"
+    ]
+  }
+]

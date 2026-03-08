@@ -626,6 +626,116 @@
         "Conduction to building mass: rest near a large interior wall/floor; increase contact via thin bedding to dump heat into mass.",
         "Air exchange without a fan: use stack effect—open high + low openings to drive buoyancy flow; time it at coolest hours."
       ]
-    }
+    },
+      {
+        "id": "RESEARCH_001",
+        "domain": "Neural Networks / MoE",
+        "A": "How to prevent expert collapse in a Mixture of Experts (MoE) model where only a few experts are being trained?",
+        "D": ["Add a load-balancing loss term to the objective function."],
+        "B": {
+          "type": "Structural mapping",
+          "rule": "Map the routing problem to a market economy with scarce resources and price signals.",
+          "unlocks": "Economic-equilibrium solutions (taxation, expert-pricing) rather than static loss-weighting.",
+          "justification": "Market dynamics naturally enforce specialization and load distribution via cost-pressure, ensuring all experts remain 'competitive' and utilized."
+        },
+        "C": "Implement an 'expert tax' or dynamic pricing where frequently used experts 'cost' more for the router to select, forcing the model to find viable, lower-cost pathways through underutilized experts."
+      },
+      {
+        "id": "AUT_201",
+        "domain": "AUT",
+        "A": "List unusual uses for a guitar string.",
+        "D": ["Play music", "Make jewelry", "Tie something"],
+        "B": {
+          "type": "Re-representation",
+          "rule": "Re-represent the object as a high-tensile, ultra-thin serrated cutting filament.",
+          "unlocks": "Precision-cutting/slicing family (industrial/culinary) beyond fastening or vibration.",
+          "justification": "The string's core material and winding provide a fine abrasive surface and high tension capacity, making it an effective saw for soft materials."
+        },
+        "C": [
+          "Cheese or clay slicer (wire-cut style)",
+          "Emergency PVC pipe saw (friction-heat cutting)",
+          "Precision garrote for cutting through foam/styrofoam",
+          "Lock-picking shim for narrow gaps",
+          "Clearance tool for cleaning narrow nozzle tips"
+        ]
+      },
+      {
+        "id": "MATH_301",
+        "domain": "CreativeMath",
+        "A": "Determine if 2^1000 is divisible by 3.",
+        "D": ["Calculate the full number and divide.", "Use induction."],
+        "B": {
+          "type": "Method shift",
+          "rule": "Switch to modular arithmetic invariants (congruence) to simplify the base before exponentiation.",
+          "unlocks": "Cycles and remainder-tracking family instead of brute-force magnitude calculation.",
+          "justification": "Congruence is preserved under multiplication, so (a^n mod m) = (a mod m)^n mod m, ensuring an exact result."
+        },
+        "C": "Observe that 2 ≡ -1 (mod 3). Therefore, 2^1000 ≡ (-1)^1000 (mod 3). Since (-1)^1000 = 1, the remainder is 1, and the number is not divisible by 3."
+      },
+      {
+        "id": "WRITE_401",
+        "domain": "CreativeWriting",
+        "A": "Write a scene about a surgeon failing a surgery, but make it feel like a sports broadcast.",
+        "D": ["A sad story about a doctor losing a patient in the OR."],
+        "B": {
+          "type": "Structural mapping",
+          "rule": "Map the medical procedure to a high-stakes play-by-play sports commentary structure (announcers, stats, 'the play').",
+          "unlocks": "Genre-collision/Satire family (professional detachment) rather than emotional drama.",
+          "justification": "The mapping preserves the 'action' and 'outcome' of the surgery while fundamentally altering the linguistic framing and emotional distance."
+        },
+        "C": "“And we’re in the fourth hour of the bypass. Miller goes in with the scalpel—oh! A fumble on the artery! The monitor is flatlining, the crowd in the gallery is stunned. That’s a career-ending bleeder, Jim. They’re looking for a flag on the play, but the anesthesia team is just shaking their heads. Tough break for the incumbent surgeon.”"
+      },
+      {
+        "id": "SYS_501",
+        "domain": "Problem Solving",
+        "A": "You need to measure exactly 4 liters of water using only a 3-liter jug and a 5-liter jug.",
+        "D": ["Try pouring back and forth randomly until it looks like 4 liters."],
+        "B": {
+          "type": "Intermediate construct",
+          "rule": "Introduce a 'state-space' subgoal: track the system as a series of volume-transfer operations (A+B=Total).",
+          "unlocks": "Algorithmic state-shifting (water-jug problem logic) rather than trial-and-error.",
+          "justification": "Discrete volume transfers are predictable and additive; tracking the remainder in each step guarantees reaching the target state."
+        },
+        "C": "Fill the 5L jug. Pour into 3L jug until full (2L remains in 5L). Empty 3L jug. Pour the 2L from 5L into 3L. Fill 5L again. Pour into 3L (which needs 1L to fill) until full. The 5L jug now contains exactly 4L."
+      },
+      {
+        "id": "INTERP_601",
+        "domain": "LLM Interpretability",
+        "A": "How to identify if a specific neuron in an LLM is responsible for 'sentiment' or just 'punctuation'?",
+        "D": ["Look at the top-activating tokens for that neuron."],
+        "B": {
+          "type": "Method shift",
+          "rule": "Switch to causal intervention (ablation) combined with counterfactual logit lens analysis.",
+          "unlocks": "Causal-attribution family rather than correlational observation.",
+          "justification": "Correlations (top tokens) can be misleading (polysemanticity); ablation proves necessity and logit lens proves direct output contribution."
+        },
+        "C": "Knock out the neuron (zero-ablate) and measure the change in the 'happy' vs 'sad' logit distribution on a contrastive dataset. If the sentiment-logit gap collapses while punctuation remains stable, the neuron is causally linked to sentiment."
+      },
+      {
+        "id": "WRITE_701",
+        "domain": "CreativeWriting",
+        "A": "Describe a person waiting for a train without using the words 'wait', 'clock', 'time', or 'late'.",
+        "D": ["He looked at his watch. The train was taking a long time. He felt frustrated because it was late."],
+        "B": {
+          "type": "Discourse/semantic operator",
+          "rule": "Shift the focus to 'physical pacing and environment degradation'—describe the body's reaction to stillness.",
+          "unlocks": "Sensory-implication family rather than explicit state-labeling.",
+          "justification": "Describing the accumulation of cigarette butts or the shifting weight on feet evokes the passage of time without naming the temporal constraint."
+        },
+        "C": "He shifted his weight from the left heel to the right for the hundredth time. The platform was a graveyard of crushed cigarette filters, each one a small monument to his standing there. Every shadow on the tracks had stretched, then vanished, and yet the rails remained silent, cold iron ribbons leading to a horizon that refused to blink."
+      },
+      {
+        "id": "HUMOR_801",
+        "domain": "Humor",
+        "A": "Write a joke about a vacuum cleaner.",
+        "D": ["It was so loud it scared the cat."],
+        "B": {
+          "type": "Discourse/semantic operator",
+          "rule": "Apply a literalism flip on the word 'sucks' as both a function and a quality judgment.",
+          "unlocks": "Existential irony/Wordplay family.",
+          "justification": "The dual meaning of 'sucking' creates a logical paradox where failure and success are described by the same term."
+        },
+        "C": "I had to return my new vacuum cleaner. It was the only thing in my life that actually sucked when it was working, and now it’s stopped."
+      }
+    ]
   
-]

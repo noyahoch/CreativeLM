@@ -1,0 +1,442 @@
+[
+    {
+      "id": "PS_001_v2",
+      "domain": "ProblemSolving",
+      "A": "Remote teams miss important decisions because discussions are scattered across chats and meetings.",
+      "D": [
+        "Send more recap emails",
+        "Ask someone to take better notes",
+        "Add more meetings for alignment",
+        "Use a shared document and hope people update it",
+        "Record every meeting and store videos",
+        "Create stricter communication rules",
+        "Increase manager check-ins",
+        "Pin key messages in chat"
+      ],
+      "B": {
+        "type": "Re-representation",
+        "rule": "Treat decisions as 'immutable commits' that must be captured at the moment of merge.",
+        "unlocks": "Decision capture, provenance, and retrieval as a first-class workflow step.",
+        "justification": "Software teams avoid ambiguity by merging explicit commits with metadata; decisions can be handled similarly."
+      },
+      "C": "A one-click 'Decision Commit' flow in chat/meetings that captures the decision, owner, rationale, and links, then auto-updates a decision log and pings affected stakeholders."
+    },
+    {
+      "id": "PS_002_v2",
+      "domain": "ProblemSolving",
+      "A": "Customer support tickets bounce between teams because the problem category is unclear at intake.",
+      "D": [
+        "Add more dropdown categories",
+        "Hire more triage agents",
+        "Write better ticket templates",
+        "Route everything to a general queue",
+        "Require customers to pick a product area",
+        "Train agents more on routing rules",
+        "Add SLA penalties for misroutes",
+        "Build a bigger knowledge base"
+      ],
+      "B": {
+        "type": "Structural mapping",
+        "rule": "Treat triage as medical differential diagnosis: ask minimal discriminative questions.",
+        "unlocks": "Adaptive intake that reduces uncertainty with a few high-information prompts.",
+        "justification": "Clinicians narrow causes via questions that maximally separate likely conditions; ticket routing can use the same logic."
+      },
+      "C": "An adaptive intake wizard that asks 3–5 branching questions chosen by information gain, then routes with confidence + shows 'why' and alternatives for quick override."
+    },
+    {
+      "id": "PS_003_v2",
+      "domain": "ProblemSolving",
+      "A": "New hires take months to become productive because context lives in people's heads.",
+      "D": [
+        "Create more onboarding docs",
+        "Assign a buddy",
+        "Schedule training sessions",
+        "Add a bigger wiki",
+        "Record walkthrough videos",
+        "Extend onboarding time",
+        "Increase code reviews",
+        "Do weekly Q&A meetings"
+      ],
+      "B": {
+        "type": "Intermediate construct",
+        "rule": "Treat onboarding as a guided museum tour with curated exhibits and 'why' plaques.",
+        "unlocks": "Curated paths, progressive disclosure, and narrative reasoning behind systems.",
+        "justification": "Museums compress vast knowledge into memorable routes; teams can curate learning trails with intent."
+      },
+      "C": "Role-based onboarding 'trails' (2-week routes) that link code, dashboards, and incidents with short 'why it exists' notes and checkpoint tasks that generate reusable artifacts."
+    },
+    {
+      "id": "PS_004_v2",
+      "domain": "ProblemSolving",
+      "A": "People forget to follow through on action items after meetings.",
+      "D": [
+        "Send reminders",
+        "Assign a meeting scribe",
+        "Use task software more strictly",
+        "Shorten meetings",
+        "Add recurring check-ins",
+        "Create action-item templates",
+        "Escalate missed items",
+        "Make fewer action items"
+      ],
+      "B": {
+        "type": "Re-representation",
+        "rule": "Treat actions as 'subscriptions' that trigger when prerequisites become true.",
+        "unlocks": "Condition-based nudges instead of time-based nagging.",
+        "justification": "Many tasks stall waiting on dependencies; notifying at the state-change moment is more effective than periodic reminders."
+      },
+      "C": "Action items become lightweight state machines with dependencies (e.g., approval received, data ready) and notify exactly when the next step becomes unblocked."
+    },
+    {
+      "id": "PS_005_v2",
+      "domain": "ProblemSolving",
+      "A": "Teams re-run the same analysis repeatedly because results are hard to find and reuse.",
+      "D": [
+        "Make a shared drive folder",
+        "Use stricter naming conventions",
+        "Write more documentation",
+        "Hold a weekly knowledge share",
+        "Centralize dashboards",
+        "Create a research wiki",
+        "Ask analysts to email results",
+        "Add search tags manually"
+      ],
+      "B": {
+        "type": "Re-representation",
+        "rule": "Treat analyses as products with packaging: title, ingredients, expiration date, and serving suggestions.",
+        "unlocks": "Standardized metadata, reproducibility, and discoverability by default.",
+        "justification": "Consumer packaging makes items searchable and comparable; analysis outputs need the same affordances."
+      },
+      "C": "An 'analysis card' standard that auto-captures query/code, dataset versions, key findings, confidence/limitations, and a 1-click rerun button, indexed for search."
+    },
+    {
+      "id": "PS_006_v2",
+      "domain": "ProblemSolving",
+      "A": "Engineering incidents repeat because postmortems don’t change day-to-day behavior.",
+      "D": [
+        "Write longer postmortems",
+        "Add more action items",
+        "Do more trainings",
+        "Create an incident playbook",
+        "Increase on-call staffing",
+        "Add more monitoring",
+        "Enforce stricter reviews",
+        "Escalate accountability"
+      ],
+      "B": {
+        "type": "Structural mapping",
+        "rule": "Treat safety like aviation: build checklists that are executed at the point of risk.",
+        "unlocks": "Just-in-time guardrails embedded in deploy/ops flows.",
+        "justification": "Aviation safety improved by operational checklists at critical moments, not by reports alone."
+      },
+      "C": "Convert each postmortem lesson into a small deploy-time or runbook checklist step (with automation where possible) that blocks or warns only when the specific risk signature appears."
+    },
+    {
+      "id": "PS_007_v2",
+      "domain": "ProblemSolving",
+      "A": "Product roadmaps thrash because priorities change with every new request.",
+      "D": [
+        "Say no more often",
+        "Add a prioritization meeting",
+        "Use a scoring spreadsheet",
+        "Define OKRs more strictly",
+        "Lock the roadmap quarterly",
+        "Escalate to executives",
+        "Do more customer interviews",
+        "Add a change-control process"
+      ],
+      "B": {
+        "type": "Re-representation",
+        "rule": "Treat roadmap capacity as a fixed 'budget' and requests as bids in an auction.",
+        "unlocks": "Transparent tradeoffs and opportunity cost visible to requesters.",
+        "justification": "Auctions allocate scarce resources by forcing explicit value signals; roadmap slots are scarce resources."
+      },
+      "C": "A quarterly 'roadmap auction' where teams spend limited tokens to bid on initiatives, with tokens tied to strategic goals—forcing explicit tradeoffs and reducing ad-hoc thrash."
+    },
+    {
+      "id": "PS_008_v2",
+      "domain": "ProblemSolving",
+      "A": "Users abandon signup because verification steps are annoying on mobile.",
+      "D": [
+        "Shorten the form",
+        "Reduce required fields",
+        "Add social login",
+        "Move verification later",
+        "Improve UI copy",
+        "Speed up SMS delivery",
+        "Add more help text",
+        "Offer email instead of SMS"
+      ],
+      "B": {
+        "type": "Intermediate construct",
+        "rule": "Treat verification as a 'trust ramp' that earns confidence via small proofs.",
+        "unlocks": "Progressive verification that adapts friction to risk.",
+        "justification": "Security can be staged: low-risk accounts require fewer proofs until risk increases."
+      },
+      "C": "Progressive verification: allow immediate low-risk use after a minimal proof, then request stronger verification only when users attempt sensitive actions (payments, exports, invites)."
+    },
+    {
+      "id": "PS_009_v2",
+      "domain": "ProblemSolving",
+      "A": "A recommendation system becomes stale because it over-personalizes and stops exploring.",
+      "D": [
+        "Increase randomness",
+        "Tune exploration parameters",
+        "Add more content",
+        "Collect more user data",
+        "Use a new model architecture",
+        "Add trending items section",
+        "Reset profiles periodically",
+        "Use editorial curation"
+      ],
+      "B": {
+        "type": "Re-representation",
+        "rule": "Treat the feed as a balanced diet: nutrients (novelty) and comfort foods (relevance).",
+        "unlocks": "Scheduled exploration as a health metric rather than a tuning knob.",
+        "justification": "Diet planning succeeds when variety is intentional and measured, not accidental."
+      },
+      "C": "A 'novelty nutrition label' that enforces a weekly quota of new categories/creators per user, with explainable tradeoffs and user-adjustable taste boundaries."
+    },
+    {
+      "id": "PS_010_v2",
+      "domain": "ProblemSolving",
+      "A": "Model training is slow because data loading and preprocessing bottleneck GPUs.",
+      "D": [
+        "Buy more GPUs",
+        "Use smaller batch sizes",
+        "Cache preprocessed data",
+        "Optimize dataloader workers",
+        "Compress datasets",
+        "Move preprocessing to CPU",
+        "Use faster storage",
+        "Reduce augmentation complexity"
+      ],
+      "B": {
+        "type": "Structural mapping",
+        "rule": "Treat the pipeline like a factory line: remove starvation via buffering and takt time.",
+        "unlocks": "Quantized stages, prefetch buffers, and throughput matching across steps.",
+        "justification": "Factories maximize output by balancing stage times and adding buffers where variability causes starvation."
+      },
+      "C": "Introduce a 'takt-time profiler' that auto-sizes prefetch/queue buffers per stage and moves variable augmentations into an asynchronous microservice that outputs ready-to-train batches."
+    },
+    {
+      "id": "PS_011_v2",
+      "domain": "ProblemSolving",
+      "A": "People avoid giving feedback because it feels awkward and high-stakes.",
+      "D": [
+        "Do feedback training",
+        "Create anonymous forms",
+        "Ask managers to enforce it",
+        "Add regular 1:1 prompts",
+        "Use a feedback framework",
+        "Do quarterly reviews",
+        "Encourage more candor",
+        "Reward feedback participation"
+      ],
+      "B": {
+        "type": "Re-representation",
+        "rule": "Treat feedback as iterative bug reports on behaviors, not evaluations of people.",
+        "unlocks": "Low-drama, testable, small-scope suggestions with follow-up checks.",
+        "justification": "Bug reports work because they are specific, reproducible, and aimed at improvement, not judgment."
+      },
+      "C": "A 'behavior bug report' template with reproduction steps (context), observed impact, minimal fix suggestion, and a scheduled quick re-test check-in two weeks later."
+    },
+    {
+      "id": "PS_012_v2",
+      "domain": "ProblemSolving",
+      "A": "Users don’t trust AI outputs because they can’t tell when it’s wrong.",
+      "D": [
+        "Add disclaimers",
+        "Show confidence scores",
+        "Provide citations",
+        "Improve the model",
+        "Add human review",
+        "Add more examples",
+        "Let users report errors",
+        "Add explanations"
+      ],
+      "B": {
+        "type": "Intermediate construct",
+        "rule": "Treat the system as an instrument that must be calibrated and show error bars.",
+        "unlocks": "Calibration tasks, drift detection, and user-facing uncertainty bounds.",
+        "justification": "Measurement tools build trust by specifying operating ranges and known failure modes."
+      },
+      "C": "Add a built-in 'calibration mode' that periodically asks the model to solve known check items per domain, then displays a live 'operating range' badge and auto-routes risky queries to safer modes."
+    },
+    {
+      "id": "PS_013_v2",
+      "domain": "ProblemSolving",
+      "A": "Teams ship regressions because integration tests don’t cover real-world edge cases.",
+      "D": [
+        "Write more tests",
+        "Increase code review strictness",
+        "Add staging environments",
+        "Do more manual QA",
+        "Add canary releases",
+        "Add monitoring alerts",
+        "Slow down releases",
+        "Improve test data quality"
+      ],
+      "B": {
+        "type": "Re-representation",
+        "rule": "Treat production as a wind tunnel: generate synthetic stress patterns that mimic failure physics.",
+        "unlocks": "Adversarial scenario generation based on observed failure modes.",
+        "justification": "Wind tunnels test against representative stressors derived from physics, not random conditions."
+      },
+      "C": "A failure-mode-driven scenario generator that learns 'stress signatures' from incidents (timing, payload shapes, concurrency) and auto-builds test cases that replay and mutate those signatures."
+    },
+    {
+      "id": "PS_014_v2",
+      "domain": "ProblemSolving",
+      "A": "Warehouse picking is inefficient because workers walk long distances between items.",
+      "D": [
+        "Reorganize shelves",
+        "Add more pickers",
+        "Use better carts",
+        "Improve route planning software",
+        "Batch orders more aggressively",
+        "Add conveyor belts",
+        "Increase inventory accuracy",
+        "Add signage and training"
+      ],
+      "B": {
+        "type": "Structural mapping",
+        "rule": "Treat picking like data locality in computing: move frequently co-accessed items closer.",
+        "unlocks": "Co-occurrence clustering and dynamic slotting based on order correlations.",
+        "justification": "Computers speed up by placing frequently accessed data together; warehouses can do the same with item co-picks."
+      },
+      "C": "Dynamic slotting that clusters items by co-pick graph (not just frequency) and periodically reshuffles a small 'hot zone' to minimize correlated walking distance."
+    },
+    {
+      "id": "PS_015_v2",
+      "domain": "ProblemSolving",
+      "A": "A city’s bike lanes are underused because riders feel unsafe at intersections.",
+      "D": [
+        "Add more signs",
+        "Paint brighter lane markings",
+        "Increase enforcement",
+        "Lower speed limits",
+        "Run safety campaigns",
+        "Add more bike lanes",
+        "Install speed bumps",
+        "Add bike education programs"
+      ],
+      "B": {
+        "type": "Re-representation",
+        "rule": "Treat intersections as negotiation protocols with clear right-of-way signals and timing windows.",
+        "unlocks": "Signal-phase design and physical cues that reduce ambiguity.",
+        "justification": "Protocols reduce collisions by defining explicit states and handshakes; intersections can be redesigned to reduce uncertain negotiation."
+      },
+      "C": "Introduce protected 'bike-only handshake phases' with early-release signals plus curb-protected corner islands that physically enforce the protocol and reduce conflict points."
+    },
+    {
+      "id": "PS_016_v2",
+      "domain": "ProblemSolving",
+      "A": "Online courses have high dropout because learners lose momentum after missing a week.",
+      "D": [
+        "Send reminder emails",
+        "Add badges and points",
+        "Make videos shorter",
+        "Add more quizzes",
+        "Use stricter schedules",
+        "Offer certificates",
+        "Create discussion forums",
+        "Improve course production quality"
+      ],
+      "B": {
+        "type": "Intermediate construct",
+        "rule": "Treat learning like a streak-based rehabilitation plan with relapse-friendly re-entry ramps.",
+        "unlocks": "Gentle re-onboarding pathways that reduce shame and restart friction.",
+        "justification": "Rehab programs succeed by making relapse recovery easy and structured, rather than punishing."
+      },
+      "C": "A 're-entry lane' that detects missed time and offers a 30-minute recap + one tiny win task, then dynamically reshapes the schedule to restore a realistic cadence."
+    },
+    {
+      "id": "PS_017_v2",
+      "domain": "ProblemSolving",
+      "A": "Restaurants waste food because demand is unpredictable day-to-day.",
+      "D": [
+        "Order less inventory",
+        "Offer smaller menus",
+        "Discount leftovers at night",
+        "Improve forecasting spreadsheets",
+        "Train staff to prep less",
+        "Donate surplus food",
+        "Raise prices to reduce demand spikes",
+        "Use pre-orders"
+      ],
+      "B": {
+        "type": "Re-representation",
+        "rule": "Treat prep as modular 'base components' that can assemble into multiple dishes late.",
+        "unlocks": "Late-binding menus where final differentiation happens near serving time.",
+        "justification": "Late binding reduces wasted specialized inventory by postponing irreversible choices."
+      },
+      "C": "Design dishes around shared prepared bases (sauces, grains, veg mixes) and finalize flavor profiles at order time, paired with a real-time 'sell-through' dashboard to steer specials."
+    },
+    {
+      "id": "PS_018_v2",
+      "domain": "ProblemSolving",
+      "A": "People miss appointments because they underestimate travel time and context switching.",
+      "D": [
+        "Send earlier reminders",
+        "Add calendar buffers manually",
+        "Tell people to leave earlier",
+        "Use navigation apps",
+        "Penalize lateness",
+        "Reduce meeting frequency",
+        "Schedule fewer back-to-backs",
+        "Add more notifications"
+      ],
+      "B": {
+        "type": "Re-representation",
+        "rule": "Treat transitions as 'setup time' like in manufacturing, not as free time.",
+        "unlocks": "Automatic setup-time budgeting (packing, walking, mental switching).",
+        "justification": "Production planning accounts for changeover time; human schedules usually don’t, causing chronic underestimation."
+      },
+      "C": "A calendar layer that learns personal setup-time profiles per location and meeting type, then automatically inserts realistic buffers and proposes swaps when the day becomes infeasible."
+    },
+    {
+      "id": "PS_019_v2",
+      "domain": "ProblemSolving",
+      "A": "Open-plan offices are noisy, reducing focus and increasing stress.",
+      "D": [
+        "Provide noise-canceling headphones",
+        "Add quiet hours",
+        "Install acoustic panels",
+        "Create more meeting rooms",
+        "Ask people to talk softer",
+        "Rearrange seating",
+        "Add white-noise machines",
+        "Let people work from home more"
+      ],
+      "B": {
+        "type": "Structural mapping",
+        "rule": "Treat sound like network traffic: shape, prioritize, and route it.",
+        "unlocks": "Zoning, throttling, and 'QoS' for conversations vs focus work.",
+        "justification": "Networks handle contention via policies and routing; offices can handle acoustic contention similarly."
+      },
+      "C": "Acoustic zoning with visible 'conversation lanes' (designated talk pods) and a lightweight reservation + occupancy indicator that nudges traffic away from focus zones in real time."
+    },
+    {
+      "id": "PS_020_v2",
+      "domain": "ProblemSolving",
+      "A": "People procrastinate on difficult tasks because the starting cost feels too high.",
+      "D": [
+        "Use to-do lists",
+        "Set deadlines",
+        "Use Pomodoro timers",
+        "Remove distractions",
+        "Increase accountability",
+        "Break tasks into smaller steps",
+        "Reward completion",
+        "Work longer hours"
+      ],
+      "B": {
+        "type": "Re-representation",
+        "rule": "Treat task initiation as static friction: overcome it with a tiny impulse, then sustain motion.",
+        "unlocks": "Ultra-low-bar 'starter actions' that reliably trigger continuation.",
+        "justification": "Physical systems resist starting more than continuing; designing a starter impulse reduces perceived barrier."
+      },
+      "C": "A '2-minute ignition ritual' that pre-creates the workspace and opens exactly one next file/tab with a single micro-goal, then automatically offers the next action only after momentum is detected."
+    }
+  ]

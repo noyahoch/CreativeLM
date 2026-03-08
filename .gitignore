@@ -1,0 +1,63 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+*.egg
+
+# Virtual environments
+.venv/
+venv/
+uv_env/
+ENV/
+env/
+
+# uv
+.uv/
+uv*
+
+# Jupyter
+.ipynb_checkpoints/
+
+# IDE
+.idea/
+.vscode/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Word temp / lock files
+~$*
+
+# Env / secrets
+.env
+.env.local
+.env.*.local
+
+# ML / checkpoints (uncomment if you use them)
+# checkpoints/
+# *.pt
+# *.pth
+# *.ckpt
+
+# DLP local / cache (no garbage committed)
+results/
+models_cache/
+external_repos/
+
+*.pyc

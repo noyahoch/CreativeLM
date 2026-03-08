@@ -1,0 +1,3302 @@
+[
+    {
+      "id": "AIDAN_SYN_001_v1",
+      "domain": "AidanBench_PS",
+      "A": "Propose a way to reduce rush-hour bus delays on a single corridor.",
+      "D": [
+        "Try real-time arrival displays",
+        "Add bus lanes",
+        "Increase fares",
+        "Enforce bus lane rules",
+        "Add more buses",
+        "Optimize signals",
+        "Add more drivers",
+        "Reduce stops"
+      ],
+      "B": {
+        "type": "Re-representation",
+        "rule": "Treat the system as a queueing network near saturation: delay grows superlinearly past utilization thresholds.",
+        "unlocks": "Peak-load shaping, batching, and small utilization reductions that yield outsized latency drops.",
+        "justification": "In queueing theory, shaving utilization near ρ≈1 produces disproportionate waiting-time gains."
+      },
+      "C": "Model demand as arrivals and bottlenecks as service stations, then target the most saturated station first.Introduce time-shift credits or appointment micro-windows that move a small fraction of arrivals off the peak.Add batching so similar requests are processed in one setup cost.Because delay explodes near saturation, even a 5–10% peak reduction can feel like a step-change in speed.Apply this framing to propose a way to reduce rush-hour and iterate until residuals drop."
+    },
+    {
+      "id": "AIDAN_SYN_002_v1",
+      "domain": "AidanBench_PS",
+      "A": "How can we make subway crowding feel less stressful without building new lines?",
+      "D": [
+        "Raise ticket prices",
+        "Improve ventilation",
+        "Extend platforms",
+        "Add signage",
+        "Increase cleaning",
+        "Add more trains",
+        "Stagger work hours",
+        "Add security staff"
+      ],
+      "B": {
+        "type": "Re-representation",
+        "rule": "Treat the system as a queueing network near saturation: delay grows superlinearly past utilization thresholds.",
+        "unlocks": "Peak-load shaping, batching, and small utilization reductions that yield outsized latency drops.",
+        "justification": "In queueing theory, shaving utilization near ρ≈1 produces disproportionate waiting-time gains."
+      },
+      "C": "Model demand as arrivals and bottlenecks as service stations, then target the most saturated station first.Introduce time-shift credits or appointment micro-windows that move a small fraction of arrivals off the peak.Add batching so similar requests are processed in one setup cost.Because delay explodes near saturation, even a 5–10% peak reduction can feel like a step-change in speed.Apply this framing to how can we make subway crowding and iterate until residuals drop."
+    },
+    {
+      "id": "AIDAN_SYN_003_v1",
+      "domain": "AidanBench_PS",
+      "A": "Create a system to reduce delivery truck double-parking in dense neighborhoods.",
+      "D": [
+        "Build garages",
+        "Require permits",
+        "Ban deliveries at peak",
+        "Add loading zones",
+        "Hire more enforcement",
+        "Add more signage",
+        "Encourage bikes",
+        "Increase fines"
+      ],
+      "B": {
+        "type": "Re-representation",
+        "rule": "Treat the system as a queueing network near saturation: delay grows superlinearly past utilization thresholds.",
+        "unlocks": "Peak-load shaping, batching, and small utilization reductions that yield outsized latency drops.",
+        "justification": "In queueing theory, shaving utilization near ρ≈1 produces disproportionate waiting-time gains."
+      },
+      "C": "Model demand as arrivals and bottlenecks as service stations, then target the most saturated station first.Introduce time-shift credits or appointment micro-windows that move a small fraction of arrivals off the peak.Add batching so similar requests are processed in one setup cost.Because delay explodes near saturation, even a 5–10% peak reduction can feel like a step-change in speed.Apply this framing to create a system to reduce delivery and iterate until residuals drop."
+    },
+    {
+      "id": "AIDAN_SYN_004_v1",
+      "domain": "AidanBench_PS",
+      "A": "How might a city reduce pedestrian injuries at night without slowing cars too much?",
+      "D": [
+        "Improve lighting",
+        "Reflective paint",
+        "Add speed bumps",
+        "Lower speed limits",
+        "Add more crosswalks",
+        "Public campaigns",
+        "Speed cameras",
+        "More police"
+      ],
+      "B": {
+        "type": "Re-representation",
+        "rule": "Treat the system as a queueing network near saturation: delay grows superlinearly past utilization thresholds.",
+        "unlocks": "Peak-load shaping, batching, and small utilization reductions that yield outsized latency drops.",
+        "justification": "In queueing theory, shaving utilization near ρ≈1 produces disproportionate waiting-time gains."
+      },
+      "C": "Model demand as arrivals and bottlenecks as service stations, then target the most saturated station first.Introduce time-shift credits or appointment micro-windows that move a small fraction of arrivals off the peak.Add batching so similar requests are processed in one setup cost.Because delay explodes near saturation, even a 5–10% peak reduction can feel like a step-change in speed.Apply this framing to how might a city reduce pedestrian and iterate until residuals drop."
+    },
+    {
+      "id": "AIDAN_SYN_005_v1",
+      "domain": "AidanBench_PS",
+      "A": "Propose an approach to reduce traffic around a stadium on event nights.",
+      "D": [
+        "More shuttles",
+        "Stagger exits",
+        "Promote rideshare",
+        "Dynamic signs",
+        "More trains",
+        "Add parking",
+        "Close roads",
+        "Traffic police"
+      ],
+      "B": {
+        "type": "Re-representation",
+        "rule": "Treat the system as a queueing network near saturation: delay grows superlinearly past utilization thresholds.",
+        "unlocks": "Peak-load shaping, batching, and small utilization reductions that yield outsized latency drops.",
+        "justification": "In queueing theory, shaving utilization near ρ≈1 produces disproportionate waiting-time gains."
+      },
+      "C": "Model demand as arrivals and bottlenecks as service stations, then target the most saturated station first.Introduce time-shift credits or appointment micro-windows that move a small fraction of arrivals off the peak.Add batching so similar requests are processed in one setup cost.Because delay explodes near saturation, even a 5–10% peak reduction can feel like a step-change in speed.Apply this framing to propose an approach to reduce traffic and iterate until residuals drop."
+    },
+    {
+      "id": "AIDAN_SYN_006_v1",
+      "domain": "AidanBench_PS",
+      "A": "Design a fair way to allocate limited meeting rooms across teams.",
+      "D": [
+        "Manual scheduling",
+        "Shorter meetings",
+        "Manager approval",
+        "First-come-first-served",
+        "Chargeback",
+        "Weekly quotas",
+        "Cancel no-shows",
+        "More rooms"
+      ],
+      "B": {
+        "type": "Structural mapping",
+        "rule": "Treat allocation as congestion-controlled bandwidth: users are flows, capacity is link rate, fairness is a policy.",
+        "unlocks": "Credit-based rate limits, borrowing/bursting, QoS floors, and transparent incentives.",
+        "justification": "Networking has stable, measurable mechanisms for fair sharing under contention."
+      },
+      "C": "Give each participant a weekly credit refill that guarantees a minimum share.Let urgent jobs spend credits to burst above baseline, with a transparent “borrow from future” limit.Rebate unused credits when a job finishes early to reward efficiency.This turns contention into a predictable control loop instead of ad‑hoc negotiation.Apply this framing to design a fair way to allocate and iterate until residuals drop."
+    },
+    {
+      "id": "AIDAN_SYN_007_v1",
+      "domain": "AidanBench_PS",
+      "A": "How can a company reduce build times in CI without buying more hardware?",
+      "D": [
+        "Optimize compiler flags",
+        "Upgrade network",
+        "Use distributed build",
+        "Run nightly builds",
+        "Parallelize jobs",
+        "Use faster machines",
+        "Reduce tests",
+        "Cache dependencies"
+      ],
+      "B": {
+        "type": "Structural mapping",
+        "rule": "Treat allocation as congestion-controlled bandwidth: users are flows, capacity is link rate, fairness is a policy.",
+        "unlocks": "Credit-based rate limits, borrowing/bursting, QoS floors, and transparent incentives.",
+        "justification": "Networking has stable, measurable mechanisms for fair sharing under contention."
+      },
+      "C": "Give each participant a weekly credit refill that guarantees a minimum share.Let urgent jobs spend credits to burst above baseline, with a transparent “borrow from future” limit.Rebate unused credits when a job finishes early to reward efficiency.This turns contention into a predictable control loop instead of ad‑hoc negotiation.Apply this framing to how can a company reduce build and iterate until residuals drop."
+    },
+    {
+      "id": "AIDAN_SYN_008_v1",
+      "domain": "AidanBench_PS",
+      "A": "Propose a system to triage customer support tickets faster without hurting quality.",
+      "D": [
+        "Route by product",
+        "Escalate less",
+        "Prioritize VIPs",
+        "Add SLAs",
+        "Hire more agents",
+        "Auto-respond FAQs",
+        "Use templates",
+        "Train staff"
+      ],
+      "B": {
+        "type": "Structural mapping",
+        "rule": "Treat allocation as congestion-controlled bandwidth: users are flows, capacity is link rate, fairness is a policy.",
+        "unlocks": "Credit-based rate limits, borrowing/bursting, QoS floors, and transparent incentives.",
+        "justification": "Networking has stable, measurable mechanisms for fair sharing under contention."
+      },
+      "C": "Give each participant a weekly credit refill that guarantees a minimum share.Let urgent jobs spend credits to burst above baseline, with a transparent “borrow from future” limit.Rebate unused credits when a job finishes early to reward efficiency.This turns contention into a predictable control loop instead of ad‑hoc negotiation.Apply this framing to propose a system to triage customer and iterate until residuals drop."
+    },
+    {
+      "id": "AIDAN_SYN_009_v1",
+      "domain": "AidanBench_PS",
+      "A": "How might a team prevent alert fatigue in on-call rotations?",
+      "D": [
+        "Mute overnight",
+        "Reduce alerts",
+        "Weekly review",
+        "More dashboards",
+        "Add runbooks",
+        "Better logging",
+        "Hire SREs",
+        "Increase thresholds"
+      ],
+      "B": {
+        "type": "Structural mapping",
+        "rule": "Treat allocation as congestion-controlled bandwidth: users are flows, capacity is link rate, fairness is a policy.",
+        "unlocks": "Credit-based rate limits, borrowing/bursting, QoS floors, and transparent incentives.",
+        "justification": "Networking has stable, measurable mechanisms for fair sharing under contention."
+      },
+      "C": "Give each participant a weekly credit refill that guarantees a minimum share.Let urgent jobs spend credits to burst above baseline, with a transparent “borrow from future” limit.Rebate unused credits when a job finishes early to reward efficiency.This turns contention into a predictable control loop instead of ad‑hoc negotiation.Apply this framing to how might a team prevent alert and iterate until residuals drop."
+    },
+    {
+      "id": "AIDAN_SYN_010_v1",
+      "domain": "AidanBench_PS",
+      "A": "Design a method to share GPUs fairly across research projects in a lab.",
+      "D": [
+        "Weekly quotas",
+        "Add more GPUs",
+        "Manual schedule",
+        "First-come-first-served",
+        "Limit runtime",
+        "Manager priority",
+        "Chargeback",
+        "Require approval"
+      ],
+      "B": {
+        "type": "Structural mapping",
+        "rule": "Treat allocation as congestion-controlled bandwidth: users are flows, capacity is link rate, fairness is a policy.",
+        "unlocks": "Credit-based rate limits, borrowing/bursting, QoS floors, and transparent incentives.",
+        "justification": "Networking has stable, measurable mechanisms for fair sharing under contention."
+      },
+      "C": "Give each participant a weekly credit refill that guarantees a minimum share.Let urgent jobs spend credits to burst above baseline, with a transparent “borrow from future” limit.Rebate unused credits when a job finishes early to reward efficiency.This turns contention into a predictable control loop instead of ad‑hoc negotiation.Apply this framing to design a method to share gpus and iterate until residuals drop."
+    },
+    {
+      "id": "AIDAN_SYN_011_v1",
+      "domain": "AidanBench_PS",
+      "A": "How could a school teach critical thinking without adding more exams?",
+      "D": [
+        "Add quizzes",
+        "More lectures",
+        "Use textbooks",
+        "Standardized tests",
+        "Assign essays",
+        "Teach logic class",
+        "Use debates",
+        "More homework"
+      ],
+      "B": {
+        "type": "Structural mapping",
+        "rule": "Treat learning as instrumented deliberate practice: resettable environment + measurable skills + feedback loops.",
+        "unlocks": "Replay, adaptive difficulty, telemetry-based coaching, and mastery missions instead of lectures.",
+        "justification": "Learning accelerates when practice is repeatable, safe, and continuously assessed."
+      },
+      "C": "Turn lessons into repeatable “missions” with clear success metrics.Log performance traces (timing, error types, choices) to guide coaching.Adapt difficulty and give immediate feedback, then replay the same skill under new constraints.This replaces passive explanation with measurable skill acquisition.Apply this framing to how could a school teach critical and iterate until residuals drop."
+    },
+    {
+      "id": "AIDAN_SYN_012_v1",
+      "domain": "AidanBench_PS",
+      "A": "Propose a way to help students practice speaking a new language daily, cheaply.",
+      "D": [
+        "Language apps",
+        "More classes",
+        "Pair students",
+        "Flashcards",
+        "Hire tutors",
+        "More homework",
+        "Watch videos",
+        "Oral exams"
+      ],
+      "B": {
+        "type": "Structural mapping",
+        "rule": "Treat learning as instrumented deliberate practice: resettable environment + measurable skills + feedback loops.",
+        "unlocks": "Replay, adaptive difficulty, telemetry-based coaching, and mastery missions instead of lectures.",
+        "justification": "Learning accelerates when practice is repeatable, safe, and continuously assessed."
+      },
+      "C": "Turn lessons into repeatable “missions” with clear success metrics.Log performance traces (timing, error types, choices) to guide coaching.Adapt difficulty and give immediate feedback, then replay the same skill under new constraints.This replaces passive explanation with measurable skill acquisition.Apply this framing to propose a way to help students and iterate until residuals drop."
+    },
+    {
+      "id": "AIDAN_SYN_013_v1",
+      "domain": "AidanBench_PS",
+      "A": "Create a classroom routine that improves attention spans without banning devices.",
+      "D": [
+        "Seating changes",
+        "Shorter lessons",
+        "Ban phones",
+        "More homework",
+        "More discipline",
+        "Mindfulness",
+        "More breaks",
+        "Behavior points"
+      ],
+      "B": {
+        "type": "Intermediate construct",
+        "rule": "Treat the design as a conflict matrix; eliminate overlap in high-risk movement pairs with micro-phasing.",
+        "unlocks": "Short protected phases, early-release, geometry tweaks, while preserving priority for critical flows.",
+        "justification": "Crashes cluster where permissions overlap; removing overlap is safer than adding warnings."
+      },
+      "C": "List conflicting movements and rank them by risk and frequency.Give the vulnerable movement a short protected head start to clear the conflict zone.Use signal priority to preserve throughput for critical vehicles.Small timing changes remove conflicts with minimal capacity loss.Apply this framing to create a classroom routine that improves and iterate until residuals drop."
+    },
+    {
+      "id": "AIDAN_SYN_014_v1",
+      "domain": "AidanBench_PS",
+      "A": "How might we teach basic statistics to non-math majors without formulas first?",
+      "D": [
+        "Textbook chapters",
+        "More worksheets",
+        "Simplify syllabus",
+        "Memorize rules",
+        "Use calculators",
+        "Office hours",
+        "Video lectures",
+        "Practice problems"
+      ],
+      "B": {
+        "type": "Structural mapping",
+        "rule": "Treat learning as instrumented deliberate practice: resettable environment + measurable skills + feedback loops.",
+        "unlocks": "Replay, adaptive difficulty, telemetry-based coaching, and mastery missions instead of lectures.",
+        "justification": "Learning accelerates when practice is repeatable, safe, and continuously assessed."
+      },
+      "C": "Turn lessons into repeatable “missions” with clear success metrics.Log performance traces (timing, error types, choices) to guide coaching.Adapt difficulty and give immediate feedback, then replay the same skill under new constraints.This replaces passive explanation with measurable skill acquisition.Apply this framing to how might we teach basic statistics and iterate until residuals drop."
+    },
+    {
+      "id": "AIDAN_SYN_015_v1",
+      "domain": "AidanBench_PS",
+      "A": "Propose a way to teach fractions that avoids worksheets.",
+      "D": [
+        "Pizza slices",
+        "Videos",
+        "Flashcards",
+        "Drills",
+        "Homework",
+        "Textbook",
+        "Quizzes",
+        "Fraction bars"
+      ],
+      "B": {
+        "type": "Intermediate construct",
+        "rule": "Treat the design as a conflict matrix; eliminate overlap in high-risk movement pairs with micro-phasing.",
+        "unlocks": "Short protected phases, early-release, geometry tweaks, while preserving priority for critical flows.",
+        "justification": "Crashes cluster where permissions overlap; removing overlap is safer than adding warnings."
+      },
+      "C": "List conflicting movements and rank them by risk and frequency.Give the vulnerable movement a short protected head start to clear the conflict zone.Use signal priority to preserve throughput for critical vehicles.Small timing changes remove conflicts with minimal capacity loss.Apply this framing to propose a way to teach fractions and iterate until residuals drop."
+    },
+    {
+      "id": "AIDAN_SYN_016_v1",
+      "domain": "AidanBench_PS",
+      "A": "Design a low-cost intervention to improve sleep quality for shift workers.",
+      "D": [
+        "Sleep tracking app",
+        "Blackout curtains",
+        "Better mattresses",
+        "Sleep hygiene tips",
+        "Nap rooms",
+        "Caffeine reduction",
+        "Melatonin",
+        "More breaks"
+      ],
+      "B": {
+        "type": "Re-representation",
+        "rule": "Treat the objective as a target time-course, not a single number: shape the release/absorption curve over hours.",
+        "unlocks": "Ingredient/step choices that control uptake speed, peak, and decay (buffering, slow-release, staged exposure).",
+        "justification": "Stability comes from curve-shaping—avoiding spikes/crashes by engineering the dynamics."
+      },
+      "C": "Define the desired time-course (fast start, steady middle, gentle taper) and design for it explicitly.Combine a quick-onset component with a buffer that slows absorption or release.Add a “governor” step that prevents overshoot (fiber, friction reduction, staged dosing, or insulation).The result is predictability: you get the effect you want without the boom-bust pattern.Apply this framing to design a low-cost intervention to improve and iterate until residuals drop."
+    },
+    {
+      "id": "AIDAN_SYN_017_v1",
+      "domain": "AidanBench_PS",
+      "A": "How might a clinic reduce no-show appointments without charging penalties?",
+      "D": [
+        "Shorter wait times",
+        "Send reminders",
+        "Charge fees",
+        "Educate patients",
+        "Overbook",
+        "Online booking",
+        "Call patients",
+        "More staff"
+      ],
+      "B": {
+        "type": "Re-representation",
+        "rule": "Treat the objective as a target time-course, not a single number: shape the release/absorption curve over hours.",
+        "unlocks": "Ingredient/step choices that control uptake speed, peak, and decay (buffering, slow-release, staged exposure).",
+        "justification": "Stability comes from curve-shaping—avoiding spikes/crashes by engineering the dynamics."
+      },
+      "C": "Define the desired time-course (fast start, steady middle, gentle taper) and design for it explicitly.Combine a quick-onset component with a buffer that slows absorption or release.Add a “governor” step that prevents overshoot (fiber, friction reduction, staged dosing, or insulation).The result is predictability: you get the effect you want without the boom-bust pattern.Apply this framing to how might a clinic reduce no-show and iterate until residuals drop."
+    },
+    {
+      "id": "AIDAN_SYN_018_v1",
+      "domain": "AidanBench_PS",
+      "A": "Propose a way to help people drink more water at work.",
+      "D": [
+        "Add flavor",
+        "Use a big bottle",
+        "Set reminders",
+        "Keep water on desk",
+        "Smart bottle",
+        "Track in an app",
+        "Make a schedule",
+        "Drink with meals"
+      ],
+      "B": {
+        "type": "Re-representation",
+        "rule": "Treat the objective as a target time-course, not a single number: shape the release/absorption curve over hours.",
+        "unlocks": "Ingredient/step choices that control uptake speed, peak, and decay (buffering, slow-release, staged exposure).",
+        "justification": "Stability comes from curve-shaping—avoiding spikes/crashes by engineering the dynamics."
+      },
+      "C": "Define the desired time-course (fast start, steady middle, gentle taper) and design for it explicitly.Combine a quick-onset component with a buffer that slows absorption or release.Add a “governor” step that prevents overshoot (fiber, friction reduction, staged dosing, or insulation).The result is predictability: you get the effect you want without the boom-bust pattern.Apply this framing to propose a way to help people and iterate until residuals drop."
+    },
+    {
+      "id": "AIDAN_SYN_019_v1",
+      "domain": "AidanBench_PS",
+      "A": "How can we make vaccines stay cold in rural areas with unreliable electricity?",
+      "D": [
+        "Coolers",
+        "Better insulation",
+        "Generators",
+        "Cold rooms",
+        "Solar panels",
+        "More deliveries",
+        "Ice packs",
+        "More refrigerators"
+      ],
+      "B": {
+        "type": "Re-representation",
+        "rule": "Treat the objective as a target time-course, not a single number: shape the release/absorption curve over hours.",
+        "unlocks": "Ingredient/step choices that control uptake speed, peak, and decay (buffering, slow-release, staged exposure).",
+        "justification": "Stability comes from curve-shaping—avoiding spikes/crashes by engineering the dynamics."
+      },
+      "C": "Define the desired time-course (fast start, steady middle, gentle taper) and design for it explicitly.Combine a quick-onset component with a buffer that slows absorption or release.Add a “governor” step that prevents overshoot (fiber, friction reduction, staged dosing, or insulation).The result is predictability: you get the effect you want without the boom-bust pattern.Apply this framing to how can we make vaccines stay and iterate until residuals drop."
+    },
+    {
+      "id": "AIDAN_SYN_020_v1",
+      "domain": "AidanBench_PS",
+      "A": "Design a method to reduce stress in open-plan offices without building walls.",
+      "D": [
+        "Desk spacing",
+        "More breaks",
+        "Plants",
+        "Noise-canceling headphones",
+        "More meeting rooms",
+        "White noise",
+        "Policies",
+        "Quiet hours"
+      ],
+      "B": {
+        "type": "Re-representation",
+        "rule": "Treat the objective as a target time-course, not a single number: shape the release/absorption curve over hours.",
+        "unlocks": "Ingredient/step choices that control uptake speed, peak, and decay (buffering, slow-release, staged exposure).",
+        "justification": "Stability comes from curve-shaping—avoiding spikes/crashes by engineering the dynamics."
+      },
+      "C": "Define the desired time-course (fast start, steady middle, gentle taper) and design for it explicitly.Combine a quick-onset component with a buffer that slows absorption or release.Add a “governor” step that prevents overshoot (fiber, friction reduction, staged dosing, or insulation).The result is predictability: you get the effect you want without the boom-bust pattern.Apply this framing to design a method to reduce stress and iterate until residuals drop."
+    },
+    {
+      "id": "AIDAN_SYN_021_v1",
+      "domain": "AidanBench_PS",
+      "A": "What is an unexpected way to reduce plastic waste in rivers?",
+      "D": [
+        "Improve recycling",
+        "Biodegradables",
+        "Better waste management",
+        "Awareness campaigns",
+        "Ban plastics",
+        "River booms",
+        "Producer responsibility",
+        "Cleanups"
+      ],
+      "B": {
+        "type": "Re-representation",
+        "rule": "Treat leakage as missing reverse logistics with negative unit economics; collection must become a commodity flow.",
+        "unlocks": "Bounties, standardized sorting, and backhaul on existing return trips to flip incentives.",
+        "justification": "Waste persists when retrieval is economically negative; make it pay and piggyback logistics."
+      },
+      "C": "Standardize a bounty per kilogram by material and contamination level.Pay at ports/depots and use return legs of boats/trucks as backhaul.Automate verification with simple sorting+weighing audits.When returns become a profitable flow, collection scales without constant campaigns.Apply this framing to what is an unexpected way to and iterate until residuals drop."
+    },
+    {
+      "id": "AIDAN_SYN_022_v1",
+      "domain": "AidanBench_PS",
+      "A": "How could we reduce microplastics from laundry at scale?",
+      "D": [
+        "Natural fabrics",
+        "Laundry filters",
+        "Wash less",
+        "Liquid detergent",
+        "Better wastewater treatment",
+        "Laundry bags",
+        "Gentle cycles",
+        "Wash colder"
+      ],
+      "B": {
+        "type": "Re-representation",
+        "rule": "Treat leakage as missing reverse logistics with negative unit economics; collection must become a commodity flow.",
+        "unlocks": "Bounties, standardized sorting, and backhaul on existing return trips to flip incentives.",
+        "justification": "Waste persists when retrieval is economically negative; make it pay and piggyback logistics."
+      },
+      "C": "Standardize a bounty per kilogram by material and contamination level.Pay at ports/depots and use return legs of boats/trucks as backhaul.Automate verification with simple sorting+weighing audits.When returns become a profitable flow, collection scales without constant campaigns.Apply this framing to how could we reduce microplastics from and iterate until residuals drop."
+    },
+    {
+      "id": "AIDAN_SYN_023_v1",
+      "domain": "AidanBench_PS",
+      "A": "Create a program to cut food waste in small restaurants while keeping menu creativity.",
+      "D": [
+        "Discount near-expiry",
+        "Buy less",
+        "Train staff",
+        "Donate leftovers",
+        "Compost",
+        "Smaller portions",
+        "Inventory tracking",
+        "Daily specials"
+      ],
+      "B": {
+        "type": "Re-representation",
+        "rule": "Treat leakage as missing reverse logistics with negative unit economics; collection must become a commodity flow.",
+        "unlocks": "Bounties, standardized sorting, and backhaul on existing return trips to flip incentives.",
+        "justification": "Waste persists when retrieval is economically negative; make it pay and piggyback logistics."
+      },
+      "C": "Standardize a bounty per kilogram by material and contamination level.Pay at ports/depots and use return legs of boats/trucks as backhaul.Automate verification with simple sorting+weighing audits.When returns become a profitable flow, collection scales without constant campaigns.Apply this framing to create a program to cut food and iterate until residuals drop."
+    },
+    {
+      "id": "AIDAN_SYN_024_v1",
+      "domain": "AidanBench_PS",
+      "A": "Suggest a mechanism to reduce household energy use without asking people to sacrifice comfort.",
+      "D": [
+        "Time-of-use pricing",
+        "Solar panels",
+        "LEDs",
+        "Smart thermostats",
+        "Appliance upgrades",
+        "Better insulation",
+        "Public campaigns",
+        "Energy audits"
+      ],
+      "B": {
+        "type": "Re-representation",
+        "rule": "Treat leakage as missing reverse logistics with negative unit economics; collection must become a commodity flow.",
+        "unlocks": "Bounties, standardized sorting, and backhaul on existing return trips to flip incentives.",
+        "justification": "Waste persists when retrieval is economically negative; make it pay and piggyback logistics."
+      },
+      "C": "Standardize a bounty per kilogram by material and contamination level.Pay at ports/depots and use return legs of boats/trucks as backhaul.Automate verification with simple sorting+weighing audits.When returns become a profitable flow, collection scales without constant campaigns.Apply this framing to suggest a mechanism to reduce household and iterate until residuals drop."
+    },
+    {
+      "id": "AIDAN_SYN_025_v1",
+      "domain": "AidanBench_PS",
+      "A": "How could a coastal town reduce flood damage using low-cost methods?",
+      "D": [
+        "Evacuation plans",
+        "Improve drainage",
+        "Build sea walls",
+        "More pumps",
+        "Raise buildings",
+        "Sandbags",
+        "Flood insurance",
+        "Zoning rules"
+      ],
+      "B": {
+        "type": "Re-representation",
+        "rule": "Treat leakage as missing reverse logistics with negative unit economics; collection must become a commodity flow.",
+        "unlocks": "Bounties, standardized sorting, and backhaul on existing return trips to flip incentives.",
+        "justification": "Waste persists when retrieval is economically negative; make it pay and piggyback logistics."
+      },
+      "C": "Standardize a bounty per kilogram by material and contamination level.Pay at ports/depots and use return legs of boats/trucks as backhaul.Automate verification with simple sorting+weighing audits.When returns become a profitable flow, collection scales without constant campaigns.Apply this framing to how could a coastal town reduce and iterate until residuals drop."
+    },
+    {
+      "id": "AIDAN_SYN_026_v1",
+      "domain": "AidanBench_PS",
+      "A": "Design a backpack that stays comfortable during long walks in humid climates.",
+      "D": [
+        "More pockets",
+        "Add waist belt",
+        "More ventilation",
+        "Lighter materials",
+        "Better straps",
+        "More padding",
+        "Ergonomic shape",
+        "Waterproofing"
+      ],
+      "B": {
+        "type": "Re-representation",
+        "rule": "Treat the objective as a target time-course, not a single number: shape the release/absorption curve over hours.",
+        "unlocks": "Ingredient/step choices that control uptake speed, peak, and decay (buffering, slow-release, staged exposure).",
+        "justification": "Stability comes from curve-shaping—avoiding spikes/crashes by engineering the dynamics."
+      },
+      "C": "Define the desired time-course (fast start, steady middle, gentle taper) and design for it explicitly.Combine a quick-onset component with a buffer that slows absorption or release.Add a “governor” step that prevents overshoot (fiber, friction reduction, staged dosing, or insulation).The result is predictability: you get the effect you want without the boom-bust pattern.Apply this framing to design a backpack that stays comfortable and iterate until residuals drop."
+    },
+    {
+      "id": "AIDAN_SYN_027_v1",
+      "domain": "AidanBench_PS",
+      "A": "How can a perfumer increase the sillage of a fragrance?",
+      "D": [
+        "Use musks",
+        "Pulse points",
+        "Alcohol base",
+        "Stronger concentration",
+        "Oil-based perfume",
+        "Add fixatives",
+        "Layering",
+        "More projection notes"
+      ],
+      "B": {
+        "type": "Re-representation",
+        "rule": "Treat the objective as a target time-course, not a single number: shape the release/absorption curve over hours.",
+        "unlocks": "Ingredient/step choices that control uptake speed, peak, and decay (buffering, slow-release, staged exposure).",
+        "justification": "Stability comes from curve-shaping—avoiding spikes/crashes by engineering the dynamics."
+      },
+      "C": "Define the desired time-course (fast start, steady middle, gentle taper) and design for it explicitly.Combine a quick-onset component with a buffer that slows absorption or release.Add a “governor” step that prevents overshoot (fiber, friction reduction, staged dosing, or insulation).The result is predictability: you get the effect you want without the boom-bust pattern.Apply this framing to how can a perfumer increase the and iterate until residuals drop."
+    },
+    {
+      "id": "AIDAN_SYN_028_v1",
+      "domain": "AidanBench_PS",
+      "A": "Create an earring that complements a round face and small ears.",
+      "D": [
+        "Minimalist design",
+        "Lightweight materials",
+        "Small studs",
+        "Thin hoops",
+        "Teardrop shapes",
+        "Drop earrings",
+        "Pearl studs",
+        "Avoid bulky designs"
+      ],
+      "B": {
+        "type": "Re-representation",
+        "rule": "Treat the objective as a target time-course, not a single number: shape the release/absorption curve over hours.",
+        "unlocks": "Ingredient/step choices that control uptake speed, peak, and decay (buffering, slow-release, staged exposure).",
+        "justification": "Stability comes from curve-shaping—avoiding spikes/crashes by engineering the dynamics."
+      },
+      "C": "Define the desired time-course (fast start, steady middle, gentle taper) and design for it explicitly.Combine a quick-onset component with a buffer that slows absorption or release.Add a “governor” step that prevents overshoot (fiber, friction reduction, staged dosing, or insulation).The result is predictability: you get the effect you want without the boom-bust pattern.Apply this framing to create an earring that complements a and iterate until residuals drop."
+    },
+    {
+      "id": "AIDAN_SYN_029_v1",
+      "domain": "AidanBench_PS",
+      "A": "Create a fashion line incorporating smart clothing technology.",
+      "D": [
+        "Temp-regulating fabric",
+        "LED dresses",
+        "Heated jackets",
+        "Color-changing fabric",
+        "UV-protective clothing",
+        "GPS shoes",
+        "Charging pockets",
+        "Fitness tracking shirts"
+      ],
+      "B": {
+        "type": "Re-representation",
+        "rule": "Treat the objective as a target time-course, not a single number: shape the release/absorption curve over hours.",
+        "unlocks": "Ingredient/step choices that control uptake speed, peak, and decay (buffering, slow-release, staged exposure).",
+        "justification": "Stability comes from curve-shaping—avoiding spikes/crashes by engineering the dynamics."
+      },
+      "C": "Define the desired time-course (fast start, steady middle, gentle taper) and design for it explicitly.Combine a quick-onset component with a buffer that slows absorption or release.Add a “governor” step that prevents overshoot (fiber, friction reduction, staged dosing, or insulation).The result is predictability: you get the effect you want without the boom-bust pattern.Apply this framing to create a fashion line incorporating smart and iterate until residuals drop."
+    },
+    {
+      "id": "AIDAN_SYN_030_v1",
+      "domain": "AidanBench_PS",
+      "A": "Design a low-cost reusable coffee cup lid that reduces spills for cyclists.",
+      "D": [
+        "Locking tab",
+        "Add handle",
+        "Tighter seal",
+        "Snap fit",
+        "Silicone gasket",
+        "Straw hole",
+        "Stronger plastic",
+        "Bigger lip"
+      ],
+      "B": {
+        "type": "Re-representation",
+        "rule": "Treat the objective as a target time-course, not a single number: shape the release/absorption curve over hours.",
+        "unlocks": "Ingredient/step choices that control uptake speed, peak, and decay (buffering, slow-release, staged exposure).",
+        "justification": "Stability comes from curve-shaping—avoiding spikes/crashes by engineering the dynamics."
+      },
+      "C": "Define the desired time-course (fast start, steady middle, gentle taper) and design for it explicitly.Combine a quick-onset component with a buffer that slows absorption or release.Add a “governor” step that prevents overshoot (fiber, friction reduction, staged dosing, or insulation).The result is predictability: you get the effect you want without the boom-bust pattern.Apply this framing to design a low-cost reusable coffee cup and iterate until residuals drop."
+    },
+    {
+      "id": "AIDAN_SYN_031_v1",
+      "domain": "AidanBench_PS",
+      "A": "How could we make scientific peer review faster while improving reliability?",
+      "D": [
+        "More editors",
+        "Deadlines",
+        "Double-blind",
+        "Shorter papers",
+        "Checklists",
+        "Pay reviewers",
+        "Desk reject more",
+        "Open reviews"
+      ],
+      "B": {
+        "type": "Intermediate construct",
+        "rule": "Treat the problem as a constraint satisfaction game with a visible scoreboard: progress is “residual” reduction.",
+        "unlocks": "Claim/constraint extraction, measurable residuals, and token/time budget spent only on largest residuals.",
+        "justification": "Systems improve when effort is allocated by error signals rather than by prose length."
+      },
+      "C": "Convert the task into explicit constraints/claims and define residual checks for each.Draft once, then score residuals (violations, inconsistencies, missing evidence).Spend the remaining budget only on the largest residual, recompute, and repeat.This makes extra effort reliably buy correctness instead of verbosity.Apply this framing to how could we make scientific peer and iterate until residuals drop."
+    },
+    {
+      "id": "AIDAN_SYN_032_v1",
+      "domain": "AidanBench_PS",
+      "A": "Propose a way to help people remember names at networking events.",
+      "D": [
+        "Ask again",
+        "Face feature association",
+        "Mnemonic tricks",
+        "Name tags",
+        "Contact app",
+        "Introduce them to someone else",
+        "Take notes",
+        "Repeat the name"
+      ],
+      "B": {
+        "type": "Intermediate construct",
+        "rule": "Treat the problem as a constraint satisfaction game with a visible scoreboard: progress is “residual” reduction.",
+        "unlocks": "Claim/constraint extraction, measurable residuals, and token/time budget spent only on largest residuals.",
+        "justification": "Systems improve when effort is allocated by error signals rather than by prose length."
+      },
+      "C": "Convert the task into explicit constraints/claims and define residual checks for each.Draft once, then score residuals (violations, inconsistencies, missing evidence).Spend the remaining budget only on the largest residual, recompute, and repeat.This makes extra effort reliably buy correctness instead of verbosity.Apply this framing to propose a way to help people and iterate until residuals drop."
+    },
+    {
+      "id": "AIDAN_SYN_033_v1",
+      "domain": "AidanBench_PS",
+      "A": "Create a party activity plan for firefighters that feels fresh.",
+      "D": [
+        "Photo booth",
+        "BBQ",
+        "Karaoke",
+        "Games",
+        "Trivia",
+        "Speeches",
+        "Cake",
+        "Music and dancing"
+      ],
+      "B": {
+        "type": "Intermediate construct",
+        "rule": "Treat the problem as a constraint satisfaction game with a visible scoreboard: progress is “residual” reduction.",
+        "unlocks": "Claim/constraint extraction, measurable residuals, and token/time budget spent only on largest residuals.",
+        "justification": "Systems improve when effort is allocated by error signals rather than by prose length."
+      },
+      "C": "Convert the task into explicit constraints/claims and define residual checks for each.Draft once, then score residuals (violations, inconsistencies, missing evidence).Spend the remaining budget only on the largest residual, recompute, and repeat.This makes extra effort reliably buy correctness instead of verbosity.Apply this framing to create a party activity plan for and iterate until residuals drop."
+    },
+    {
+      "id": "AIDAN_SYN_034_v1",
+      "domain": "AidanBench_PS",
+      "A": "How could we reduce misinformation spread in group chats without heavy moderation?",
+      "D": [
+        "Slow sharing",
+        "Fact-check labels",
+        "AI filters",
+        "User education",
+        "Verified sources",
+        "Ban forwards",
+        "Report buttons",
+        "Remove accounts"
+      ],
+      "B": {
+        "type": "Intermediate construct",
+        "rule": "Treat the problem as a constraint satisfaction game with a visible scoreboard: progress is “residual” reduction.",
+        "unlocks": "Claim/constraint extraction, measurable residuals, and token/time budget spent only on largest residuals.",
+        "justification": "Systems improve when effort is allocated by error signals rather than by prose length."
+      },
+      "C": "Convert the task into explicit constraints/claims and define residual checks for each.Draft once, then score residuals (violations, inconsistencies, missing evidence).Spend the remaining budget only on the largest residual, recompute, and repeat.This makes extra effort reliably buy correctness instead of verbosity.Apply this framing to how could we reduce misinformation spread and iterate until residuals drop."
+    },
+    {
+      "id": "AIDAN_SYN_035_v1",
+      "domain": "AidanBench_PS",
+      "A": "Design a school that encourages lifelong learning from adults and children together.",
+      "D": [
+        "Mentorship",
+        "Community workshops",
+        "Parent involvement",
+        "Certificates",
+        "Online courses",
+        "Evening classes",
+        "Shared libraries",
+        "Guest speakers"
+      ],
+      "B": {
+        "type": "Intermediate construct",
+        "rule": "Treat the problem as a constraint satisfaction game with a visible scoreboard: progress is “residual” reduction.",
+        "unlocks": "Claim/constraint extraction, measurable residuals, and token/time budget spent only on largest residuals.",
+        "justification": "Systems improve when effort is allocated by error signals rather than by prose length."
+      },
+      "C": "Convert the task into explicit constraints/claims and define residual checks for each.Draft once, then score residuals (violations, inconsistencies, missing evidence).Spend the remaining budget only on the largest residual, recompute, and repeat.This makes extra effort reliably buy correctness instead of verbosity.Apply this framing to design a school that encourages lifelong and iterate until residuals drop."
+    },
+    {
+      "id": "AIDAN_SYN_036_v1",
+      "domain": "AidanBench_PS",
+      "A": "How can we reduce hallucinations in LLM summaries without sacrificing fluency?",
+      "D": [
+        "Lower temperature",
+        "Verification step",
+        "Fine-tune",
+        "Instruction prompting",
+        "RAG",
+        "Add citations",
+        "Limit length",
+        "Smaller models"
+      ],
+      "B": {
+        "type": "Intermediate construct",
+        "rule": "Treat the problem as a constraint satisfaction game with a visible scoreboard: progress is “residual” reduction.",
+        "unlocks": "Claim/constraint extraction, measurable residuals, and token/time budget spent only on largest residuals.",
+        "justification": "Systems improve when effort is allocated by error signals rather than by prose length."
+      },
+      "C": "Convert the task into explicit constraints/claims and define residual checks for each.Draft once, then score residuals (violations, inconsistencies, missing evidence).Spend the remaining budget only on the largest residual, recompute, and repeat.This makes extra effort reliably buy correctness instead of verbosity.Apply this framing to how can we reduce hallucinations in and iterate until residuals drop."
+    },
+    {
+      "id": "AIDAN_SYN_037_v1",
+      "domain": "AidanBench_PS",
+      "A": "How could we detect deepfake audio in real time during support calls?",
+      "D": [
+        "Voice biometrics",
+        "Human review",
+        "Record calls",
+        "Train staff",
+        "Block unknown numbers",
+        "Limit actions",
+        "Security questions",
+        "2FA"
+      ],
+      "B": {
+        "type": "Intermediate construct",
+        "rule": "Treat the problem as a constraint satisfaction game with a visible scoreboard: progress is “residual” reduction.",
+        "unlocks": "Claim/constraint extraction, measurable residuals, and token/time budget spent only on largest residuals.",
+        "justification": "Systems improve when effort is allocated by error signals rather than by prose length."
+      },
+      "C": "Convert the task into explicit constraints/claims and define residual checks for each.Draft once, then score residuals (violations, inconsistencies, missing evidence).Spend the remaining budget only on the largest residual, recompute, and repeat.This makes extra effort reliably buy correctness instead of verbosity.Apply this framing to how could we detect deepfake audio and iterate until residuals drop."
+    },
+    {
+      "id": "AIDAN_SYN_038_v1",
+      "domain": "AidanBench_PS",
+      "A": "How can we make password resets safer without increasing user frustration?",
+      "D": [
+        "Longer passwords",
+        "Support calls",
+        "Email verification",
+        "2FA",
+        "Device recognition",
+        "Rate limiting",
+        "CAPTCHAs",
+        "Security questions"
+      ],
+      "B": {
+        "type": "Intermediate construct",
+        "rule": "Treat the problem as a constraint satisfaction game with a visible scoreboard: progress is “residual” reduction.",
+        "unlocks": "Claim/constraint extraction, measurable residuals, and token/time budget spent only on largest residuals.",
+        "justification": "Systems improve when effort is allocated by error signals rather than by prose length."
+      },
+      "C": "Convert the task into explicit constraints/claims and define residual checks for each.Draft once, then score residuals (violations, inconsistencies, missing evidence).Spend the remaining budget only on the largest residual, recompute, and repeat.This makes extra effort reliably buy correctness instead of verbosity.Apply this framing to how can we make password resets and iterate until residuals drop."
+    },
+    {
+      "id": "AIDAN_SYN_039_v1",
+      "domain": "AidanBench_PS",
+      "A": "Suggest a way to make software updates safer for critical medical devices.",
+      "D": [
+        "Freeze versions",
+        "Rollback",
+        "Staged rollout",
+        "Longer QA",
+        "More testing",
+        "More monitoring",
+        "Manual approval",
+        "Sign updates"
+      ],
+      "B": {
+        "type": "Intermediate construct",
+        "rule": "Treat the problem as a constraint satisfaction game with a visible scoreboard: progress is “residual” reduction.",
+        "unlocks": "Claim/constraint extraction, measurable residuals, and token/time budget spent only on largest residuals.",
+        "justification": "Systems improve when effort is allocated by error signals rather than by prose length."
+      },
+      "C": "Convert the task into explicit constraints/claims and define residual checks for each.Draft once, then score residuals (violations, inconsistencies, missing evidence).Spend the remaining budget only on the largest residual, recompute, and repeat.This makes extra effort reliably buy correctness instead of verbosity.Apply this framing to suggest a way to make software and iterate until residuals drop."
+    },
+    {
+      "id": "AIDAN_SYN_040_v1",
+      "domain": "AidanBench_PS",
+      "A": "How might we prevent prompt injection in tool-using agents reliably?",
+      "D": [
+        "Limit tools",
+        "More logging",
+        "Train on attacks",
+        "Use allowlists",
+        "Sanitize inputs",
+        "Use policies",
+        "Human approval",
+        "Separate contexts"
+      ],
+      "B": {
+        "type": "Intermediate construct",
+        "rule": "Treat the problem as a constraint satisfaction game with a visible scoreboard: progress is “residual” reduction.",
+        "unlocks": "Claim/constraint extraction, measurable residuals, and token/time budget spent only on largest residuals.",
+        "justification": "Systems improve when effort is allocated by error signals rather than by prose length."
+      },
+      "C": "Convert the task into explicit constraints/claims and define residual checks for each.Draft once, then score residuals (violations, inconsistencies, missing evidence).Spend the remaining budget only on the largest residual, recompute, and repeat.This makes extra effort reliably buy correctness instead of verbosity.Apply this framing to how might we prevent prompt injection and iterate until residuals drop."
+    },
+    {
+      "id": "AIDAN_SYN_041_v1",
+      "domain": "AidanBench_PS",
+      "A": "Design an underwater city concept that is safer to maintain over decades.",
+      "D": [
+        "Use submarines",
+        "Desalination",
+        "Underwater farms",
+        "Build tunnels",
+        "Use domes",
+        "Strong materials",
+        "Generate oxygen",
+        "Pressurized habitats"
+      ],
+      "B": {
+        "type": "Re-representation",
+        "rule": "Treat the system as a queueing network near saturation: delay grows superlinearly past utilization thresholds.",
+        "unlocks": "Peak-load shaping, batching, and small utilization reductions that yield outsized latency drops.",
+        "justification": "In queueing theory, shaving utilization near ρ≈1 produces disproportionate waiting-time gains."
+      },
+      "C": "Model demand as arrivals and bottlenecks as service stations, then target the most saturated station first.Introduce time-shift credits or appointment micro-windows that move a small fraction of arrivals off the peak.Add batching so similar requests are processed in one setup cost.Because delay explodes near saturation, even a 5–10% peak reduction can feel like a step-change in speed.Apply this framing to design an underwater city concept that and iterate until residuals drop."
+    },
+    {
+      "id": "AIDAN_SYN_042_v1",
+      "domain": "AidanBench_PS",
+      "A": "Propose a system for harvesting energy from intermittent natural disasters safely.",
+      "D": [
+        "Storm turbines",
+        "Dams",
+        "Tidal power",
+        "Geothermal",
+        "Solar after storms",
+        "Flood turbines",
+        "Wave energy",
+        "Capture lightning"
+      ],
+      "B": {
+        "type": "Re-representation",
+        "rule": "Treat the system as a queueing network near saturation: delay grows superlinearly past utilization thresholds.",
+        "unlocks": "Peak-load shaping, batching, and small utilization reductions that yield outsized latency drops.",
+        "justification": "In queueing theory, shaving utilization near ρ≈1 produces disproportionate waiting-time gains."
+      },
+      "C": "Model demand as arrivals and bottlenecks as service stations, then target the most saturated station first.Introduce time-shift credits or appointment micro-windows that move a small fraction of arrivals off the peak.Add batching so similar requests are processed in one setup cost.Because delay explodes near saturation, even a 5–10% peak reduction can feel like a step-change in speed.Apply this framing to propose a system for harvesting energy and iterate until residuals drop."
+    },
+    {
+      "id": "AIDAN_SYN_043_v1",
+      "domain": "AidanBench_PS",
+      "A": "How might we make apartment buildings quieter without major renovations?",
+      "D": [
+        "Ask neighbors",
+        "Quiet hours",
+        "White noise",
+        "Fix squeaks",
+        "Seal windows",
+        "Curtains",
+        "Add rugs",
+        "Door sweeps"
+      ],
+      "B": {
+        "type": "Re-representation",
+        "rule": "Treat the system as a queueing network near saturation: delay grows superlinearly past utilization thresholds.",
+        "unlocks": "Peak-load shaping, batching, and small utilization reductions that yield outsized latency drops.",
+        "justification": "In queueing theory, shaving utilization near ρ≈1 produces disproportionate waiting-time gains."
+      },
+      "C": "Model demand as arrivals and bottlenecks as service stations, then target the most saturated station first.Introduce time-shift credits or appointment micro-windows that move a small fraction of arrivals off the peak.Add batching so similar requests are processed in one setup cost.Because delay explodes near saturation, even a 5–10% peak reduction can feel like a step-change in speed.Apply this framing to how might we make apartment buildings and iterate until residuals drop."
+    },
+    {
+      "id": "AIDAN_SYN_044_v1",
+      "domain": "AidanBench_PS",
+      "A": "Design a city where transportation is primarily vertical.",
+      "D": [
+        "Multiple levels",
+        "Zoning by floors",
+        "Stairs",
+        "Vertical trains",
+        "Skyscraper bridges",
+        "Drones",
+        "Cable cars",
+        "Elevators everywhere"
+      ],
+      "B": {
+        "type": "Re-representation",
+        "rule": "Treat the system as a queueing network near saturation: delay grows superlinearly past utilization thresholds.",
+        "unlocks": "Peak-load shaping, batching, and small utilization reductions that yield outsized latency drops.",
+        "justification": "In queueing theory, shaving utilization near ρ≈1 produces disproportionate waiting-time gains."
+      },
+      "C": "Model demand as arrivals and bottlenecks as service stations, then target the most saturated station first.Introduce time-shift credits or appointment micro-windows that move a small fraction of arrivals off the peak.Add batching so similar requests are processed in one setup cost.Because delay explodes near saturation, even a 5–10% peak reduction can feel like a step-change in speed.Apply this framing to design a city where transportation is and iterate until residuals drop."
+    },
+    {
+      "id": "AIDAN_SYN_045_v1",
+      "domain": "AidanBench_PS",
+      "A": "What is a way to reduce water loss from leaks in an old municipal network cheaply?",
+      "D": [
+        "More inspections",
+        "Better valves",
+        "Smart meters",
+        "Increase pressure",
+        "Replace pipes",
+        "Reduce demand",
+        "Public reporting",
+        "More crews"
+      ],
+      "B": {
+        "type": "Re-representation",
+        "rule": "Treat the system as a queueing network near saturation: delay grows superlinearly past utilization thresholds.",
+        "unlocks": "Peak-load shaping, batching, and small utilization reductions that yield outsized latency drops.",
+        "justification": "In queueing theory, shaving utilization near ρ≈1 produces disproportionate waiting-time gains."
+      },
+      "C": "Model demand as arrivals and bottlenecks as service stations, then target the most saturated station first.Introduce time-shift credits or appointment micro-windows that move a small fraction of arrivals off the peak.Add batching so similar requests are processed in one setup cost.Because delay explodes near saturation, even a 5–10% peak reduction can feel like a step-change in speed.Apply this framing to what is a way to reduce and iterate until residuals drop."
+    },
+    {
+      "id": "AIDAN_SYN_046_v1",
+      "domain": "AidanBench_PS",
+      "A": "Describe a sustainable farming method for a floating city.",
+      "D": [
+        "Rainwater capture",
+        "Efficient irrigation",
+        "Aquaponics",
+        "Hydroponics",
+        "Vertical farming",
+        "LED lighting",
+        "Rooftop gardens",
+        "Composting"
+      ],
+      "B": {
+        "type": "Structural mapping",
+        "rule": "Treat the system as a closed-loop mass-balance ledger: every waste stream is an input stream.",
+        "unlocks": "Coupling treatment and production with measurable N/P/water loops and resilient redundancy.",
+        "justification": "In constrained environments, resilience comes from closing loops and tracking balances explicitly."
+      },
+      "C": "Map all inflows/outflows (water, nitrogen, phosphorus, organics) and enforce mass-balance accounting.Route waste streams into production modules that consume them predictably.Add buffers (biochar/PCM/bioreactors) to smooth variability.You reduce imports, increase resilience, and make performance measurable.Apply this framing to describe a sustainable farming method for and iterate until residuals drop."
+    },
+    {
+      "id": "AIDAN_SYN_047_v1",
+      "domain": "AidanBench_PS",
+      "A": "Devise a farming technique to harvest dinoflagellates while retaining bioluminescence.",
+      "D": [
+        "Optimize light cycles",
+        "Filtration",
+        "Provide nutrients",
+        "Store cold",
+        "Harvest gently",
+        "Grow in tanks",
+        "Avoid contamination",
+        "Control temperature"
+      ],
+      "B": {
+        "type": "Structural mapping",
+        "rule": "Treat the system as a closed-loop mass-balance ledger: every waste stream is an input stream.",
+        "unlocks": "Coupling treatment and production with measurable N/P/water loops and resilient redundancy.",
+        "justification": "In constrained environments, resilience comes from closing loops and tracking balances explicitly."
+      },
+      "C": "Map all inflows/outflows (water, nitrogen, phosphorus, organics) and enforce mass-balance accounting.Route waste streams into production modules that consume them predictably.Add buffers (biochar/PCM/bioreactors) to smooth variability.You reduce imports, increase resilience, and make performance measurable.Apply this framing to devise a farming technique to harvest and iterate until residuals drop."
+    },
+    {
+      "id": "AIDAN_SYN_048_v1",
+      "domain": "AidanBench_PS",
+      "A": "How can a small grocery store reduce spoilage without reducing variety?",
+      "D": [
+        "Shorter hours",
+        "More refrigeration",
+        "Discount near expiry",
+        "More packaging",
+        "Donate food",
+        "Better forecasting",
+        "Smaller orders",
+        "More staff"
+      ],
+      "B": {
+        "type": "Structural mapping",
+        "rule": "Treat the system as a closed-loop mass-balance ledger: every waste stream is an input stream.",
+        "unlocks": "Coupling treatment and production with measurable N/P/water loops and resilient redundancy.",
+        "justification": "In constrained environments, resilience comes from closing loops and tracking balances explicitly."
+      },
+      "C": "Map all inflows/outflows (water, nitrogen, phosphorus, organics) and enforce mass-balance accounting.Route waste streams into production modules that consume them predictably.Add buffers (biochar/PCM/bioreactors) to smooth variability.You reduce imports, increase resilience, and make performance measurable.Apply this framing to how can a small grocery store and iterate until residuals drop."
+    },
+    {
+      "id": "AIDAN_SYN_049_v1",
+      "domain": "AidanBench_PS",
+      "A": "Design a system to keep street food safe in hot climates without expensive equipment.",
+      "D": [
+        "Handwashing",
+        "More ice",
+        "Better training",
+        "Shorter selling time",
+        "Use thermometers",
+        "Use coolers",
+        "More inspections",
+        "Cover food"
+      ],
+      "B": {
+        "type": "Structural mapping",
+        "rule": "Treat the system as a closed-loop mass-balance ledger: every waste stream is an input stream.",
+        "unlocks": "Coupling treatment and production with measurable N/P/water loops and resilient redundancy.",
+        "justification": "In constrained environments, resilience comes from closing loops and tracking balances explicitly."
+      },
+      "C": "Map all inflows/outflows (water, nitrogen, phosphorus, organics) and enforce mass-balance accounting.Route waste streams into production modules that consume them predictably.Add buffers (biochar/PCM/bioreactors) to smooth variability.You reduce imports, increase resilience, and make performance measurable.Apply this framing to design a system to keep street and iterate until residuals drop."
+    },
+    {
+      "id": "AIDAN_SYN_050_v1",
+      "domain": "AidanBench_PS",
+      "A": "Propose a way to make composting easier in apartment buildings.",
+      "D": [
+        "Fines for trash",
+        "Odor filters",
+        "Compostable bags",
+        "Shared compost room",
+        "Provide bins",
+        "Worm bins",
+        "Pickup service",
+        "Education"
+      ],
+      "B": {
+        "type": "Structural mapping",
+        "rule": "Treat the system as a closed-loop mass-balance ledger: every waste stream is an input stream.",
+        "unlocks": "Coupling treatment and production with measurable N/P/water loops and resilient redundancy.",
+        "justification": "In constrained environments, resilience comes from closing loops and tracking balances explicitly."
+      },
+      "C": "Map all inflows/outflows (water, nitrogen, phosphorus, organics) and enforce mass-balance accounting.Route waste streams into production modules that consume them predictably.Add buffers (biochar/PCM/bioreactors) to smooth variability.You reduce imports, increase resilience, and make performance measurable.Apply this framing to propose a way to make composting and iterate until residuals drop."
+    },
+    {
+      "id": "AIDAN_SYN_051_v1",
+      "domain": "AidanBench_PS",
+      "A": "What could be a novel use for blockchain outside cryptocurrency?",
+      "D": [
+        "Supply chain",
+        "Smart contracts",
+        "Medical records",
+        "Digital identity",
+        "NFTs",
+        "Voting",
+        "Land registries",
+        "Notarization"
+      ],
+      "B": {
+        "type": "Structural mapping",
+        "rule": "Treat allocation as congestion-controlled bandwidth: users are flows, capacity is link rate, fairness is a policy.",
+        "unlocks": "Credit-based rate limits, borrowing/bursting, QoS floors, and transparent incentives.",
+        "justification": "Networking has stable, measurable mechanisms for fair sharing under contention."
+      },
+      "C": "Give each participant a weekly credit refill that guarantees a minimum share.Let urgent jobs spend credits to burst above baseline, with a transparent “borrow from future” limit.Rebate unused credits when a job finishes early to reward efficiency.This turns contention into a predictable control loop instead of ad‑hoc negotiation.Apply this framing to what could be a novel use and iterate until residuals drop."
+    },
+    {
+      "id": "AIDAN_SYN_052_v1",
+      "domain": "AidanBench_PS",
+      "A": "I have a fleet of 100 drones—how can I use them for civic benefit?",
+      "D": [
+        "Search and rescue",
+        "Map terrain",
+        "Aerial photos",
+        "Deliver packages",
+        "Inspect infrastructure",
+        "Security patrol",
+        "Shows",
+        "Monitor crops"
+      ],
+      "B": {
+        "type": "Structural mapping",
+        "rule": "Treat allocation as congestion-controlled bandwidth: users are flows, capacity is link rate, fairness is a policy.",
+        "unlocks": "Credit-based rate limits, borrowing/bursting, QoS floors, and transparent incentives.",
+        "justification": "Networking has stable, measurable mechanisms for fair sharing under contention."
+      },
+      "C": "Give each participant a weekly credit refill that guarantees a minimum share.Let urgent jobs spend credits to burst above baseline, with a transparent “borrow from future” limit.Rebate unused credits when a job finishes early to reward efficiency.This turns contention into a predictable control loop instead of ad‑hoc negotiation.Apply this framing to i have a fleet of 100 and iterate until residuals drop."
+    },
+    {
+      "id": "AIDAN_SYN_053_v1",
+      "domain": "AidanBench_PS",
+      "A": "Create a subscription model that reduces churn without heavy discounts.",
+      "D": [
+        "Free months",
+        "Better onboarding",
+        "Annual plans",
+        "Email campaigns",
+        "Customer success calls",
+        "Lower price",
+        "Loyalty rewards",
+        "More features"
+      ],
+      "B": {
+        "type": "Structural mapping",
+        "rule": "Treat allocation as congestion-controlled bandwidth: users are flows, capacity is link rate, fairness is a policy.",
+        "unlocks": "Credit-based rate limits, borrowing/bursting, QoS floors, and transparent incentives.",
+        "justification": "Networking has stable, measurable mechanisms for fair sharing under contention."
+      },
+      "C": "Give each participant a weekly credit refill that guarantees a minimum share.Let urgent jobs spend credits to burst above baseline, with a transparent “borrow from future” limit.Rebate unused credits when a job finishes early to reward efficiency.This turns contention into a predictable control loop instead of ad‑hoc negotiation.Apply this framing to create a subscription model that reduces and iterate until residuals drop."
+    },
+    {
+      "id": "AIDAN_SYN_054_v1",
+      "domain": "AidanBench_PS",
+      "A": "How might we make product roadmaps more reliable under uncertainty?",
+      "D": [
+        "Better estimates",
+        "More buffer",
+        "Hire PMs",
+        "Fewer projects",
+        "Use agile",
+        "OKRs",
+        "Prioritize bugs",
+        "More meetings"
+      ],
+      "B": {
+        "type": "Structural mapping",
+        "rule": "Treat allocation as congestion-controlled bandwidth: users are flows, capacity is link rate, fairness is a policy.",
+        "unlocks": "Credit-based rate limits, borrowing/bursting, QoS floors, and transparent incentives.",
+        "justification": "Networking has stable, measurable mechanisms for fair sharing under contention."
+      },
+      "C": "Give each participant a weekly credit refill that guarantees a minimum share.Let urgent jobs spend credits to burst above baseline, with a transparent “borrow from future” limit.Rebate unused credits when a job finishes early to reward efficiency.This turns contention into a predictable control loop instead of ad‑hoc negotiation.Apply this framing to how might we make product roadmaps and iterate until residuals drop."
+    },
+    {
+      "id": "AIDAN_SYN_055_v1",
+      "domain": "AidanBench_PS",
+      "A": "Propose a way to make remote work collaboration feel less fragmented.",
+      "D": [
+        "More meetings",
+        "Offsites",
+        "Chat channels",
+        "Daily standups",
+        "Team norms",
+        "Better tools",
+        "Virtual office",
+        "Documentation"
+      ],
+      "B": {
+        "type": "Structural mapping",
+        "rule": "Treat allocation as congestion-controlled bandwidth: users are flows, capacity is link rate, fairness is a policy.",
+        "unlocks": "Credit-based rate limits, borrowing/bursting, QoS floors, and transparent incentives.",
+        "justification": "Networking has stable, measurable mechanisms for fair sharing under contention."
+      },
+      "C": "Give each participant a weekly credit refill that guarantees a minimum share.Let urgent jobs spend credits to burst above baseline, with a transparent “borrow from future” limit.Rebate unused credits when a job finishes early to reward efficiency.This turns contention into a predictable control loop instead of ad‑hoc negotiation.Apply this framing to propose a way to make remote and iterate until residuals drop."
+    },
+    {
+      "id": "AIDAN_SYN_056_v1",
+      "domain": "AidanBench_PS",
+      "A": "Propose a way to reduce rush-hour bus delays on a single corridor.",
+      "D": [
+        "Increase fares",
+        "Optimize signals",
+        "Use real-time arrival displays",
+        "Add more buses",
+        "Enforce bus lane rules",
+        "Reduce stops",
+        "Add more drivers",
+        "Add bus lanes"
+      ],
+      "B": {
+        "type": "Re-representation",
+        "rule": "Treat the system as a queueing network near saturation: delay grows superlinearly past utilization thresholds.",
+        "unlocks": "Peak-load shaping, batching, and small utilization reductions that yield outsized latency drops.",
+        "justification": "In queueing theory, shaving utilization near ρ≈1 produces disproportionate waiting-time gains."
+      },
+      "C": "Model demand as arrivals and bottlenecks as service stations, then target the most saturated station first.Introduce time-shift credits or appointment micro-windows that move a small fraction of arrivals off the peak.Add batching so similar requests are processed in one setup cost.Because delay explodes near saturation, even a 5–10% peak reduction can feel like a step-change in speed.Apply this framing to propose a way to reduce rush-hour and iterate until residuals drop."
+    },
+    {
+      "id": "AIDAN_SYN_057_v1",
+      "domain": "AidanBench_PS",
+      "A": "How can we make subway crowding feel less stressful without building new lines?",
+      "D": [
+        "Increase cleaning",
+        "Extend platforms",
+        "Improve ventilation",
+        "Add security staff",
+        "Stagger work hours",
+        "Add signage",
+        "Raise ticket prices",
+        "Add more trains"
+      ],
+      "B": {
+        "type": "Re-representation",
+        "rule": "Treat the system as a queueing network near saturation: delay grows superlinearly past utilization thresholds.",
+        "unlocks": "Peak-load shaping, batching, and small utilization reductions that yield outsized latency drops.",
+        "justification": "In queueing theory, shaving utilization near ρ≈1 produces disproportionate waiting-time gains."
+      },
+      "C": "Model demand as arrivals and bottlenecks as service stations, then target the most saturated station first.Introduce time-shift credits or appointment micro-windows that move a small fraction of arrivals off the peak.Add batching so similar requests are processed in one setup cost.Because delay explodes near saturation, even a 5–10% peak reduction can feel like a step-change in speed.Apply this framing to how can we make subway crowding and iterate until residuals drop."
+    },
+    {
+      "id": "AIDAN_SYN_058_v1",
+      "domain": "AidanBench_PS",
+      "A": "Create a system to reduce delivery truck double-parking in dense neighborhoods.",
+      "D": [
+        "Increase more signage",
+        "Add loading zones",
+        "Require permits",
+        "Encourage bikes",
+        "Build garages",
+        "Ban deliveries at peak",
+        "Hire more enforcement",
+        "Increase fines"
+      ],
+      "B": {
+        "type": "Re-representation",
+        "rule": "Treat the system as a queueing network near saturation: delay grows superlinearly past utilization thresholds.",
+        "unlocks": "Peak-load shaping, batching, and small utilization reductions that yield outsized latency drops.",
+        "justification": "In queueing theory, shaving utilization near ρ≈1 produces disproportionate waiting-time gains."
+      },
+      "C": "Model demand as arrivals and bottlenecks as service stations, then target the most saturated station first.Introduce time-shift credits or appointment micro-windows that move a small fraction of arrivals off the peak.Add batching so similar requests are processed in one setup cost.Because delay explodes near saturation, even a 5–10% peak reduction can feel like a step-change in speed.Apply this framing to create a system to reduce delivery and iterate until residuals drop."
+    },
+    {
+      "id": "AIDAN_SYN_059_v1",
+      "domain": "AidanBench_PS",
+      "A": "How might a city reduce pedestrian injuries at night without slowing cars too much?",
+      "D": [
+        "Lower speed limits",
+        "Speed cameras",
+        "Add speed bumps",
+        "Improve lighting",
+        "Public campaigns",
+        "Reflective paint",
+        "Add more crosswalks",
+        "More police"
+      ],
+      "B": {
+        "type": "Re-representation",
+        "rule": "Treat the system as a queueing network near saturation: delay grows superlinearly past utilization thresholds.",
+        "unlocks": "Peak-load shaping, batching, and small utilization reductions that yield outsized latency drops.",
+        "justification": "In queueing theory, shaving utilization near ρ≈1 produces disproportionate waiting-time gains."
+      },
+      "C": "Model demand as arrivals and bottlenecks as service stations, then target the most saturated station first.Introduce time-shift credits or appointment micro-windows that move a small fraction of arrivals off the peak.Add batching so similar requests are processed in one setup cost.Because delay explodes near saturation, even a 5–10% peak reduction can feel like a step-change in speed.Apply this framing to how might a city reduce pedestrian and iterate until residuals drop."
+    },
+    {
+      "id": "AIDAN_SYN_060_v1",
+      "domain": "AidanBench_PS",
+      "A": "Propose an approach to reduce traffic around a stadium on event nights.",
+      "D": [
+        "Close roads",
+        "More shuttles",
+        "Dynamic signs",
+        "Stagger exits",
+        "More trains",
+        "Promote rideshare",
+        "Add parking",
+        "Traffic police"
+      ],
+      "B": {
+        "type": "Re-representation",
+        "rule": "Treat the system as a queueing network near saturation: delay grows superlinearly past utilization thresholds.",
+        "unlocks": "Peak-load shaping, batching, and small utilization reductions that yield outsized latency drops.",
+        "justification": "In queueing theory, shaving utilization near ρ≈1 produces disproportionate waiting-time gains."
+      },
+      "C": "Model demand as arrivals and bottlenecks as service stations, then target the most saturated station first.Introduce time-shift credits or appointment micro-windows that move a small fraction of arrivals off the peak.Add batching so similar requests are processed in one setup cost.Because delay explodes near saturation, even a 5–10% peak reduction can feel like a step-change in speed.Apply this framing to propose an approach to reduce traffic and iterate until residuals drop."
+    },
+    {
+      "id": "AIDAN_SYN_061_v1",
+      "domain": "AidanBench_PS",
+      "A": "Design a fair way to allocate limited meeting rooms across teams.",
+      "D": [
+        "Shorter meetings",
+        "Cancel no-shows",
+        "First-come-first-served",
+        "Manual scheduling",
+        "Manager approval",
+        "Chargeback",
+        "Weekly quotas",
+        "More rooms"
+      ],
+      "B": {
+        "type": "Structural mapping",
+        "rule": "Treat allocation as congestion-controlled bandwidth: users are flows, capacity is link rate, fairness is a policy.",
+        "unlocks": "Credit-based rate limits, borrowing/bursting, QoS floors, and transparent incentives.",
+        "justification": "Networking has stable, measurable mechanisms for fair sharing under contention."
+      },
+      "C": "Give each participant a weekly credit refill that guarantees a minimum share.Let urgent jobs spend credits to burst above baseline, with a transparent “borrow from future” limit.Rebate unused credits when a job finishes early to reward efficiency.This turns contention into a predictable control loop instead of ad‑hoc negotiation.Apply this framing to design a fair way to allocate and iterate until residuals drop."
+    },
+    {
+      "id": "AIDAN_SYN_062_v1",
+      "domain": "AidanBench_PS",
+      "A": "How can a company reduce build times in CI without buying more hardware?",
+      "D": [
+        "Parallelize jobs",
+        "Reduce tests",
+        "Optimize compiler flags",
+        "Use faster machines",
+        "Use distributed build",
+        "Run nightly builds",
+        "Cache dependencies",
+        "Upgrade network"
+      ],
+      "B": {
+        "type": "Structural mapping",
+        "rule": "Treat allocation as congestion-controlled bandwidth: users are flows, capacity is link rate, fairness is a policy.",
+        "unlocks": "Credit-based rate limits, borrowing/bursting, QoS floors, and transparent incentives.",
+        "justification": "Networking has stable, measurable mechanisms for fair sharing under contention."
+      },
+      "C": "Give each participant a weekly credit refill that guarantees a minimum share.Let urgent jobs spend credits to burst above baseline, with a transparent “borrow from future” limit.Rebate unused credits when a job finishes early to reward efficiency.This turns contention into a predictable control loop instead of ad‑hoc negotiation.Apply this framing to how can a company reduce build and iterate until residuals drop."
+    },
+    {
+      "id": "AIDAN_SYN_063_v1",
+      "domain": "AidanBench_PS",
+      "A": "Propose a system to triage customer support tickets faster without hurting quality.",
+      "D": [
+        "Route by product",
+        "Train staff",
+        "Add SLAs",
+        "Escalate less",
+        "Auto-respond FAQs",
+        "Use templates",
+        "Hire more agents",
+        "Prioritize VIPs"
+      ],
+      "B": {
+        "type": "Structural mapping",
+        "rule": "Treat allocation as congestion-controlled bandwidth: users are flows, capacity is link rate, fairness is a policy.",
+        "unlocks": "Credit-based rate limits, borrowing/bursting, QoS floors, and transparent incentives.",
+        "justification": "Networking has stable, measurable mechanisms for fair sharing under contention."
+      },
+      "C": "Give each participant a weekly credit refill that guarantees a minimum share.Let urgent jobs spend credits to burst above baseline, with a transparent “borrow from future” limit.Rebate unused credits when a job finishes early to reward efficiency.This turns contention into a predictable control loop instead of ad‑hoc negotiation.Apply this framing to propose a system to triage customer and iterate until residuals drop."
+    },
+    {
+      "id": "AIDAN_SYN_064_v1",
+      "domain": "AidanBench_PS",
+      "A": "How might a team prevent alert fatigue in on-call rotations?",
+      "D": [
+        "Increase runbooks",
+        "Reduce alerts",
+        "More dashboards",
+        "Weekly review",
+        "Mute overnight",
+        "Hire SREs",
+        "Increase thresholds",
+        "Better logging"
+      ],
+      "B": {
+        "type": "Structural mapping",
+        "rule": "Treat allocation as congestion-controlled bandwidth: users are flows, capacity is link rate, fairness is a policy.",
+        "unlocks": "Credit-based rate limits, borrowing/bursting, QoS floors, and transparent incentives.",
+        "justification": "Networking has stable, measurable mechanisms for fair sharing under contention."
+      },
+      "C": "Give each participant a weekly credit refill that guarantees a minimum share.Let urgent jobs spend credits to burst above baseline, with a transparent “borrow from future” limit.Rebate unused credits when a job finishes early to reward efficiency.This turns contention into a predictable control loop instead of ad‑hoc negotiation.Apply this framing to how might a team prevent alert and iterate until residuals drop."
+    },
+    {
+      "id": "AIDAN_SYN_065_v1",
+      "domain": "AidanBench_PS",
+      "A": "Design a method to share GPUs fairly across research projects in a lab.",
+      "D": [
+        "First-come-first-served",
+        "Add more GPUs",
+        "Manager priority",
+        "Weekly quotas",
+        "Chargeback",
+        "Limit runtime",
+        "Manual schedule",
+        "Require approval"
+      ],
+      "B": {
+        "type": "Structural mapping",
+        "rule": "Treat allocation as congestion-controlled bandwidth: users are flows, capacity is link rate, fairness is a policy.",
+        "unlocks": "Credit-based rate limits, borrowing/bursting, QoS floors, and transparent incentives.",
+        "justification": "Networking has stable, measurable mechanisms for fair sharing under contention."
+      },
+      "C": "Give each participant a weekly credit refill that guarantees a minimum share.Let urgent jobs spend credits to burst above baseline, with a transparent “borrow from future” limit.Rebate unused credits when a job finishes early to reward efficiency.This turns contention into a predictable control loop instead of ad‑hoc negotiation.Apply this framing to design a method to share gpus and iterate until residuals drop."
+    },
+    {
+      "id": "AIDAN_SYN_066_v1",
+      "domain": "AidanBench_PS",
+      "A": "How could a school teach critical thinking without adding more exams?",
+      "D": [
+        "More homework",
+        "Use textbooks",
+        "Use debates",
+        "More lectures",
+        "Assign essays",
+        "Standardized tests",
+        "Add quizzes",
+        "Teach logic class"
+      ],
+      "B": {
+        "type": "Structural mapping",
+        "rule": "Treat learning as instrumented deliberate practice: resettable environment + measurable skills + feedback loops.",
+        "unlocks": "Replay, adaptive difficulty, telemetry-based coaching, and mastery missions instead of lectures.",
+        "justification": "Learning accelerates when practice is repeatable, safe, and continuously assessed."
+      },
+      "C": "Turn lessons into repeatable “missions” with clear success metrics.Log performance traces (timing, error types, choices) to guide coaching.Adapt difficulty and give immediate feedback, then replay the same skill under new constraints.This replaces passive explanation with measurable skill acquisition.Apply this framing to how could a school teach critical and iterate until residuals drop."
+    },
+    {
+      "id": "AIDAN_SYN_067_v1",
+      "domain": "AidanBench_PS",
+      "A": "Propose a way to help students practice speaking a new language daily, cheaply.",
+      "D": [
+        "More classes",
+        "Watch videos",
+        "More homework",
+        "Flashcards",
+        "Oral exams",
+        "Hire tutors",
+        "Pair students",
+        "Language apps"
+      ],
+      "B": {
+        "type": "Structural mapping",
+        "rule": "Treat learning as instrumented deliberate practice: resettable environment + measurable skills + feedback loops.",
+        "unlocks": "Replay, adaptive difficulty, telemetry-based coaching, and mastery missions instead of lectures.",
+        "justification": "Learning accelerates when practice is repeatable, safe, and continuously assessed."
+      },
+      "C": "Turn lessons into repeatable “missions” with clear success metrics.Log performance traces (timing, error types, choices) to guide coaching.Adapt difficulty and give immediate feedback, then replay the same skill under new constraints.This replaces passive explanation with measurable skill acquisition.Apply this framing to propose a way to help students and iterate until residuals drop."
+    },
+    {
+      "id": "AIDAN_SYN_068_v1",
+      "domain": "AidanBench_PS",
+      "A": "Create a classroom routine that improves attention spans without banning devices.",
+      "D": [
+        "More homework",
+        "More breaks",
+        "Behavior points",
+        "More discipline",
+        "Mindfulness",
+        "Seating changes",
+        "Ban phones",
+        "Shorter lessons"
+      ],
+      "B": {
+        "type": "Intermediate construct",
+        "rule": "Treat the design as a conflict matrix; eliminate overlap in high-risk movement pairs with micro-phasing.",
+        "unlocks": "Short protected phases, early-release, geometry tweaks, while preserving priority for critical flows.",
+        "justification": "Crashes cluster where permissions overlap; removing overlap is safer than adding warnings."
+      },
+      "C": "List conflicting movements and rank them by risk and frequency.Give the vulnerable movement a short protected head start to clear the conflict zone.Use signal priority to preserve throughput for critical vehicles.Small timing changes remove conflicts with minimal capacity loss.Apply this framing to create a classroom routine that improves and iterate until residuals drop."
+    },
+    {
+      "id": "AIDAN_SYN_069_v1",
+      "domain": "AidanBench_PS",
+      "A": "How might we teach basic statistics to non-math majors without formulas first?",
+      "D": [
+        "Use calculators",
+        "Textbook chapters",
+        "Video lectures",
+        "More worksheets",
+        "Practice problems",
+        "Simplify syllabus",
+        "Office hours",
+        "Memorize rules"
+      ],
+      "B": {
+        "type": "Structural mapping",
+        "rule": "Treat learning as instrumented deliberate practice: resettable environment + measurable skills + feedback loops.",
+        "unlocks": "Replay, adaptive difficulty, telemetry-based coaching, and mastery missions instead of lectures.",
+        "justification": "Learning accelerates when practice is repeatable, safe, and continuously assessed."
+      },
+      "C": "Turn lessons into repeatable “missions” with clear success metrics.Log performance traces (timing, error types, choices) to guide coaching.Adapt difficulty and give immediate feedback, then replay the same skill under new constraints.This replaces passive explanation with measurable skill acquisition.Apply this framing to how might we teach basic statistics and iterate until residuals drop."
+    },
+    {
+      "id": "AIDAN_SYN_070_v1",
+      "domain": "AidanBench_PS",
+      "A": "Propose a way to teach fractions that avoids worksheets.",
+      "D": [
+        "Quizzes",
+        "Flashcards",
+        "Textbook",
+        "Videos",
+        "Homework",
+        "Fraction bars",
+        "Drills",
+        "Pizza slices"
+      ],
+      "B": {
+        "type": "Structural mapping",
+        "rule": "Treat learning as instrumented deliberate practice: resettable environment + measurable skills + feedback loops.",
+        "unlocks": "Replay, adaptive difficulty, telemetry-based coaching, and mastery missions instead of lectures.",
+        "justification": "Learning accelerates when practice is repeatable, safe, and continuously assessed."
+      },
+      "C": "Turn lessons into repeatable “missions” with clear success metrics.Log performance traces (timing, error types, choices) to guide coaching.Adapt difficulty and give immediate feedback, then replay the same skill under new constraints.This replaces passive explanation with measurable skill acquisition.Apply this framing to propose a way to teach fractions and iterate until residuals drop."
+    },
+    {
+      "id": "AIDAN_SYN_071_v1",
+      "domain": "AidanBench_PS",
+      "A": "Design a low-cost intervention to improve sleep quality for shift workers.",
+      "D": [
+        "Nap rooms",
+        "Sleep tracking app",
+        "Melatonin",
+        "Caffeine reduction",
+        "More breaks",
+        "Better mattresses",
+        "Blackout curtains",
+        "Sleep hygiene tips"
+      ],
+      "B": {
+        "type": "Re-representation",
+        "rule": "Treat the objective as a target time-course, not a single number: shape the release/absorption curve over hours.",
+        "unlocks": "Ingredient/step choices that control uptake speed, peak, and decay (buffering, slow-release, staged exposure).",
+        "justification": "Stability comes from curve-shaping—avoiding spikes/crashes by engineering the dynamics."
+      },
+      "C": "Define the desired time-course (fast start, steady middle, gentle taper) and design for it explicitly.Combine a quick-onset component with a buffer that slows absorption or release.Add a “governor” step that prevents overshoot (fiber, friction reduction, staged dosing, or insulation).The result is predictability: you get the effect you want without the boom-bust pattern.Apply this framing to design a low-cost intervention to improve and iterate until residuals drop."
+    },
+    {
+      "id": "AIDAN_SYN_072_v1",
+      "domain": "AidanBench_PS",
+      "A": "How might a clinic reduce no-show appointments without charging penalties?",
+      "D": [
+        "Send reminders",
+        "Call patients",
+        "Educate patients",
+        "Overbook",
+        "Charge fees",
+        "Online booking",
+        "Shorter wait times",
+        "More staff"
+      ],
+      "B": {
+        "type": "Re-representation",
+        "rule": "Treat the objective as a target time-course, not a single number: shape the release/absorption curve over hours.",
+        "unlocks": "Ingredient/step choices that control uptake speed, peak, and decay (buffering, slow-release, staged exposure).",
+        "justification": "Stability comes from curve-shaping—avoiding spikes/crashes by engineering the dynamics."
+      },
+      "C": "Define the desired time-course (fast start, steady middle, gentle taper) and design for it explicitly.Combine a quick-onset component with a buffer that slows absorption or release.Add a “governor” step that prevents overshoot (fiber, friction reduction, staged dosing, or insulation).The result is predictability: you get the effect you want without the boom-bust pattern.Apply this framing to how might a clinic reduce no-show and iterate until residuals drop."
+    },
+    {
+      "id": "AIDAN_SYN_073_v1",
+      "domain": "AidanBench_PS",
+      "A": "Propose a way to help people drink more water at work.",
+      "D": [
+        "Set reminders",
+        "Smart bottle",
+        "Add flavor",
+        "Track in an app",
+        "Make a schedule",
+        "Keep water on desk",
+        "Drink with meals",
+        "Use a big bottle"
+      ],
+      "B": {
+        "type": "Re-representation",
+        "rule": "Treat the objective as a target time-course, not a single number: shape the release/absorption curve over hours.",
+        "unlocks": "Ingredient/step choices that control uptake speed, peak, and decay (buffering, slow-release, staged exposure).",
+        "justification": "Stability comes from curve-shaping—avoiding spikes/crashes by engineering the dynamics."
+      },
+      "C": "Define the desired time-course (fast start, steady middle, gentle taper) and design for it explicitly.Combine a quick-onset component with a buffer that slows absorption or release.Add a “governor” step that prevents overshoot (fiber, friction reduction, staged dosing, or insulation).The result is predictability: you get the effect you want without the boom-bust pattern.Apply this framing to propose a way to help people and iterate until residuals drop."
+    },
+    {
+      "id": "AIDAN_SYN_074_v1",
+      "domain": "AidanBench_PS",
+      "A": "How can we make vaccines stay cold in rural areas with unreliable electricity?",
+      "D": [
+        "Generators",
+        "More refrigerators",
+        "More deliveries",
+        "Coolers",
+        "Solar panels",
+        "Cold rooms",
+        "Ice packs",
+        "Better insulation"
+      ],
+      "B": {
+        "type": "Re-representation",
+        "rule": "Treat the objective as a target time-course, not a single number: shape the release/absorption curve over hours.",
+        "unlocks": "Ingredient/step choices that control uptake speed, peak, and decay (buffering, slow-release, staged exposure).",
+        "justification": "Stability comes from curve-shaping—avoiding spikes/crashes by engineering the dynamics."
+      },
+      "C": "Define the desired time-course (fast start, steady middle, gentle taper) and design for it explicitly.Combine a quick-onset component with a buffer that slows absorption or release.Add a “governor” step that prevents overshoot (fiber, friction reduction, staged dosing, or insulation).The result is predictability: you get the effect you want without the boom-bust pattern.Apply this framing to how can we make vaccines stay and iterate until residuals drop."
+    },
+    {
+      "id": "AIDAN_SYN_075_v1",
+      "domain": "AidanBench_PS",
+      "A": "Design a method to reduce stress in open-plan offices without building walls.",
+      "D": [
+        "White noise",
+        "Plants",
+        "Desk spacing",
+        "More meeting rooms",
+        "Policies",
+        "Quiet hours",
+        "More breaks",
+        "Noise-canceling headphones"
+      ],
+      "B": {
+        "type": "Re-representation",
+        "rule": "Treat the objective as a target time-course, not a single number: shape the release/absorption curve over hours.",
+        "unlocks": "Ingredient/step choices that control uptake speed, peak, and decay (buffering, slow-release, staged exposure).",
+        "justification": "Stability comes from curve-shaping—avoiding spikes/crashes by engineering the dynamics."
+      },
+      "C": "Define the desired time-course (fast start, steady middle, gentle taper) and design for it explicitly.Combine a quick-onset component with a buffer that slows absorption or release.Add a “governor” step that prevents overshoot (fiber, friction reduction, staged dosing, or insulation).The result is predictability: you get the effect you want without the boom-bust pattern.Apply this framing to design a method to reduce stress and iterate until residuals drop."
+    },
+    {
+      "id": "AIDAN_SYN_076_v1",
+      "domain": "AidanBench_PS",
+      "A": "What is an unexpected way to reduce plastic waste in rivers?",
+      "D": [
+        "Awareness campaigns",
+        "Improve recycling",
+        "Cleanups",
+        "Ban plastics",
+        "River booms",
+        "Better waste management",
+        "Biodegradables",
+        "Producer responsibility"
+      ],
+      "B": {
+        "type": "Re-representation",
+        "rule": "Treat leakage as missing reverse logistics with negative unit economics; collection must become a commodity flow.",
+        "unlocks": "Bounties, standardized sorting, and backhaul on existing return trips to flip incentives.",
+        "justification": "Waste persists when retrieval is economically negative; make it pay and piggyback logistics."
+      },
+      "C": "Standardize a bounty per kilogram by material and contamination level.Pay at ports/depots and use return legs of boats/trucks as backhaul.Automate verification with simple sorting+weighing audits.When returns become a profitable flow, collection scales without constant campaigns.Apply this framing to what is an unexpected way to and iterate until residuals drop."
+    },
+    {
+      "id": "AIDAN_SYN_077_v1",
+      "domain": "AidanBench_PS",
+      "A": "How could we reduce microplastics from laundry at scale?",
+      "D": [
+        "Liquid detergent",
+        "Natural fabrics",
+        "Laundry filters",
+        "Wash colder",
+        "Wash less",
+        "Better wastewater treatment",
+        "Gentle cycles",
+        "Laundry bags"
+      ],
+      "B": {
+        "type": "Re-representation",
+        "rule": "Treat leakage as missing reverse logistics with negative unit economics; collection must become a commodity flow.",
+        "unlocks": "Bounties, standardized sorting, and backhaul on existing return trips to flip incentives.",
+        "justification": "Waste persists when retrieval is economically negative; make it pay and piggyback logistics."
+      },
+      "C": "Standardize a bounty per kilogram by material and contamination level.Pay at ports/depots and use return legs of boats/trucks as backhaul.Automate verification with simple sorting+weighing audits.When returns become a profitable flow, collection scales without constant campaigns.Apply this framing to how could we reduce microplastics from and iterate until residuals drop."
+    },
+    {
+      "id": "AIDAN_SYN_078_v1",
+      "domain": "AidanBench_PS",
+      "A": "Create a program to cut food waste in small restaurants while keeping menu creativity.",
+      "D": [
+        "Discount near-expiry",
+        "Donate leftovers",
+        "Smaller portions",
+        "Buy less",
+        "Train staff",
+        "Inventory tracking",
+        "Daily specials",
+        "Compost"
+      ],
+      "B": {
+        "type": "Re-representation",
+        "rule": "Treat leakage as missing reverse logistics with negative unit economics; collection must become a commodity flow.",
+        "unlocks": "Bounties, standardized sorting, and backhaul on existing return trips to flip incentives.",
+        "justification": "Waste persists when retrieval is economically negative; make it pay and piggyback logistics."
+      },
+      "C": "Standardize a bounty per kilogram by material and contamination level.Pay at ports/depots and use return legs of boats/trucks as backhaul.Automate verification with simple sorting+weighing audits.When returns become a profitable flow, collection scales without constant campaigns.Apply this framing to create a program to cut food and iterate until residuals drop."
+    },
+    {
+      "id": "AIDAN_SYN_079_v1",
+      "domain": "AidanBench_PS",
+      "A": "Suggest a mechanism to reduce household energy use without asking people to sacrifice comfort.",
+      "D": [
+        "LEDs",
+        "Energy audits",
+        "Public campaigns",
+        "Time-of-use pricing",
+        "Appliance upgrades",
+        "Smart thermostats",
+        "Better insulation",
+        "Solar panels"
+      ],
+      "B": {
+        "type": "Re-representation",
+        "rule": "Treat leakage as missing reverse logistics with negative unit economics; collection must become a commodity flow.",
+        "unlocks": "Bounties, standardized sorting, and backhaul on existing return trips to flip incentives.",
+        "justification": "Waste persists when retrieval is economically negative; make it pay and piggyback logistics."
+      },
+      "C": "Standardize a bounty per kilogram by material and contamination level.Pay at ports/depots and use return legs of boats/trucks as backhaul.Automate verification with simple sorting+weighing audits.When returns become a profitable flow, collection scales without constant campaigns.Apply this framing to suggest a mechanism to reduce household and iterate until residuals drop."
+    },
+    {
+      "id": "AIDAN_SYN_080_v1",
+      "domain": "AidanBench_PS",
+      "A": "How could a coastal town reduce flood damage using low-cost methods?",
+      "D": [
+        "Zoning rules",
+        "More pumps",
+        "Build sea walls",
+        "Raise buildings",
+        "Sandbags",
+        "Flood insurance",
+        "Evacuation plans",
+        "Improve drainage"
+      ],
+      "B": {
+        "type": "Re-representation",
+        "rule": "Treat leakage as missing reverse logistics with negative unit economics; collection must become a commodity flow.",
+        "unlocks": "Bounties, standardized sorting, and backhaul on existing return trips to flip incentives.",
+        "justification": "Waste persists when retrieval is economically negative; make it pay and piggyback logistics."
+      },
+      "C": "Standardize a bounty per kilogram by material and contamination level.Pay at ports/depots and use return legs of boats/trucks as backhaul.Automate verification with simple sorting+weighing audits.When returns become a profitable flow, collection scales without constant campaigns.Apply this framing to how could a coastal town reduce and iterate until residuals drop."
+    },
+    {
+      "id": "AIDAN_SYN_081_v1",
+      "domain": "AidanBench_PS",
+      "A": "Design a backpack that stays comfortable during long walks in humid climates.",
+      "D": [
+        "More padding",
+        "More pockets",
+        "Better straps",
+        "Lighter materials",
+        "Waterproofing",
+        "Ergonomic shape",
+        "More ventilation",
+        "Add waist belt"
+      ],
+      "B": {
+        "type": "Re-representation",
+        "rule": "Treat the objective as a target time-course, not a single number: shape the release/absorption curve over hours.",
+        "unlocks": "Ingredient/step choices that control uptake speed, peak, and decay (buffering, slow-release, staged exposure).",
+        "justification": "Stability comes from curve-shaping—avoiding spikes/crashes by engineering the dynamics."
+      },
+      "C": "Define the desired time-course (fast start, steady middle, gentle taper) and design for it explicitly.Combine a quick-onset component with a buffer that slows absorption or release.Add a “governor” step that prevents overshoot (fiber, friction reduction, staged dosing, or insulation).The result is predictability: you get the effect you want without the boom-bust pattern.Apply this framing to design a backpack that stays comfortable and iterate until residuals drop."
+    },
+    {
+      "id": "AIDAN_SYN_082_v1",
+      "domain": "AidanBench_PS",
+      "A": "How can a perfumer increase the sillage of a fragrance?",
+      "D": [
+        "Pulse points",
+        "Stronger concentration",
+        "Add fixatives",
+        "More projection notes",
+        "Layering",
+        "Alcohol base",
+        "Use musks",
+        "Oil-based perfume"
+      ],
+      "B": {
+        "type": "Re-representation",
+        "rule": "Treat the objective as a target time-course, not a single number: shape the release/absorption curve over hours.",
+        "unlocks": "Ingredient/step choices that control uptake speed, peak, and decay (buffering, slow-release, staged exposure).",
+        "justification": "Stability comes from curve-shaping—avoiding spikes/crashes by engineering the dynamics."
+      },
+      "C": "Define the desired time-course (fast start, steady middle, gentle taper) and design for it explicitly.Combine a quick-onset component with a buffer that slows absorption or release.Add a “governor” step that prevents overshoot (fiber, friction reduction, staged dosing, or insulation).The result is predictability: you get the effect you want without the boom-bust pattern.Apply this framing to how can a perfumer increase the and iterate until residuals drop."
+    },
+    {
+      "id": "AIDAN_SYN_083_v1",
+      "domain": "AidanBench_PS",
+      "A": "Create an earring that complements a round face and small ears.",
+      "D": [
+        "Thin hoops",
+        "Pearl studs",
+        "Small studs",
+        "Avoid bulky designs",
+        "Lightweight materials",
+        "Minimalist design",
+        "Teardrop shapes",
+        "Drop earrings"
+      ],
+      "B": {
+        "type": "Re-representation",
+        "rule": "Treat the objective as a target time-course, not a single number: shape the release/absorption curve over hours.",
+        "unlocks": "Ingredient/step choices that control uptake speed, peak, and decay (buffering, slow-release, staged exposure).",
+        "justification": "Stability comes from curve-shaping—avoiding spikes/crashes by engineering the dynamics."
+      },
+      "C": "Define the desired time-course (fast start, steady middle, gentle taper) and design for it explicitly.Combine a quick-onset component with a buffer that slows absorption or release.Add a “governor” step that prevents overshoot (fiber, friction reduction, staged dosing, or insulation).The result is predictability: you get the effect you want without the boom-bust pattern.Apply this framing to create an earring that complements a and iterate until residuals drop."
+    },
+    {
+      "id": "AIDAN_SYN_084_v1",
+      "domain": "AidanBench_PS",
+      "A": "Create a fashion line incorporating smart clothing technology.",
+      "D": [
+        "LED dresses",
+        "UV-protective clothing",
+        "Charging pockets",
+        "Fitness tracking shirts",
+        "Heated jackets",
+        "Temp-regulating fabric",
+        "Color-changing fabric",
+        "GPS shoes"
+      ],
+      "B": {
+        "type": "Re-representation",
+        "rule": "Treat the objective as a target time-course, not a single number: shape the release/absorption curve over hours.",
+        "unlocks": "Ingredient/step choices that control uptake speed, peak, and decay (buffering, slow-release, staged exposure).",
+        "justification": "Stability comes from curve-shaping—avoiding spikes/crashes by engineering the dynamics."
+      },
+      "C": "Define the desired time-course (fast start, steady middle, gentle taper) and design for it explicitly.Combine a quick-onset component with a buffer that slows absorption or release.Add a “governor” step that prevents overshoot (fiber, friction reduction, staged dosing, or insulation).The result is predictability: you get the effect you want without the boom-bust pattern.Apply this framing to create a fashion line incorporating smart and iterate until residuals drop."
+    },
+    {
+      "id": "AIDAN_SYN_085_v1",
+      "domain": "AidanBench_PS",
+      "A": "Design a low-cost reusable coffee cup lid that reduces spills for cyclists.",
+      "D": [
+        "Increase handle",
+        "Bigger lip",
+        "Stronger plastic",
+        "Silicone gasket",
+        "Locking tab",
+        "Tighter seal",
+        "Snap fit",
+        "Straw hole"
+      ],
+      "B": {
+        "type": "Re-representation",
+        "rule": "Treat the objective as a target time-course, not a single number: shape the release/absorption curve over hours.",
+        "unlocks": "Ingredient/step choices that control uptake speed, peak, and decay (buffering, slow-release, staged exposure).",
+        "justification": "Stability comes from curve-shaping—avoiding spikes/crashes by engineering the dynamics."
+      },
+      "C": "Define the desired time-course (fast start, steady middle, gentle taper) and design for it explicitly.Combine a quick-onset component with a buffer that slows absorption or release.Add a “governor” step that prevents overshoot (fiber, friction reduction, staged dosing, or insulation).The result is predictability: you get the effect you want without the boom-bust pattern.Apply this framing to design a low-cost reusable coffee cup and iterate until residuals drop."
+    },
+    {
+      "id": "AIDAN_SYN_086_v1",
+      "domain": "AidanBench_PS",
+      "A": "How could we make scientific peer review faster while improving reliability?",
+      "D": [
+        "Shorter papers",
+        "Desk reject more",
+        "Checklists",
+        "More editors",
+        "Pay reviewers",
+        "Open reviews",
+        "Deadlines",
+        "Double-blind"
+      ],
+      "B": {
+        "type": "Intermediate construct",
+        "rule": "Treat the problem as a constraint satisfaction game with a visible scoreboard: progress is “residual” reduction.",
+        "unlocks": "Claim/constraint extraction, measurable residuals, and token/time budget spent only on largest residuals.",
+        "justification": "Systems improve when effort is allocated by error signals rather than by prose length."
+      },
+      "C": "Convert the task into explicit constraints/claims and define residual checks for each.Draft once, then score residuals (violations, inconsistencies, missing evidence).Spend the remaining budget only on the largest residual, recompute, and repeat.This makes extra effort reliably buy correctness instead of verbosity.Apply this framing to how could we make scientific peer and iterate until residuals drop."
+    },
+    {
+      "id": "AIDAN_SYN_087_v1",
+      "domain": "AidanBench_PS",
+      "A": "Propose a way to help people remember names at networking events.",
+      "D": [
+        "Take notes",
+        "Name tags",
+        "Face feature association",
+        "Contact app",
+        "Introduce them to someone else",
+        "Mnemonic tricks",
+        "Ask again",
+        "Repeat the name"
+      ],
+      "B": {
+        "type": "Intermediate construct",
+        "rule": "Treat the problem as a constraint satisfaction game with a visible scoreboard: progress is “residual” reduction.",
+        "unlocks": "Claim/constraint extraction, measurable residuals, and token/time budget spent only on largest residuals.",
+        "justification": "Systems improve when effort is allocated by error signals rather than by prose length."
+      },
+      "C": "Convert the task into explicit constraints/claims and define residual checks for each.Draft once, then score residuals (violations, inconsistencies, missing evidence).Spend the remaining budget only on the largest residual, recompute, and repeat.This makes extra effort reliably buy correctness instead of verbosity.Apply this framing to propose a way to help people and iterate until residuals drop."
+    },
+    {
+      "id": "AIDAN_SYN_088_v1",
+      "domain": "AidanBench_PS",
+      "A": "Create a party activity plan for firefighters that feels fresh.",
+      "D": [
+        "Karaoke",
+        "Cake",
+        "Speeches",
+        "BBQ",
+        "Photo booth",
+        "Music and dancing",
+        "Games",
+        "Trivia"
+      ],
+      "B": {
+        "type": "Intermediate construct",
+        "rule": "Treat the problem as a constraint satisfaction game with a visible scoreboard: progress is “residual” reduction.",
+        "unlocks": "Claim/constraint extraction, measurable residuals, and token/time budget spent only on largest residuals.",
+        "justification": "Systems improve when effort is allocated by error signals rather than by prose length."
+      },
+      "C": "Convert the task into explicit constraints/claims and define residual checks for each.Draft once, then score residuals (violations, inconsistencies, missing evidence).Spend the remaining budget only on the largest residual, recompute, and repeat.This makes extra effort reliably buy correctness instead of verbosity.Apply this framing to create a party activity plan for and iterate until residuals drop."
+    },
+    {
+      "id": "AIDAN_SYN_089_v1",
+      "domain": "AidanBench_PS",
+      "A": "How could we reduce misinformation spread in group chats without heavy moderation?",
+      "D": [
+        "AI filters",
+        "User education",
+        "Report buttons",
+        "Fact-check labels",
+        "Verified sources",
+        "Remove accounts",
+        "Ban forwards",
+        "Slow sharing"
+      ],
+      "B": {
+        "type": "Intermediate construct",
+        "rule": "Treat the problem as a constraint satisfaction game with a visible scoreboard: progress is “residual” reduction.",
+        "unlocks": "Claim/constraint extraction, measurable residuals, and token/time budget spent only on largest residuals.",
+        "justification": "Systems improve when effort is allocated by error signals rather than by prose length."
+      },
+      "C": "Convert the task into explicit constraints/claims and define residual checks for each.Draft once, then score residuals (violations, inconsistencies, missing evidence).Spend the remaining budget only on the largest residual, recompute, and repeat.This makes extra effort reliably buy correctness instead of verbosity.Apply this framing to how could we reduce misinformation spread and iterate until residuals drop."
+    },
+    {
+      "id": "AIDAN_SYN_090_v1",
+      "domain": "AidanBench_PS",
+      "A": "Design a school that encourages lifelong learning from adults and children together.",
+      "D": [
+        "Guest speakers",
+        "Evening classes",
+        "Mentorship",
+        "Certificates",
+        "Community workshops",
+        "Shared libraries",
+        "Parent involvement",
+        "Online courses"
+      ],
+      "B": {
+        "type": "Intermediate construct",
+        "rule": "Treat the problem as a constraint satisfaction game with a visible scoreboard: progress is “residual” reduction.",
+        "unlocks": "Claim/constraint extraction, measurable residuals, and token/time budget spent only on largest residuals.",
+        "justification": "Systems improve when effort is allocated by error signals rather than by prose length."
+      },
+      "C": "Convert the task into explicit constraints/claims and define residual checks for each.Draft once, then score residuals (violations, inconsistencies, missing evidence).Spend the remaining budget only on the largest residual, recompute, and repeat.This makes extra effort reliably buy correctness instead of verbosity.Apply this framing to design a school that encourages lifelong and iterate until residuals drop."
+    },
+    {
+      "id": "AIDAN_SYN_091_v1",
+      "domain": "AidanBench_PS",
+      "A": "How can we reduce hallucinations in LLM summaries without sacrificing fluency?",
+      "D": [
+        "Limit length",
+        "Add citations",
+        "Verification step",
+        "RAG",
+        "Instruction prompting",
+        "Lower temperature",
+        "Smaller models",
+        "Fine-tune"
+      ],
+      "B": {
+        "type": "Intermediate construct",
+        "rule": "Treat the problem as a constraint satisfaction game with a visible scoreboard: progress is “residual” reduction.",
+        "unlocks": "Claim/constraint extraction, measurable residuals, and token/time budget spent only on largest residuals.",
+        "justification": "Systems improve when effort is allocated by error signals rather than by prose length."
+      },
+      "C": "Convert the task into explicit constraints/claims and define residual checks for each.Draft once, then score residuals (violations, inconsistencies, missing evidence).Spend the remaining budget only on the largest residual, recompute, and repeat.This makes extra effort reliably buy correctness instead of verbosity.Apply this framing to how can we reduce hallucinations in and iterate until residuals drop."
+    },
+    {
+      "id": "AIDAN_SYN_092_v1",
+      "domain": "AidanBench_PS",
+      "A": "How could we detect deepfake audio in real time during support calls?",
+      "D": [
+        "Security questions",
+        "Block unknown numbers",
+        "Limit actions",
+        "Record calls",
+        "2FA",
+        "Train staff",
+        "Human review",
+        "Voice biometrics"
+      ],
+      "B": {
+        "type": "Intermediate construct",
+        "rule": "Treat the problem as a constraint satisfaction game with a visible scoreboard: progress is “residual” reduction.",
+        "unlocks": "Claim/constraint extraction, measurable residuals, and token/time budget spent only on largest residuals.",
+        "justification": "Systems improve when effort is allocated by error signals rather than by prose length."
+      },
+      "C": "Convert the task into explicit constraints/claims and define residual checks for each.Draft once, then score residuals (violations, inconsistencies, missing evidence).Spend the remaining budget only on the largest residual, recompute, and repeat.This makes extra effort reliably buy correctness instead of verbosity.Apply this framing to how could we detect deepfake audio and iterate until residuals drop."
+    },
+    {
+      "id": "AIDAN_SYN_093_v1",
+      "domain": "AidanBench_PS",
+      "A": "How can we make password resets safer without increasing user frustration?",
+      "D": [
+        "Security questions",
+        "2FA",
+        "Longer passwords",
+        "Email verification",
+        "Rate limiting",
+        "Support calls",
+        "CAPTCHAs",
+        "Device recognition"
+      ],
+      "B": {
+        "type": "Intermediate construct",
+        "rule": "Treat the problem as a constraint satisfaction game with a visible scoreboard: progress is “residual” reduction.",
+        "unlocks": "Claim/constraint extraction, measurable residuals, and token/time budget spent only on largest residuals.",
+        "justification": "Systems improve when effort is allocated by error signals rather than by prose length."
+      },
+      "C": "Convert the task into explicit constraints/claims and define residual checks for each.Draft once, then score residuals (violations, inconsistencies, missing evidence).Spend the remaining budget only on the largest residual, recompute, and repeat.This makes extra effort reliably buy correctness instead of verbosity.Apply this framing to how can we make password resets and iterate until residuals drop."
+    },
+    {
+      "id": "AIDAN_SYN_094_v1",
+      "domain": "AidanBench_PS",
+      "A": "Suggest a way to make software updates safer for critical medical devices.",
+      "D": [
+        "Sign updates",
+        "Staged rollout",
+        "Manual approval",
+        "More testing",
+        "Rollback",
+        "More monitoring",
+        "Longer QA",
+        "Freeze versions"
+      ],
+      "B": {
+        "type": "Intermediate construct",
+        "rule": "Treat the problem as a constraint satisfaction game with a visible scoreboard: progress is “residual” reduction.",
+        "unlocks": "Claim/constraint extraction, measurable residuals, and token/time budget spent only on largest residuals.",
+        "justification": "Systems improve when effort is allocated by error signals rather than by prose length."
+      },
+      "C": "Convert the task into explicit constraints/claims and define residual checks for each.Draft once, then score residuals (violations, inconsistencies, missing evidence).Spend the remaining budget only on the largest residual, recompute, and repeat.This makes extra effort reliably buy correctness instead of verbosity.Apply this framing to suggest a way to make software and iterate until residuals drop."
+    },
+    {
+      "id": "AIDAN_SYN_095_v1",
+      "domain": "AidanBench_PS",
+      "A": "How might we prevent prompt injection in tool-using agents reliably?",
+      "D": [
+        "Train on attacks",
+        "Use allowlists",
+        "Limit tools",
+        "Separate contexts",
+        "More logging",
+        "Use policies",
+        "Sanitize inputs",
+        "Human approval"
+      ],
+      "B": {
+        "type": "Intermediate construct",
+        "rule": "Treat the problem as a constraint satisfaction game with a visible scoreboard: progress is “residual” reduction.",
+        "unlocks": "Claim/constraint extraction, measurable residuals, and token/time budget spent only on largest residuals.",
+        "justification": "Systems improve when effort is allocated by error signals rather than by prose length."
+      },
+      "C": "Convert the task into explicit constraints/claims and define residual checks for each.Draft once, then score residuals (violations, inconsistencies, missing evidence).Spend the remaining budget only on the largest residual, recompute, and repeat.This makes extra effort reliably buy correctness instead of verbosity.Apply this framing to how might we prevent prompt injection and iterate until residuals drop."
+    },
+    {
+      "id": "AIDAN_SYN_096_v1",
+      "domain": "AidanBench_PS",
+      "A": "Design an underwater city concept that is safer to maintain over decades.",
+      "D": [
+        "Generate oxygen",
+        "Strong materials",
+        "Pressurized habitats",
+        "Desalination",
+        "Build tunnels",
+        "Use domes",
+        "Underwater farms",
+        "Use submarines"
+      ],
+      "B": {
+        "type": "Re-representation",
+        "rule": "Treat the system as a queueing network near saturation: delay grows superlinearly past utilization thresholds.",
+        "unlocks": "Peak-load shaping, batching, and small utilization reductions that yield outsized latency drops.",
+        "justification": "In queueing theory, shaving utilization near ρ≈1 produces disproportionate waiting-time gains."
+      },
+      "C": "Model demand as arrivals and bottlenecks as service stations, then target the most saturated station first.Introduce time-shift credits or appointment micro-windows that move a small fraction of arrivals off the peak.Add batching so similar requests are processed in one setup cost.Because delay explodes near saturation, even a 5–10% peak reduction can feel like a step-change in speed.Apply this framing to design an underwater city concept that and iterate until residuals drop."
+    },
+    {
+      "id": "AIDAN_SYN_097_v1",
+      "domain": "AidanBench_PS",
+      "A": "Propose a system for harvesting energy from intermittent natural disasters safely.",
+      "D": [
+        "Capture lightning",
+        "Dams",
+        "Storm turbines",
+        "Flood turbines",
+        "Geothermal",
+        "Tidal power",
+        "Wave energy",
+        "Solar after storms"
+      ],
+      "B": {
+        "type": "Re-representation",
+        "rule": "Treat the system as a queueing network near saturation: delay grows superlinearly past utilization thresholds.",
+        "unlocks": "Peak-load shaping, batching, and small utilization reductions that yield outsized latency drops.",
+        "justification": "In queueing theory, shaving utilization near ρ≈1 produces disproportionate waiting-time gains."
+      },
+      "C": "Model demand as arrivals and bottlenecks as service stations, then target the most saturated station first.Introduce time-shift credits or appointment micro-windows that move a small fraction of arrivals off the peak.Add batching so similar requests are processed in one setup cost.Because delay explodes near saturation, even a 5–10% peak reduction can feel like a step-change in speed.Apply this framing to propose a system for harvesting energy and iterate until residuals drop."
+    },
+    {
+      "id": "AIDAN_SYN_098_v1",
+      "domain": "AidanBench_PS",
+      "A": "How might we make apartment buildings quieter without major renovations?",
+      "D": [
+        "Door sweeps",
+        "White noise",
+        "Curtains",
+        "Quiet hours",
+        "Add rugs",
+        "Seal windows",
+        "Fix squeaks",
+        "Ask neighbors"
+      ],
+      "B": {
+        "type": "Re-representation",
+        "rule": "Treat the system as a queueing network near saturation: delay grows superlinearly past utilization thresholds.",
+        "unlocks": "Peak-load shaping, batching, and small utilization reductions that yield outsized latency drops.",
+        "justification": "In queueing theory, shaving utilization near ρ≈1 produces disproportionate waiting-time gains."
+      },
+      "C": "Model demand as arrivals and bottlenecks as service stations, then target the most saturated station first.Introduce time-shift credits or appointment micro-windows that move a small fraction of arrivals off the peak.Add batching so similar requests are processed in one setup cost.Because delay explodes near saturation, even a 5–10% peak reduction can feel like a step-change in speed.Apply this framing to how might we make apartment buildings and iterate until residuals drop."
+    },
+    {
+      "id": "AIDAN_SYN_099_v1",
+      "domain": "AidanBench_PS",
+      "A": "Design a city where transportation is primarily vertical.",
+      "D": [
+        "Multiple levels",
+        "Skyscraper bridges",
+        "Zoning by floors",
+        "Vertical trains",
+        "Cable cars",
+        "Elevators everywhere",
+        "Stairs",
+        "Drones"
+      ],
+      "B": {
+        "type": "Re-representation",
+        "rule": "Treat the system as a queueing network near saturation: delay grows superlinearly past utilization thresholds.",
+        "unlocks": "Peak-load shaping, batching, and small utilization reductions that yield outsized latency drops.",
+        "justification": "In queueing theory, shaving utilization near ρ≈1 produces disproportionate waiting-time gains."
+      },
+      "C": "Model demand as arrivals and bottlenecks as service stations, then target the most saturated station first.Introduce time-shift credits or appointment micro-windows that move a small fraction of arrivals off the peak.Add batching so similar requests are processed in one setup cost.Because delay explodes near saturation, even a 5–10% peak reduction can feel like a step-change in speed.Apply this framing to design a city where transportation is and iterate until residuals drop."
+    },
+    {
+      "id": "AIDAN_SYN_100_v1",
+      "domain": "AidanBench_PS",
+      "A": "What is a way to reduce water loss from leaks in an old municipal network cheaply?",
+      "D": [
+        "Reduce demand",
+        "More inspections",
+        "Replace pipes",
+        "Better valves",
+        "Public reporting",
+        "Increase pressure",
+        "Smart meters",
+        "More crews"
+      ],
+      "B": {
+        "type": "Re-representation",
+        "rule": "Treat the system as a queueing network near saturation: delay grows superlinearly past utilization thresholds.",
+        "unlocks": "Peak-load shaping, batching, and small utilization reductions that yield outsized latency drops.",
+        "justification": "In queueing theory, shaving utilization near ρ≈1 produces disproportionate waiting-time gains."
+      },
+      "C": "Model demand as arrivals and bottlenecks as service stations, then target the most saturated station first.Introduce time-shift credits or appointment micro-windows that move a small fraction of arrivals off the peak.Add batching so similar requests are processed in one setup cost.Because delay explodes near saturation, even a 5–10% peak reduction can feel like a step-change in speed.Apply this framing to what is a way to reduce and iterate until residuals drop."
+    },
+    {
+      "id": "AIDAN_SYN_101_v1",
+      "domain": "AidanBench_PS",
+      "A": "Describe a sustainable farming method for a floating city.",
+      "D": [
+        "Hydroponics",
+        "Composting",
+        "Efficient irrigation",
+        "Rainwater capture",
+        "Aquaponics",
+        "LED lighting",
+        "Rooftop gardens",
+        "Vertical farming"
+      ],
+      "B": {
+        "type": "Structural mapping",
+        "rule": "Treat the system as a closed-loop mass-balance ledger: every waste stream is an input stream.",
+        "unlocks": "Coupling treatment and production with measurable N/P/water loops and resilient redundancy.",
+        "justification": "In constrained environments, resilience comes from closing loops and tracking balances explicitly."
+      },
+      "C": "Map all inflows/outflows (water, nitrogen, phosphorus, organics) and enforce mass-balance accounting.Route waste streams into production modules that consume them predictably.Add buffers (biochar/PCM/bioreactors) to smooth variability.You reduce imports, increase resilience, and make performance measurable.Apply this framing to describe a sustainable farming method for and iterate until residuals drop."
+    },
+    {
+      "id": "AIDAN_SYN_102_v1",
+      "domain": "AidanBench_PS",
+      "A": "Devise a farming technique to harvest dinoflagellates while retaining bioluminescence.",
+      "D": [
+        "Control temperature",
+        "Optimize light cycles",
+        "Filtration",
+        "Grow in tanks",
+        "Store cold",
+        "Provide nutrients",
+        "Harvest gently",
+        "Avoid contamination"
+      ],
+      "B": {
+        "type": "Structural mapping",
+        "rule": "Treat the system as a closed-loop mass-balance ledger: every waste stream is an input stream.",
+        "unlocks": "Coupling treatment and production with measurable N/P/water loops and resilient redundancy.",
+        "justification": "In constrained environments, resilience comes from closing loops and tracking balances explicitly."
+      },
+      "C": "Map all inflows/outflows (water, nitrogen, phosphorus, organics) and enforce mass-balance accounting.Route waste streams into production modules that consume them predictably.Add buffers (biochar/PCM/bioreactors) to smooth variability.You reduce imports, increase resilience, and make performance measurable.Apply this framing to devise a farming technique to harvest and iterate until residuals drop."
+    },
+    {
+      "id": "AIDAN_SYN_103_v1",
+      "domain": "AidanBench_PS",
+      "A": "How can a small grocery store reduce spoilage without reducing variety?",
+      "D": [
+        "Better forecasting",
+        "Smaller orders",
+        "Shorter hours",
+        "More refrigeration",
+        "More packaging",
+        "Donate food",
+        "More staff",
+        "Discount near expiry"
+      ],
+      "B": {
+        "type": "Structural mapping",
+        "rule": "Treat the system as a closed-loop mass-balance ledger: every waste stream is an input stream.",
+        "unlocks": "Coupling treatment and production with measurable N/P/water loops and resilient redundancy.",
+        "justification": "In constrained environments, resilience comes from closing loops and tracking balances explicitly."
+      },
+      "C": "Map all inflows/outflows (water, nitrogen, phosphorus, organics) and enforce mass-balance accounting.Route waste streams into production modules that consume them predictably.Add buffers (biochar/PCM/bioreactors) to smooth variability.You reduce imports, increase resilience, and make performance measurable.Apply this framing to how can a small grocery store and iterate until residuals drop."
+    },
+    {
+      "id": "AIDAN_SYN_104_v1",
+      "domain": "AidanBench_PS",
+      "A": "Design a system to keep street food safe in hot climates without expensive equipment.",
+      "D": [
+        "Use coolers",
+        "Better training",
+        "Shorter selling time",
+        "More ice",
+        "More inspections",
+        "Handwashing",
+        "Cover food",
+        "Use thermometers"
+      ],
+      "B": {
+        "type": "Structural mapping",
+        "rule": "Treat the system as a closed-loop mass-balance ledger: every waste stream is an input stream.",
+        "unlocks": "Coupling treatment and production with measurable N/P/water loops and resilient redundancy.",
+        "justification": "In constrained environments, resilience comes from closing loops and tracking balances explicitly."
+      },
+      "C": "Map all inflows/outflows (water, nitrogen, phosphorus, organics) and enforce mass-balance accounting.Route waste streams into production modules that consume them predictably.Add buffers (biochar/PCM/bioreactors) to smooth variability.You reduce imports, increase resilience, and make performance measurable.Apply this framing to design a system to keep street and iterate until residuals drop."
+    },
+    {
+      "id": "AIDAN_SYN_105_v1",
+      "domain": "AidanBench_PS",
+      "A": "Propose a way to make composting easier in apartment buildings.",
+      "D": [
+        "Pickup service",
+        "Fines for trash",
+        "Odor filters",
+        "Worm bins",
+        "Compostable bags",
+        "Education",
+        "Shared compost room",
+        "Provide bins"
+      ],
+      "B": {
+        "type": "Structural mapping",
+        "rule": "Treat the system as a closed-loop mass-balance ledger: every waste stream is an input stream.",
+        "unlocks": "Coupling treatment and production with measurable N/P/water loops and resilient redundancy.",
+        "justification": "In constrained environments, resilience comes from closing loops and tracking balances explicitly."
+      },
+      "C": "Map all inflows/outflows (water, nitrogen, phosphorus, organics) and enforce mass-balance accounting.Route waste streams into production modules that consume them predictably.Add buffers (biochar/PCM/bioreactors) to smooth variability.You reduce imports, increase resilience, and make performance measurable.Apply this framing to propose a way to make composting and iterate until residuals drop."
+    },
+    {
+      "id": "AIDAN_SYN_106_v1",
+      "domain": "AidanBench_PS",
+      "A": "What could be a novel use for blockchain outside cryptocurrency?",
+      "D": [
+        "Land registries",
+        "Digital identity",
+        "Smart contracts",
+        "Voting",
+        "Notarization",
+        "Supply chain",
+        "Medical records",
+        "NFTs"
+      ],
+      "B": {
+        "type": "Structural mapping",
+        "rule": "Treat allocation as congestion-controlled bandwidth: users are flows, capacity is link rate, fairness is a policy.",
+        "unlocks": "Credit-based rate limits, borrowing/bursting, QoS floors, and transparent incentives.",
+        "justification": "Networking has stable, measurable mechanisms for fair sharing under contention."
+      },
+      "C": "Give each participant a weekly credit refill that guarantees a minimum share.Let urgent jobs spend credits to burst above baseline, with a transparent “borrow from future” limit.Rebate unused credits when a job finishes early to reward efficiency.This turns contention into a predictable control loop instead of ad‑hoc negotiation.Apply this framing to what could be a novel use and iterate until residuals drop."
+    },
+    {
+      "id": "AIDAN_SYN_107_v1",
+      "domain": "AidanBench_PS",
+      "A": "I have a fleet of 100 drones—how can I use them for civic benefit?",
+      "D": [
+        "Map terrain",
+        "Deliver packages",
+        "Shows",
+        "Monitor crops",
+        "Inspect infrastructure",
+        "Security patrol",
+        "Aerial photos",
+        "Search and rescue"
+      ],
+      "B": {
+        "type": "Structural mapping",
+        "rule": "Treat allocation as congestion-controlled bandwidth: users are flows, capacity is link rate, fairness is a policy.",
+        "unlocks": "Credit-based rate limits, borrowing/bursting, QoS floors, and transparent incentives.",
+        "justification": "Networking has stable, measurable mechanisms for fair sharing under contention."
+      },
+      "C": "Give each participant a weekly credit refill that guarantees a minimum share.Let urgent jobs spend credits to burst above baseline, with a transparent “borrow from future” limit.Rebate unused credits when a job finishes early to reward efficiency.This turns contention into a predictable control loop instead of ad‑hoc negotiation.Apply this framing to i have a fleet of 100 and iterate until residuals drop."
+    },
+    {
+      "id": "AIDAN_SYN_108_v1",
+      "domain": "AidanBench_PS",
+      "A": "Create a subscription model that reduces churn without heavy discounts.",
+      "D": [
+        "Better onboarding",
+        "Loyalty rewards",
+        "Annual plans",
+        "Lower price",
+        "Customer success calls",
+        "Free months",
+        "More features",
+        "Email campaigns"
+      ],
+      "B": {
+        "type": "Structural mapping",
+        "rule": "Treat allocation as congestion-controlled bandwidth: users are flows, capacity is link rate, fairness is a policy.",
+        "unlocks": "Credit-based rate limits, borrowing/bursting, QoS floors, and transparent incentives.",
+        "justification": "Networking has stable, measurable mechanisms for fair sharing under contention."
+      },
+      "C": "Give each participant a weekly credit refill that guarantees a minimum share.Let urgent jobs spend credits to burst above baseline, with a transparent “borrow from future” limit.Rebate unused credits when a job finishes early to reward efficiency.This turns contention into a predictable control loop instead of ad‑hoc negotiation.Apply this framing to create a subscription model that reduces and iterate until residuals drop."
+    },
+    {
+      "id": "AIDAN_SYN_109_v1",
+      "domain": "AidanBench_PS",
+      "A": "How might we make product roadmaps more reliable under uncertainty?",
+      "D": [
+        "OKRs",
+        "Use agile",
+        "More buffer",
+        "Prioritize bugs",
+        "More meetings",
+        "Better estimates",
+        "Hire PMs",
+        "Fewer projects"
+      ],
+      "B": {
+        "type": "Structural mapping",
+        "rule": "Treat allocation as congestion-controlled bandwidth: users are flows, capacity is link rate, fairness is a policy.",
+        "unlocks": "Credit-based rate limits, borrowing/bursting, QoS floors, and transparent incentives.",
+        "justification": "Networking has stable, measurable mechanisms for fair sharing under contention."
+      },
+      "C": "Give each participant a weekly credit refill that guarantees a minimum share.Let urgent jobs spend credits to burst above baseline, with a transparent “borrow from future” limit.Rebate unused credits when a job finishes early to reward efficiency.This turns contention into a predictable control loop instead of ad‑hoc negotiation.Apply this framing to how might we make product roadmaps and iterate until residuals drop."
+    },
+    {
+      "id": "AIDAN_SYN_110_v1",
+      "domain": "AidanBench_PS",
+      "A": "Propose a way to make remote work collaboration feel less fragmented.",
+      "D": [
+        "Daily standups",
+        "Documentation",
+        "Team norms",
+        "More meetings",
+        "Offsites",
+        "Virtual office",
+        "Chat channels",
+        "Better tools"
+      ],
+      "B": {
+        "type": "Structural mapping",
+        "rule": "Treat allocation as congestion-controlled bandwidth: users are flows, capacity is link rate, fairness is a policy.",
+        "unlocks": "Credit-based rate limits, borrowing/bursting, QoS floors, and transparent incentives.",
+        "justification": "Networking has stable, measurable mechanisms for fair sharing under contention."
+      },
+      "C": "Give each participant a weekly credit refill that guarantees a minimum share.Let urgent jobs spend credits to burst above baseline, with a transparent “borrow from future” limit.Rebate unused credits when a job finishes early to reward efficiency.This turns contention into a predictable control loop instead of ad‑hoc negotiation.Apply this framing to propose a way to make remote and iterate until residuals drop."
+    },
+    {
+      "id": "AIDAN_SYN_111_v1",
+      "domain": "AidanBench_PS",
+      "A": "Propose a way to reduce rush-hour bus delays on a single corridor.",
+      "D": [
+        "Add more buses",
+        "Enforce bus lane rules",
+        "Increase fares",
+        "Optimize signals",
+        "Add bus lanes",
+        "Use real-time arrival displays",
+        "Add more drivers",
+        "Reduce stops"
+      ],
+      "B": {
+        "type": "Re-representation",
+        "rule": "Treat the system as a queueing network near saturation: delay grows superlinearly past utilization thresholds.",
+        "unlocks": "Peak-load shaping, batching, and small utilization reductions that yield outsized latency drops.",
+        "justification": "In queueing theory, shaving utilization near ρ≈1 produces disproportionate waiting-time gains."
+      },
+      "C": "Model demand as arrivals and bottlenecks as service stations, then target the most saturated station first.Introduce time-shift credits or appointment micro-windows that move a small fraction of arrivals off the peak.Add batching so similar requests are processed in one setup cost.Because delay explodes near saturation, even a 5–10% peak reduction can feel like a step-change in speed.Apply this framing to propose a way to reduce rush-hour and iterate until residuals drop."
+    },
+    {
+      "id": "AIDAN_SYN_112_v1",
+      "domain": "AidanBench_PS",
+      "A": "How can we make subway crowding feel less stressful without building new lines?",
+      "D": [
+        "Improve ventilation",
+        "Add more trains",
+        "Stagger work hours",
+        "Add signage",
+        "Extend platforms",
+        "Increase cleaning",
+        "Add security staff",
+        "Raise ticket prices"
+      ],
+      "B": {
+        "type": "Re-representation",
+        "rule": "Treat the system as a queueing network near saturation: delay grows superlinearly past utilization thresholds.",
+        "unlocks": "Peak-load shaping, batching, and small utilization reductions that yield outsized latency drops.",
+        "justification": "In queueing theory, shaving utilization near ρ≈1 produces disproportionate waiting-time gains."
+      },
+      "C": "Model demand as arrivals and bottlenecks as service stations, then target the most saturated station first.Introduce time-shift credits or appointment micro-windows that move a small fraction of arrivals off the peak.Add batching so similar requests are processed in one setup cost.Because delay explodes near saturation, even a 5–10% peak reduction can feel like a step-change in speed.Apply this framing to how can we make subway crowding and iterate until residuals drop."
+    },
+    {
+      "id": "AIDAN_SYN_113_v1",
+      "domain": "AidanBench_PS",
+      "A": "Create a system to reduce delivery truck double-parking in dense neighborhoods.",
+      "D": [
+        "Increase fines",
+        "Add loading zones",
+        "Require permits",
+        "Hire more enforcement",
+        "Ban deliveries at peak",
+        "Build garages",
+        "Add more signage",
+        "Encourage bikes"
+      ],
+      "B": {
+        "type": "Re-representation",
+        "rule": "Treat the system as a queueing network near saturation: delay grows superlinearly past utilization thresholds.",
+        "unlocks": "Peak-load shaping, batching, and small utilization reductions that yield outsized latency drops.",
+        "justification": "In queueing theory, shaving utilization near ρ≈1 produces disproportionate waiting-time gains."
+      },
+      "C": "Model demand as arrivals and bottlenecks as service stations, then target the most saturated station first.Introduce time-shift credits or appointment micro-windows that move a small fraction of arrivals off the peak.Add batching so similar requests are processed in one setup cost.Because delay explodes near saturation, even a 5–10% peak reduction can feel like a step-change in speed.Apply this framing to create a system to reduce delivery and iterate until residuals drop."
+    },
+    {
+      "id": "AIDAN_SYN_114_v1",
+      "domain": "AidanBench_PS",
+      "A": "How might a city reduce pedestrian injuries at night without slowing cars too much?",
+      "D": [
+        "More police",
+        "Speed cameras",
+        "Add more crosswalks",
+        "Add speed bumps",
+        "Lower speed limits",
+        "Public campaigns",
+        "Reflective paint",
+        "Improve lighting"
+      ],
+      "B": {
+        "type": "Re-representation",
+        "rule": "Treat the system as a queueing network near saturation: delay grows superlinearly past utilization thresholds.",
+        "unlocks": "Peak-load shaping, batching, and small utilization reductions that yield outsized latency drops.",
+        "justification": "In queueing theory, shaving utilization near ρ≈1 produces disproportionate waiting-time gains."
+      },
+      "C": "Model demand as arrivals and bottlenecks as service stations, then target the most saturated station first.Introduce time-shift credits or appointment micro-windows that move a small fraction of arrivals off the peak.Add batching so similar requests are processed in one setup cost.Because delay explodes near saturation, even a 5–10% peak reduction can feel like a step-change in speed.Apply this framing to how might a city reduce pedestrian and iterate until residuals drop."
+    },
+    {
+      "id": "AIDAN_SYN_115_v1",
+      "domain": "AidanBench_PS",
+      "A": "Propose an approach to reduce traffic around a stadium on event nights.",
+      "D": [
+        "More trains",
+        "Promote rideshare",
+        "Stagger exits",
+        "More shuttles",
+        "Close roads",
+        "Add parking",
+        "Dynamic signs",
+        "Traffic police"
+      ],
+      "B": {
+        "type": "Re-representation",
+        "rule": "Treat the system as a queueing network near saturation: delay grows superlinearly past utilization thresholds.",
+        "unlocks": "Peak-load shaping, batching, and small utilization reductions that yield outsized latency drops.",
+        "justification": "In queueing theory, shaving utilization near ρ≈1 produces disproportionate waiting-time gains."
+      },
+      "C": "Model demand as arrivals and bottlenecks as service stations, then target the most saturated station first.Introduce time-shift credits or appointment micro-windows that move a small fraction of arrivals off the peak.Add batching so similar requests are processed in one setup cost.Because delay explodes near saturation, even a 5–10% peak reduction can feel like a step-change in speed.Apply this framing to propose an approach to reduce traffic and iterate until residuals drop."
+    },
+    {
+      "id": "AIDAN_SYN_116_v1",
+      "domain": "AidanBench_PS",
+      "A": "Design a fair way to allocate limited meeting rooms across teams.",
+      "D": [
+        "Shorter meetings",
+        "Weekly quotas",
+        "Manual scheduling",
+        "Cancel no-shows",
+        "Chargeback",
+        "First-come-first-served",
+        "Manager approval",
+        "More rooms"
+      ],
+      "B": {
+        "type": "Structural mapping",
+        "rule": "Treat allocation as congestion-controlled bandwidth: users are flows, capacity is link rate, fairness is a policy.",
+        "unlocks": "Credit-based rate limits, borrowing/bursting, QoS floors, and transparent incentives.",
+        "justification": "Networking has stable, measurable mechanisms for fair sharing under contention."
+      },
+      "C": "Give each participant a weekly credit refill that guarantees a minimum share.Let urgent jobs spend credits to burst above baseline, with a transparent “borrow from future” limit.Rebate unused credits when a job finishes early to reward efficiency.This turns contention into a predictable control loop instead of ad‑hoc negotiation.Apply this framing to design a fair way to allocate and iterate until residuals drop."
+    },
+    {
+      "id": "AIDAN_SYN_117_v1",
+      "domain": "AidanBench_PS",
+      "A": "How can a company reduce build times in CI without buying more hardware?",
+      "D": [
+        "Upgrade network",
+        "Use faster machines",
+        "Reduce tests",
+        "Cache dependencies",
+        "Use distributed build",
+        "Optimize compiler flags",
+        "Parallelize jobs",
+        "Run nightly builds"
+      ],
+      "B": {
+        "type": "Structural mapping",
+        "rule": "Treat allocation as congestion-controlled bandwidth: users are flows, capacity is link rate, fairness is a policy.",
+        "unlocks": "Credit-based rate limits, borrowing/bursting, QoS floors, and transparent incentives.",
+        "justification": "Networking has stable, measurable mechanisms for fair sharing under contention."
+      },
+      "C": "Give each participant a weekly credit refill that guarantees a minimum share.Let urgent jobs spend credits to burst above baseline, with a transparent “borrow from future” limit.Rebate unused credits when a job finishes early to reward efficiency.This turns contention into a predictable control loop instead of ad‑hoc negotiation.Apply this framing to how can a company reduce build and iterate until residuals drop."
+    },
+    {
+      "id": "AIDAN_SYN_118_v1",
+      "domain": "AidanBench_PS",
+      "A": "Propose a system to triage customer support tickets faster without hurting quality.",
+      "D": [
+        "Prioritize VIPs",
+        "Add SLAs",
+        "Hire more agents",
+        "Escalate less",
+        "Train staff",
+        "Route by product",
+        "Use templates",
+        "Auto-respond FAQs"
+      ],
+      "B": {
+        "type": "Structural mapping",
+        "rule": "Treat allocation as congestion-controlled bandwidth: users are flows, capacity is link rate, fairness is a policy.",
+        "unlocks": "Credit-based rate limits, borrowing/bursting, QoS floors, and transparent incentives.",
+        "justification": "Networking has stable, measurable mechanisms for fair sharing under contention."
+      },
+      "C": "Give each participant a weekly credit refill that guarantees a minimum share.Let urgent jobs spend credits to burst above baseline, with a transparent “borrow from future” limit.Rebate unused credits when a job finishes early to reward efficiency.This turns contention into a predictable control loop instead of ad‑hoc negotiation.Apply this framing to propose a system to triage customer and iterate until residuals drop."
+    },
+    {
+      "id": "AIDAN_SYN_119_v1",
+      "domain": "AidanBench_PS",
+      "A": "How might a team prevent alert fatigue in on-call rotations?",
+      "D": [
+        "Increase thresholds",
+        "Add runbooks",
+        "Mute overnight",
+        "More dashboards",
+        "Weekly review",
+        "Reduce alerts",
+        "Better logging",
+        "Hire SREs"
+      ],
+      "B": {
+        "type": "Structural mapping",
+        "rule": "Treat allocation as congestion-controlled bandwidth: users are flows, capacity is link rate, fairness is a policy.",
+        "unlocks": "Credit-based rate limits, borrowing/bursting, QoS floors, and transparent incentives.",
+        "justification": "Networking has stable, measurable mechanisms for fair sharing under contention."
+      },
+      "C": "Give each participant a weekly credit refill that guarantees a minimum share.Let urgent jobs spend credits to burst above baseline, with a transparent “borrow from future” limit.Rebate unused credits when a job finishes early to reward efficiency.This turns contention into a predictable control loop instead of ad‑hoc negotiation.Apply this framing to how might a team prevent alert and iterate until residuals drop."
+    },
+    {
+      "id": "AIDAN_SYN_120_v1",
+      "domain": "AidanBench_PS",
+      "A": "Design a method to share GPUs fairly across research projects in a lab.",
+      "D": [
+        "Add more GPUs",
+        "Manager priority",
+        "Manual schedule",
+        "Weekly quotas",
+        "Require approval",
+        "Limit runtime",
+        "First-come-first-served",
+        "Chargeback"
+      ],
+      "B": {
+        "type": "Structural mapping",
+        "rule": "Treat allocation as congestion-controlled bandwidth: users are flows, capacity is link rate, fairness is a policy.",
+        "unlocks": "Credit-based rate limits, borrowing/bursting, QoS floors, and transparent incentives.",
+        "justification": "Networking has stable, measurable mechanisms for fair sharing under contention."
+      },
+      "C": "Give each participant a weekly credit refill that guarantees a minimum share.Let urgent jobs spend credits to burst above baseline, with a transparent “borrow from future” limit.Rebate unused credits when a job finishes early to reward efficiency.This turns contention into a predictable control loop instead of ad‑hoc negotiation.Apply this framing to design a method to share gpus and iterate until residuals drop."
+    },
+    {
+      "id": "AIDAN_SYN_121_v1",
+      "domain": "AidanBench_PS",
+      "A": "How could a school teach critical thinking without adding more exams?",
+      "D": [
+        "Increase quizzes",
+        "Teach logic class",
+        "More homework",
+        "Standardized tests",
+        "Assign essays",
+        "Use textbooks",
+        "More lectures",
+        "Use debates"
+      ],
+      "B": {
+        "type": "Structural mapping",
+        "rule": "Treat learning as instrumented deliberate practice: resettable environment + measurable skills + feedback loops.",
+        "unlocks": "Replay, adaptive difficulty, telemetry-based coaching, and mastery missions instead of lectures.",
+        "justification": "Learning accelerates when practice is repeatable, safe, and continuously assessed."
+      },
+      "C": "Turn lessons into repeatable “missions” with clear success metrics.Log performance traces (timing, error types, choices) to guide coaching.Adapt difficulty and give immediate feedback, then replay the same skill under new constraints.This replaces passive explanation with measurable skill acquisition.Apply this framing to how could a school teach critical and iterate until residuals drop."
+    },
+    {
+      "id": "AIDAN_SYN_122_v1",
+      "domain": "AidanBench_PS",
+      "A": "Propose a way to help students practice speaking a new language daily, cheaply.",
+      "D": [
+        "Flashcards",
+        "More classes",
+        "Pair students",
+        "Watch videos",
+        "Hire tutors",
+        "More homework",
+        "Oral exams",
+        "Language apps"
+      ],
+      "B": {
+        "type": "Structural mapping",
+        "rule": "Treat learning as instrumented deliberate practice: resettable environment + measurable skills + feedback loops.",
+        "unlocks": "Replay, adaptive difficulty, telemetry-based coaching, and mastery missions instead of lectures.",
+        "justification": "Learning accelerates when practice is repeatable, safe, and continuously assessed."
+      },
+      "C": "Turn lessons into repeatable “missions” with clear success metrics.Log performance traces (timing, error types, choices) to guide coaching.Adapt difficulty and give immediate feedback, then replay the same skill under new constraints.This replaces passive explanation with measurable skill acquisition.Apply this framing to propose a way to help students and iterate until residuals drop."
+    },
+    {
+      "id": "AIDAN_SYN_123_v1",
+      "domain": "AidanBench_PS",
+      "A": "Create a classroom routine that improves attention spans without banning devices.",
+      "D": [
+        "Behavior points",
+        "Shorter lessons",
+        "More homework",
+        "Mindfulness",
+        "Ban phones",
+        "More breaks",
+        "More discipline",
+        "Seating changes"
+      ],
+      "B": {
+        "type": "Structural mapping",
+        "rule": "Treat learning as instrumented deliberate practice: resettable environment + measurable skills + feedback loops.",
+        "unlocks": "Replay, adaptive difficulty, telemetry-based coaching, and mastery missions instead of lectures.",
+        "justification": "Learning accelerates when practice is repeatable, safe, and continuously assessed."
+      },
+      "C": "Turn lessons into repeatable “missions” with clear success metrics.Log performance traces (timing, error types, choices) to guide coaching.Adapt difficulty and give immediate feedback, then replay the same skill under new constraints.This replaces passive explanation with measurable skill acquisition.Apply this framing to create a classroom routine that improves and iterate until residuals drop."
+    },
+    {
+      "id": "AIDAN_SYN_124_v1",
+      "domain": "AidanBench_PS",
+      "A": "How might we teach basic statistics to non-math majors without formulas first?",
+      "D": [
+        "Try calculators",
+        "Practice problems",
+        "Office hours",
+        "Simplify syllabus",
+        "Textbook chapters",
+        "Memorize rules",
+        "Video lectures",
+        "More worksheets"
+      ],
+      "B": {
+        "type": "Intermediate construct",
+        "rule": "Treat the design as a conflict matrix; eliminate overlap in high-risk movement pairs with micro-phasing.",
+        "unlocks": "Short protected phases, early-release, geometry tweaks, while preserving priority for critical flows.",
+        "justification": "Crashes cluster where permissions overlap; removing overlap is safer than adding warnings."
+      },
+      "C": "List conflicting movements and rank them by risk and frequency.Give the vulnerable movement a short protected head start to clear the conflict zone.Use signal priority to preserve throughput for critical vehicles.Small timing changes remove conflicts with minimal capacity loss.Apply this framing to how might we teach basic statistics and iterate until residuals drop."
+    },
+    {
+      "id": "AIDAN_SYN_125_v1",
+      "domain": "AidanBench_PS",
+      "A": "Propose a way to teach fractions that avoids worksheets.",
+      "D": [
+        "Flashcards",
+        "Videos",
+        "Homework",
+        "Textbook",
+        "Fraction bars",
+        "Pizza slices",
+        "Drills",
+        "Quizzes"
+      ],
+      "B": {
+        "type": "Structural mapping",
+        "rule": "Treat learning as instrumented deliberate practice: resettable environment + measurable skills + feedback loops.",
+        "unlocks": "Replay, adaptive difficulty, telemetry-based coaching, and mastery missions instead of lectures.",
+        "justification": "Learning accelerates when practice is repeatable, safe, and continuously assessed."
+      },
+      "C": "Turn lessons into repeatable “missions” with clear success metrics.Log performance traces (timing, error types, choices) to guide coaching.Adapt difficulty and give immediate feedback, then replay the same skill under new constraints.This replaces passive explanation with measurable skill acquisition.Apply this framing to propose a way to teach fractions and iterate until residuals drop."
+    },
+    {
+      "id": "AIDAN_SYN_126_v1",
+      "domain": "AidanBench_PS",
+      "A": "Design a low-cost intervention to improve sleep quality for shift workers.",
+      "D": [
+        "Better mattresses",
+        "Melatonin",
+        "Sleep tracking app",
+        "Nap rooms",
+        "Blackout curtains",
+        "Caffeine reduction",
+        "Sleep hygiene tips",
+        "More breaks"
+      ],
+      "B": {
+        "type": "Re-representation",
+        "rule": "Treat the objective as a target time-course, not a single number: shape the release/absorption curve over hours.",
+        "unlocks": "Ingredient/step choices that control uptake speed, peak, and decay (buffering, slow-release, staged exposure).",
+        "justification": "Stability comes from curve-shaping—avoiding spikes/crashes by engineering the dynamics."
+      },
+      "C": "Define the desired time-course (fast start, steady middle, gentle taper) and design for it explicitly.Combine a quick-onset component with a buffer that slows absorption or release.Add a “governor” step that prevents overshoot (fiber, friction reduction, staged dosing, or insulation).The result is predictability: you get the effect you want without the boom-bust pattern.Apply this framing to design a low-cost intervention to improve and iterate until residuals drop."
+    },
+    {
+      "id": "AIDAN_SYN_127_v1",
+      "domain": "AidanBench_PS",
+      "A": "How might a clinic reduce no-show appointments without charging penalties?",
+      "D": [
+        "More staff",
+        "Educate patients",
+        "Overbook",
+        "Send reminders",
+        "Call patients",
+        "Online booking",
+        "Shorter wait times",
+        "Charge fees"
+      ],
+      "B": {
+        "type": "Re-representation",
+        "rule": "Treat the objective as a target time-course, not a single number: shape the release/absorption curve over hours.",
+        "unlocks": "Ingredient/step choices that control uptake speed, peak, and decay (buffering, slow-release, staged exposure).",
+        "justification": "Stability comes from curve-shaping—avoiding spikes/crashes by engineering the dynamics."
+      },
+      "C": "Define the desired time-course (fast start, steady middle, gentle taper) and design for it explicitly.Combine a quick-onset component with a buffer that slows absorption or release.Add a “governor” step that prevents overshoot (fiber, friction reduction, staged dosing, or insulation).The result is predictability: you get the effect you want without the boom-bust pattern.Apply this framing to how might a clinic reduce no-show and iterate until residuals drop."
+    },
+    {
+      "id": "AIDAN_SYN_128_v1",
+      "domain": "AidanBench_PS",
+      "A": "Propose a way to help people drink more water at work.",
+      "D": [
+        "Use a big bottle",
+        "Track in an app",
+        "Add flavor",
+        "Make a schedule",
+        "Smart bottle",
+        "Drink with meals",
+        "Keep water on desk",
+        "Set reminders"
+      ],
+      "B": {
+        "type": "Re-representation",
+        "rule": "Treat the objective as a target time-course, not a single number: shape the release/absorption curve over hours.",
+        "unlocks": "Ingredient/step choices that control uptake speed, peak, and decay (buffering, slow-release, staged exposure).",
+        "justification": "Stability comes from curve-shaping—avoiding spikes/crashes by engineering the dynamics."
+      },
+      "C": "Define the desired time-course (fast start, steady middle, gentle taper) and design for it explicitly.Combine a quick-onset component with a buffer that slows absorption or release.Add a “governor” step that prevents overshoot (fiber, friction reduction, staged dosing, or insulation).The result is predictability: you get the effect you want without the boom-bust pattern.Apply this framing to propose a way to help people and iterate until residuals drop."
+    },
+    {
+      "id": "AIDAN_SYN_129_v1",
+      "domain": "AidanBench_PS",
+      "A": "How can we make vaccines stay cold in rural areas with unreliable electricity?",
+      "D": [
+        "More deliveries",
+        "Ice packs",
+        "Generators",
+        "Coolers",
+        "More refrigerators",
+        "Better insulation",
+        "Cold rooms",
+        "Solar panels"
+      ],
+      "B": {
+        "type": "Re-representation",
+        "rule": "Treat the objective as a target time-course, not a single number: shape the release/absorption curve over hours.",
+        "unlocks": "Ingredient/step choices that control uptake speed, peak, and decay (buffering, slow-release, staged exposure).",
+        "justification": "Stability comes from curve-shaping—avoiding spikes/crashes by engineering the dynamics."
+      },
+      "C": "Define the desired time-course (fast start, steady middle, gentle taper) and design for it explicitly.Combine a quick-onset component with a buffer that slows absorption or release.Add a “governor” step that prevents overshoot (fiber, friction reduction, staged dosing, or insulation).The result is predictability: you get the effect you want without the boom-bust pattern.Apply this framing to how can we make vaccines stay and iterate until residuals drop."
+    },
+    {
+      "id": "AIDAN_SYN_130_v1",
+      "domain": "AidanBench_PS",
+      "A": "Design a method to reduce stress in open-plan offices without building walls.",
+      "D": [
+        "More breaks",
+        "Policies",
+        "More meeting rooms",
+        "Noise-canceling headphones",
+        "Plants",
+        "Desk spacing",
+        "Quiet hours",
+        "White noise"
+      ],
+      "B": {
+        "type": "Re-representation",
+        "rule": "Treat the objective as a target time-course, not a single number: shape the release/absorption curve over hours.",
+        "unlocks": "Ingredient/step choices that control uptake speed, peak, and decay (buffering, slow-release, staged exposure).",
+        "justification": "Stability comes from curve-shaping—avoiding spikes/crashes by engineering the dynamics."
+      },
+      "C": "Define the desired time-course (fast start, steady middle, gentle taper) and design for it explicitly.Combine a quick-onset component with a buffer that slows absorption or release.Add a “governor” step that prevents overshoot (fiber, friction reduction, staged dosing, or insulation).The result is predictability: you get the effect you want without the boom-bust pattern.Apply this framing to design a method to reduce stress and iterate until residuals drop."
+    },
+    {
+      "id": "AIDAN_SYN_131_v1",
+      "domain": "AidanBench_PS",
+      "A": "What is an unexpected way to reduce plastic waste in rivers?",
+      "D": [
+        "Producer responsibility",
+        "Improve recycling",
+        "Ban plastics",
+        "Biodegradables",
+        "Better waste management",
+        "River booms",
+        "Cleanups",
+        "Awareness campaigns"
+      ],
+      "B": {
+        "type": "Re-representation",
+        "rule": "Treat leakage as missing reverse logistics with negative unit economics; collection must become a commodity flow.",
+        "unlocks": "Bounties, standardized sorting, and backhaul on existing return trips to flip incentives.",
+        "justification": "Waste persists when retrieval is economically negative; make it pay and piggyback logistics."
+      },
+      "C": "Standardize a bounty per kilogram by material and contamination level.Pay at ports/depots and use return legs of boats/trucks as backhaul.Automate verification with simple sorting+weighing audits.When returns become a profitable flow, collection scales without constant campaigns.Apply this framing to what is an unexpected way to and iterate until residuals drop."
+    },
+    {
+      "id": "AIDAN_SYN_132_v1",
+      "domain": "AidanBench_PS",
+      "A": "How could we reduce microplastics from laundry at scale?",
+      "D": [
+        "Better wastewater treatment",
+        "Liquid detergent",
+        "Wash less",
+        "Gentle cycles",
+        "Laundry filters",
+        "Natural fabrics",
+        "Wash colder",
+        "Laundry bags"
+      ],
+      "B": {
+        "type": "Re-representation",
+        "rule": "Treat leakage as missing reverse logistics with negative unit economics; collection must become a commodity flow.",
+        "unlocks": "Bounties, standardized sorting, and backhaul on existing return trips to flip incentives.",
+        "justification": "Waste persists when retrieval is economically negative; make it pay and piggyback logistics."
+      },
+      "C": "Standardize a bounty per kilogram by material and contamination level.Pay at ports/depots and use return legs of boats/trucks as backhaul.Automate verification with simple sorting+weighing audits.When returns become a profitable flow, collection scales without constant campaigns.Apply this framing to how could we reduce microplastics from and iterate until residuals drop."
+    },
+    {
+      "id": "AIDAN_SYN_133_v1",
+      "domain": "AidanBench_PS",
+      "A": "Create a program to cut food waste in small restaurants while keeping menu creativity.",
+      "D": [
+        "Daily specials",
+        "Train staff",
+        "Compost",
+        "Buy less",
+        "Smaller portions",
+        "Donate leftovers",
+        "Inventory tracking",
+        "Discount near-expiry"
+      ],
+      "B": {
+        "type": "Re-representation",
+        "rule": "Treat leakage as missing reverse logistics with negative unit economics; collection must become a commodity flow.",
+        "unlocks": "Bounties, standardized sorting, and backhaul on existing return trips to flip incentives.",
+        "justification": "Waste persists when retrieval is economically negative; make it pay and piggyback logistics."
+      },
+      "C": "Standardize a bounty per kilogram by material and contamination level.Pay at ports/depots and use return legs of boats/trucks as backhaul.Automate verification with simple sorting+weighing audits.When returns become a profitable flow, collection scales without constant campaigns.Apply this framing to create a program to cut food and iterate until residuals drop."
+    },
+    {
+      "id": "AIDAN_SYN_134_v1",
+      "domain": "AidanBench_PS",
+      "A": "Suggest a mechanism to reduce household energy use without asking people to sacrifice comfort.",
+      "D": [
+        "LEDs",
+        "Better insulation",
+        "Appliance upgrades",
+        "Energy audits",
+        "Public campaigns",
+        "Solar panels",
+        "Smart thermostats",
+        "Time-of-use pricing"
+      ],
+      "B": {
+        "type": "Re-representation",
+        "rule": "Treat leakage as missing reverse logistics with negative unit economics; collection must become a commodity flow.",
+        "unlocks": "Bounties, standardized sorting, and backhaul on existing return trips to flip incentives.",
+        "justification": "Waste persists when retrieval is economically negative; make it pay and piggyback logistics."
+      },
+      "C": "Standardize a bounty per kilogram by material and contamination level.Pay at ports/depots and use return legs of boats/trucks as backhaul.Automate verification with simple sorting+weighing audits.When returns become a profitable flow, collection scales without constant campaigns.Apply this framing to suggest a mechanism to reduce household and iterate until residuals drop."
+    },
+    {
+      "id": "AIDAN_SYN_135_v1",
+      "domain": "AidanBench_PS",
+      "A": "How could a coastal town reduce flood damage using low-cost methods?",
+      "D": [
+        "Improve drainage",
+        "Evacuation plans",
+        "Build sea walls",
+        "More pumps",
+        "Zoning rules",
+        "Raise buildings",
+        "Sandbags",
+        "Flood insurance"
+      ],
+      "B": {
+        "type": "Re-representation",
+        "rule": "Treat leakage as missing reverse logistics with negative unit economics; collection must become a commodity flow.",
+        "unlocks": "Bounties, standardized sorting, and backhaul on existing return trips to flip incentives.",
+        "justification": "Waste persists when retrieval is economically negative; make it pay and piggyback logistics."
+      },
+      "C": "Standardize a bounty per kilogram by material and contamination level.Pay at ports/depots and use return legs of boats/trucks as backhaul.Automate verification with simple sorting+weighing audits.When returns become a profitable flow, collection scales without constant campaigns.Apply this framing to how could a coastal town reduce and iterate until residuals drop."
+    },
+    {
+      "id": "AIDAN_SYN_136_v1",
+      "domain": "AidanBench_PS",
+      "A": "Design a backpack that stays comfortable during long walks in humid climates.",
+      "D": [
+        "More padding",
+        "More ventilation",
+        "Better straps",
+        "Lighter materials",
+        "Add waist belt",
+        "Waterproofing",
+        "Ergonomic shape",
+        "More pockets"
+      ],
+      "B": {
+        "type": "Re-representation",
+        "rule": "Treat the objective as a target time-course, not a single number: shape the release/absorption curve over hours.",
+        "unlocks": "Ingredient/step choices that control uptake speed, peak, and decay (buffering, slow-release, staged exposure).",
+        "justification": "Stability comes from curve-shaping—avoiding spikes/crashes by engineering the dynamics."
+      },
+      "C": "Define the desired time-course (fast start, steady middle, gentle taper) and design for it explicitly.Combine a quick-onset component with a buffer that slows absorption or release.Add a “governor” step that prevents overshoot (fiber, friction reduction, staged dosing, or insulation).The result is predictability: you get the effect you want without the boom-bust pattern.Apply this framing to design a backpack that stays comfortable and iterate until residuals drop."
+    },
+    {
+      "id": "AIDAN_SYN_137_v1",
+      "domain": "AidanBench_PS",
+      "A": "How can a perfumer increase the sillage of a fragrance?",
+      "D": [
+        "Use musks",
+        "Add fixatives",
+        "Layering",
+        "Oil-based perfume",
+        "More projection notes",
+        "Stronger concentration",
+        "Alcohol base",
+        "Pulse points"
+      ],
+      "B": {
+        "type": "Re-representation",
+        "rule": "Treat the objective as a target time-course, not a single number: shape the release/absorption curve over hours.",
+        "unlocks": "Ingredient/step choices that control uptake speed, peak, and decay (buffering, slow-release, staged exposure).",
+        "justification": "Stability comes from curve-shaping—avoiding spikes/crashes by engineering the dynamics."
+      },
+      "C": "Define the desired time-course (fast start, steady middle, gentle taper) and design for it explicitly.Combine a quick-onset component with a buffer that slows absorption or release.Add a “governor” step that prevents overshoot (fiber, friction reduction, staged dosing, or insulation).The result is predictability: you get the effect you want without the boom-bust pattern.Apply this framing to how can a perfumer increase the and iterate until residuals drop."
+    },
+    {
+      "id": "AIDAN_SYN_138_v1",
+      "domain": "AidanBench_PS",
+      "A": "Create an earring that complements a round face and small ears.",
+      "D": [
+        "Lightweight materials",
+        "Pearl studs",
+        "Small studs",
+        "Teardrop shapes",
+        "Drop earrings",
+        "Minimalist design",
+        "Avoid bulky designs",
+        "Thin hoops"
+      ],
+      "B": {
+        "type": "Re-representation",
+        "rule": "Treat the objective as a target time-course, not a single number: shape the release/absorption curve over hours.",
+        "unlocks": "Ingredient/step choices that control uptake speed, peak, and decay (buffering, slow-release, staged exposure).",
+        "justification": "Stability comes from curve-shaping—avoiding spikes/crashes by engineering the dynamics."
+      },
+      "C": "Define the desired time-course (fast start, steady middle, gentle taper) and design for it explicitly.Combine a quick-onset component with a buffer that slows absorption or release.Add a “governor” step that prevents overshoot (fiber, friction reduction, staged dosing, or insulation).The result is predictability: you get the effect you want without the boom-bust pattern.Apply this framing to create an earring that complements a and iterate until residuals drop."
+    },
+    {
+      "id": "AIDAN_SYN_139_v1",
+      "domain": "AidanBench_PS",
+      "A": "Create a fashion line incorporating smart clothing technology.",
+      "D": [
+        "Heated jackets",
+        "Charging pockets",
+        "UV-protective clothing",
+        "Fitness tracking shirts",
+        "LED dresses",
+        "Color-changing fabric",
+        "GPS shoes",
+        "Temp-regulating fabric"
+      ],
+      "B": {
+        "type": "Re-representation",
+        "rule": "Treat the objective as a target time-course, not a single number: shape the release/absorption curve over hours.",
+        "unlocks": "Ingredient/step choices that control uptake speed, peak, and decay (buffering, slow-release, staged exposure).",
+        "justification": "Stability comes from curve-shaping—avoiding spikes/crashes by engineering the dynamics."
+      },
+      "C": "Define the desired time-course (fast start, steady middle, gentle taper) and design for it explicitly.Combine a quick-onset component with a buffer that slows absorption or release.Add a “governor” step that prevents overshoot (fiber, friction reduction, staged dosing, or insulation).The result is predictability: you get the effect you want without the boom-bust pattern.Apply this framing to create a fashion line incorporating smart and iterate until residuals drop."
+    },
+    {
+      "id": "AIDAN_SYN_140_v1",
+      "domain": "AidanBench_PS",
+      "A": "Design a low-cost reusable coffee cup lid that reduces spills for cyclists.",
+      "D": [
+        "Bigger lip",
+        "Add handle",
+        "Locking tab",
+        "Stronger plastic",
+        "Snap fit",
+        "Straw hole",
+        "Silicone gasket",
+        "Tighter seal"
+      ],
+      "B": {
+        "type": "Re-representation",
+        "rule": "Treat the objective as a target time-course, not a single number: shape the release/absorption curve over hours.",
+        "unlocks": "Ingredient/step choices that control uptake speed, peak, and decay (buffering, slow-release, staged exposure).",
+        "justification": "Stability comes from curve-shaping—avoiding spikes/crashes by engineering the dynamics."
+      },
+      "C": "Define the desired time-course (fast start, steady middle, gentle taper) and design for it explicitly.Combine a quick-onset component with a buffer that slows absorption or release.Add a “governor” step that prevents overshoot (fiber, friction reduction, staged dosing, or insulation).The result is predictability: you get the effect you want without the boom-bust pattern.Apply this framing to design a low-cost reusable coffee cup and iterate until residuals drop."
+    },
+    {
+      "id": "AIDAN_SYN_141_v1",
+      "domain": "AidanBench_PS",
+      "A": "How could we make scientific peer review faster while improving reliability?",
+      "D": [
+        "Desk reject more",
+        "Double-blind",
+        "Deadlines",
+        "Open reviews",
+        "Checklists",
+        "More editors",
+        "Pay reviewers",
+        "Shorter papers"
+      ],
+      "B": {
+        "type": "Intermediate construct",
+        "rule": "Treat the problem as a constraint satisfaction game with a visible scoreboard: progress is “residual” reduction.",
+        "unlocks": "Claim/constraint extraction, measurable residuals, and token/time budget spent only on largest residuals.",
+        "justification": "Systems improve when effort is allocated by error signals rather than by prose length."
+      },
+      "C": "Convert the task into explicit constraints/claims and define residual checks for each.Draft once, then score residuals (violations, inconsistencies, missing evidence).Spend the remaining budget only on the largest residual, recompute, and repeat.This makes extra effort reliably buy correctness instead of verbosity.Apply this framing to how could we make scientific peer and iterate until residuals drop."
+    },
+    {
+      "id": "AIDAN_SYN_142_v1",
+      "domain": "AidanBench_PS",
+      "A": "Propose a way to help people remember names at networking events.",
+      "D": [
+        "Mnemonic tricks",
+        "Contact app",
+        "Introduce them to someone else",
+        "Face feature association",
+        "Name tags",
+        "Take notes",
+        "Ask again",
+        "Repeat the name"
+      ],
+      "B": {
+        "type": "Intermediate construct",
+        "rule": "Treat the problem as a constraint satisfaction game with a visible scoreboard: progress is “residual” reduction.",
+        "unlocks": "Claim/constraint extraction, measurable residuals, and token/time budget spent only on largest residuals.",
+        "justification": "Systems improve when effort is allocated by error signals rather than by prose length."
+      },
+      "C": "Convert the task into explicit constraints/claims and define residual checks for each.Draft once, then score residuals (violations, inconsistencies, missing evidence).Spend the remaining budget only on the largest residual, recompute, and repeat.This makes extra effort reliably buy correctness instead of verbosity.Apply this framing to propose a way to help people and iterate until residuals drop."
+    },
+    {
+      "id": "AIDAN_SYN_143_v1",
+      "domain": "AidanBench_PS",
+      "A": "Create a party activity plan for firefighters that feels fresh.",
+      "D": [
+        "BBQ",
+        "Games",
+        "Speeches",
+        "Photo booth",
+        "Trivia",
+        "Karaoke",
+        "Music and dancing",
+        "Cake"
+      ],
+      "B": {
+        "type": "Intermediate construct",
+        "rule": "Treat the problem as a constraint satisfaction game with a visible scoreboard: progress is “residual” reduction.",
+        "unlocks": "Claim/constraint extraction, measurable residuals, and token/time budget spent only on largest residuals.",
+        "justification": "Systems improve when effort is allocated by error signals rather than by prose length."
+      },
+      "C": "Convert the task into explicit constraints/claims and define residual checks for each.Draft once, then score residuals (violations, inconsistencies, missing evidence).Spend the remaining budget only on the largest residual, recompute, and repeat.This makes extra effort reliably buy correctness instead of verbosity.Apply this framing to create a party activity plan for and iterate until residuals drop."
+    },
+    {
+      "id": "AIDAN_SYN_144_v1",
+      "domain": "AidanBench_PS",
+      "A": "How could we reduce misinformation spread in group chats without heavy moderation?",
+      "D": [
+        "User education",
+        "Verified sources",
+        "AI filters",
+        "Ban forwards",
+        "Report buttons",
+        "Fact-check labels",
+        "Slow sharing",
+        "Remove accounts"
+      ],
+      "B": {
+        "type": "Intermediate construct",
+        "rule": "Treat the problem as a constraint satisfaction game with a visible scoreboard: progress is “residual” reduction.",
+        "unlocks": "Claim/constraint extraction, measurable residuals, and token/time budget spent only on largest residuals.",
+        "justification": "Systems improve when effort is allocated by error signals rather than by prose length."
+      },
+      "C": "Convert the task into explicit constraints/claims and define residual checks for each.Draft once, then score residuals (violations, inconsistencies, missing evidence).Spend the remaining budget only on the largest residual, recompute, and repeat.This makes extra effort reliably buy correctness instead of verbosity.Apply this framing to how could we reduce misinformation spread and iterate until residuals drop."
+    },
+    {
+      "id": "AIDAN_SYN_145_v1",
+      "domain": "AidanBench_PS",
+      "A": "Design a school that encourages lifelong learning from adults and children together.",
+      "D": [
+        "Community workshops",
+        "Shared libraries",
+        "Guest speakers",
+        "Online courses",
+        "Parent involvement",
+        "Mentorship",
+        "Evening classes",
+        "Certificates"
+      ],
+      "B": {
+        "type": "Intermediate construct",
+        "rule": "Treat the problem as a constraint satisfaction game with a visible scoreboard: progress is “residual” reduction.",
+        "unlocks": "Claim/constraint extraction, measurable residuals, and token/time budget spent only on largest residuals.",
+        "justification": "Systems improve when effort is allocated by error signals rather than by prose length."
+      },
+      "C": "Convert the task into explicit constraints/claims and define residual checks for each.Draft once, then score residuals (violations, inconsistencies, missing evidence).Spend the remaining budget only on the largest residual, recompute, and repeat.This makes extra effort reliably buy correctness instead of verbosity.Apply this framing to design a school that encourages lifelong and iterate until residuals drop."
+    },
+    {
+      "id": "AIDAN_SYN_146_v1",
+      "domain": "AidanBench_PS",
+      "A": "How can we reduce hallucinations in LLM summaries without sacrificing fluency?",
+      "D": [
+        "Instruction prompting",
+        "Add citations",
+        "RAG",
+        "Smaller models",
+        "Fine-tune",
+        "Lower temperature",
+        "Verification step",
+        "Limit length"
+      ],
+      "B": {
+        "type": "Intermediate construct",
+        "rule": "Treat the problem as a constraint satisfaction game with a visible scoreboard: progress is “residual” reduction.",
+        "unlocks": "Claim/constraint extraction, measurable residuals, and token/time budget spent only on largest residuals.",
+        "justification": "Systems improve when effort is allocated by error signals rather than by prose length."
+      },
+      "C": "Convert the task into explicit constraints/claims and define residual checks for each.Draft once, then score residuals (violations, inconsistencies, missing evidence).Spend the remaining budget only on the largest residual, recompute, and repeat.This makes extra effort reliably buy correctness instead of verbosity.Apply this framing to how can we reduce hallucinations in and iterate until residuals drop."
+    },
+    {
+      "id": "AIDAN_SYN_147_v1",
+      "domain": "AidanBench_PS",
+      "A": "How could we detect deepfake audio in real time during support calls?",
+      "D": [
+        "2FA",
+        "Limit actions",
+        "Record calls",
+        "Security questions",
+        "Train staff",
+        "Human review",
+        "Voice biometrics",
+        "Block unknown numbers"
+      ],
+      "B": {
+        "type": "Intermediate construct",
+        "rule": "Treat the problem as a constraint satisfaction game with a visible scoreboard: progress is “residual” reduction.",
+        "unlocks": "Claim/constraint extraction, measurable residuals, and token/time budget spent only on largest residuals.",
+        "justification": "Systems improve when effort is allocated by error signals rather than by prose length."
+      },
+      "C": "Convert the task into explicit constraints/claims and define residual checks for each.Draft once, then score residuals (violations, inconsistencies, missing evidence).Spend the remaining budget only on the largest residual, recompute, and repeat.This makes extra effort reliably buy correctness instead of verbosity.Apply this framing to how could we detect deepfake audio and iterate until residuals drop."
+    },
+    {
+      "id": "AIDAN_SYN_148_v1",
+      "domain": "AidanBench_PS",
+      "A": "How can we make password resets safer without increasing user frustration?",
+      "D": [
+        "Support calls",
+        "Security questions",
+        "2FA",
+        "Rate limiting",
+        "CAPTCHAs",
+        "Device recognition",
+        "Longer passwords",
+        "Email verification"
+      ],
+      "B": {
+        "type": "Intermediate construct",
+        "rule": "Treat the problem as a constraint satisfaction game with a visible scoreboard: progress is “residual” reduction.",
+        "unlocks": "Claim/constraint extraction, measurable residuals, and token/time budget spent only on largest residuals.",
+        "justification": "Systems improve when effort is allocated by error signals rather than by prose length."
+      },
+      "C": "Convert the task into explicit constraints/claims and define residual checks for each.Draft once, then score residuals (violations, inconsistencies, missing evidence).Spend the remaining budget only on the largest residual, recompute, and repeat.This makes extra effort reliably buy correctness instead of verbosity.Apply this framing to how can we make password resets and iterate until residuals drop."
+    },
+    {
+      "id": "AIDAN_SYN_149_v1",
+      "domain": "AidanBench_PS",
+      "A": "Suggest a way to make software updates safer for critical medical devices.",
+      "D": [
+        "Longer QA",
+        "Rollback",
+        "Staged rollout",
+        "Manual approval",
+        "More testing",
+        "Freeze versions",
+        "More monitoring",
+        "Sign updates"
+      ],
+      "B": {
+        "type": "Intermediate construct",
+        "rule": "Treat the problem as a constraint satisfaction game with a visible scoreboard: progress is “residual” reduction.",
+        "unlocks": "Claim/constraint extraction, measurable residuals, and token/time budget spent only on largest residuals.",
+        "justification": "Systems improve when effort is allocated by error signals rather than by prose length."
+      },
+      "C": "Convert the task into explicit constraints/claims and define residual checks for each.Draft once, then score residuals (violations, inconsistencies, missing evidence).Spend the remaining budget only on the largest residual, recompute, and repeat.This makes extra effort reliably buy correctness instead of verbosity.Apply this framing to suggest a way to make software and iterate until residuals drop."
+    },
+    {
+      "id": "AIDAN_SYN_150_v1",
+      "domain": "AidanBench_PS",
+      "A": "How might we prevent prompt injection in tool-using agents reliably?",
+      "D": [
+        "Train on attacks",
+        "More logging",
+        "Limit tools",
+        "Use policies",
+        "Separate contexts",
+        "Human approval",
+        "Sanitize inputs",
+        "Use allowlists"
+      ],
+      "B": {
+        "type": "Intermediate construct",
+        "rule": "Treat the problem as a constraint satisfaction game with a visible scoreboard: progress is “residual” reduction.",
+        "unlocks": "Claim/constraint extraction, measurable residuals, and token/time budget spent only on largest residuals.",
+        "justification": "Systems improve when effort is allocated by error signals rather than by prose length."
+      },
+      "C": "Convert the task into explicit constraints/claims and define residual checks for each.Draft once, then score residuals (violations, inconsistencies, missing evidence).Spend the remaining budget only on the largest residual, recompute, and repeat.This makes extra effort reliably buy correctness instead of verbosity.Apply this framing to how might we prevent prompt injection and iterate until residuals drop."
+    }
+  ]
